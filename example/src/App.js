@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
-import ExampleComponent from 'react-krpano'
+import Krpano from 'react-krpano'
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <Krpano xml='vtour/tour.xml'/>
       </div>
     )
   }

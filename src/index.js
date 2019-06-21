@@ -1,22 +1,26 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
+import React, {Component} from 'react'
 import styles from './styles.css'
-
+import vtour from './vtour/tour'
 export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
 
   render() {
-    const {
-      text
-    } = this.props
-
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div className={styles.krpano}>
+        <div id="krpano" className={styles.core}/>
       </div>
     )
   }
+
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    this.init(this.props.xml)
+  }
+
+  init(xml) {
+    embedpano({xml: xml, target: "krpano", html5: "only"});
+  }
+
 }
