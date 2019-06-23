@@ -8,8 +8,49 @@
   bottom: 0;
   overflow: hidden;
   background: green;
+  z-index: 1;
 }
-.core{
+
+.krpano-core {
   height: 100%;
   width: 100%;
 }
+
+.krpano-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+.krpano-loading:before {
+  content: '资源载入中';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+  color: #666666;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: 0.7s ease;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: 0.7s ease;
+}
+

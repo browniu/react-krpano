@@ -23,8 +23,8 @@
 			</level>
 		</image>
 		<!-- 热点 -->
-		<hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="jscall(link())" />
-		<hotspot name="spot2" style="hotspot_style_go" ath="16.403" atv="12.259" onclick="jscall(toast())" />
+		<hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="jscall(krpano.hooks.test())" />
+		<hotspot name="spot2" style="hotspot_style_go" ath="16.403" atv="12.259" onclick="jscall(console.log('xixixi'))" />
 		<hotspot name="spot3" style="hotspot_style_go" ath="-32.358" atv="-0.267" onclick="loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))" />
 	</scene>
 	<!-- 场景2 -->

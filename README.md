@@ -15,12 +15,12 @@ npm install --save react-krpano
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-krpano'
+import Krpano from 'react-krpano'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+        <Krpano xml='vtour/tour.xml' hooks={this.hooks} mounted={this.mounted}/>
     )
   }
 }
