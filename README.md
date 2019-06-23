@@ -9,6 +9,11 @@
 ```bash
 npm install --save react-krpano
 ```
+or
+
+```bash
+yarn add react-krpano
+```
 
 ## Usage
 
