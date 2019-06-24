@@ -55,6 +55,7 @@ export default class ExampleComponent extends Component {
       xml: xml,
       target: 'krpano',
       html5: 'only',
+      passQueryParameters: true,
       onready(krpano) {
         let hooks = that.config.hooks
         if (!hooks.ready) hooks.ready = () => that.ready()

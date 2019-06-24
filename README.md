@@ -1,12 +1,8 @@
-# react-krpano [Demo](https://browniu.com/react-krpano/)
+# react-krpano [demo](https://browniu.com/react-krpano/)
 
 > krpano in react
 
 [![NPM](https://img.shields.io/npm/v/react-krpano.svg)](https://www.npmjs.com/package/react-krpano) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-## Demo
-
-view https://browniu.com/react-krpano/
 
 ## 安装 Install
 
@@ -38,7 +34,7 @@ class Example extends Component {
 ```
 
 ## 通信 Communication
-### Xml => React
+### Xml => React (e.g.)
 
 #### 无内部参数 No-Params 
 ```xml
@@ -60,7 +56,7 @@ this.hooks = {
 }
 ```
 
-### React => Xml
+### React => Xml (e.g.)
 
 ##### `Get` 获取当前视角
 ```javascript
@@ -170,6 +166,27 @@ window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
 ...
 <planet_config enable="true" angle="120" during="1" />
 ...
+</krpano>
+```
+
+### 光晕
+
+```xml
+<!-- tour.xml -->
+<krpano>
+...
+<krpano flare_dir="style/lensflare"/>
+<include url="style/lensflare/core.xml" />
+...
+</krpano>
+```
+
+```xml
+<!-- style/lensflare/lenflaresettings.xml -->
+<krpano>
+	<lensflares name="obj">
+		<item name="name" ath="0" atv="0" scene="scene_name" typ="blinkstyle1" dust_effect="true"/>
+	</lensflares>
 </krpano>
 ```
 

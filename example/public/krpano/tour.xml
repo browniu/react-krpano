@@ -1,6 +1,11 @@
 ﻿<krpano version="1.19" title="Virtual Tour">
 	<!-- 菜单设置 -->
 	<include url="style/style.xml" />
+
+<!--光晕插件-->
+  <krpano flare_dir="style/lensflare"/>
+  <include url="style/lensflare/core.xml" />
+
 	<!-- 生命周期-加载第一个场景 -->
 	<action name="startup" autorun="onstart">
 		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );

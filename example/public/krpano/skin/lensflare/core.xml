@@ -1,0 +1,403 @@
+<krpano licznik="0" x_listflar="0" y_listflar="160">
+
+	<include url="lensflaresettings.xml"/>
+	<include url="edit.xml" devices="html5" if="addflaremode == 1"/>
+
+	<action name="teacujflarenastart" autorun="preinit">
+		trace('Lensflare plugin 2.1 :: 10-05-2016');
+	</action>
+
+
+                                                                                                                                                                                                                                                                    
+            
+
+	<style name="blink_fl_lt" url="dust/d1.png" vr="true" enabled="false" align="center" edge="rightbottom" x="0" y="0" width="prop" height="70%" keep="false" alpha="0" zorder="100"/>
+	<style name="blink_fl_rt" url="dust/d2.png" vr="true" enabled="false" align="center" edge="leftbottom" x="0" y="0" width="prop" height="70%" keep="false" alpha="0" zorder="100"/>
+	<style name="blink_fl_rb" url="dust/d3.png" vr="true" enabled="false" align="center" edge="lefttop" x="0" y="0" width="prop" height="70%" keep="false" alpha="0" zorder="100"/>
+	<style name="blink_fl_lb" url="dust/d4.png" vr="true" enabled="false" align="center" edge="righttop" x="0" y="0" width="prop" height="70%" keep="false" alpha="0" zorder="100"/>
+	<style name="blink_fl_ce" url="dast4.png" vr="true" enabled="false" rotate="180" align="center" edge="center" x="0" y="0" width="prop" height="50%" keep="false" alpha="0" zorder="100"/>
+
+	                                                                                
+
+	<events name="loasflares" keep="true" onpreviewcomplete="load_flare_content()"/>
+
+	<style name="flare" enabled="false" depth="1000" alpha="0" distorted="true" edge="center" ox="0" oy="0" width="440" height="440" keep="false" />
+
+
+
+                                                                                                  
+	<flare_style  name="blinkstyle1">
+		<item name="flare0" url="blinkstyle1/flare7.png" vars="100|0.5|1.0|-1|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare1" url="blinkstyle1/flare5.png" vars="100|5.0|0.0|2|0|1|false|0.0|0.05|true|normal"/>
+		<item name="flare2" url="blinkstyle1/flare11.png" vars="-0.2|0.1|0.0|-1|0.9|0.017|true|0.4|0.05|false|add"/>
+		<item name="flare3" url="blinkstyle1/flare6.png" vars="-9|0.05|0.2|-1|0.9|0.015|false|0.2|0.015|false|add"/>
+		<item name="flare4" url="blinkstyle1/flare6.png" vars="-1|0.1|0.3|-1|0.9|0.015|false|0.2|0.015|true|add"/>
+		<item name="flare5" url="blinkstyle1/flare6.png" vars="-0.3|0.05|0.4|-1|0.9|0.015|false|0.2|0.015|true|add"/>
+		<item name="flare6" url="blinkstyle1/flare11.png" vars="-0.7|0.2|0.0|-1|0.9|0.017|true|0.4|0.017|false|add"/>
+		<item name="flare7" url="blinkstyle1/flare16.png" vars="-9|1.8|0.0|-1|0.9|0.01|true|0.5|0.02|false|add"/>
+		<item name="flare8" url="blinkstyle1/flare4.png" vars="100|0.8|0.2|-1|0|1|false|0.0|0.015|false|add"/>
+	</flare_style>
+
+	                                                                                                            
+	<flare_style  name="blinkstyle2">
+		<item name="flare1" url="blinkstyle2/flare7.png"  vars="100|1.0|1.0|-1|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare2" url="blinkstyle2/flare5.png"  vars="100|6.0|0.0|2|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare7" url="blinkstyle2/flare13.png"  vars="100|1.05|0.0|-1|0|0.115|true|0.3|0.0|false|add"/>
+		<item name="flare3" url="blinkstyle2/flare3.png"  vars="-6|0.15|0.2|-1|0.9|0.015|false|0.0|0.015|false|add"/>
+		<item name="flare4" url="blinkstyle2/flare5.png"  vars="-1|0.02|0.6|-1|0.9|0.015|false|0.0|0.015|false|add"/>
+		<item name="flare5" url="blinkstyle2/flare3.png"  vars="-0.5|0.11|0.4|-1|0.9|0.015|false|0.0|0.015|true|add"/>
+		<item name="flare6" url="blinkstyle2/flare2.png"  vars="18|0.01|0.0|1|0.9|0.15|true|0.6|0.15|false|add"/>
+	</flare_style>
+
+
+	<flare_style  name="blinkstyle3">
+		<item name="flare1" url="blinkstyle3/flare7.png"  vars="100|1.0|1.0|-1|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare2" url="blinkstyle3/flare5.png"  vars="100|8.0|0.0|2|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare3" url="blinkstyle3/flare6.png"  vars="-8|1.2|0.1|-1|0.9|0.05|false|0.2|0.05|false|add"/>
+		<item name="flare4" url="blinkstyle3/flare6.png"  vars="-5|0.12|0.6|-1|0.9|0.009|true|0.6|0.02|false|add"/>
+		<item name="flare5" url="blinkstyle3/flare6.png"  vars="-2|0.06|0.6|-1|0.9|0.012|true|0.8|0.05|false|add"/>
+		<item name="flare6" url="blinkstyle3/flare6.png"  vars="-1.5|1.6|0.05|-1|0.9|0.07|false|0.0|0.05|true|add"/>
+		<item name="flare8" url="blinkstyle3/flare16.png" vars="-0.1|1.2|0.0|-1|0.9|0.01|true|0.4|0.05|true|add"/>
+	</flare_style>
+
+
+                         
+	<flare_style  name="blinkstyle4">
+		<item name="flare1" url="blinkstyle4/flare7.png"  vars="100|0.3|0.9|-1|0|0.05|false|0.0|0.0|true|add"/>
+		<item name="flare2" url="blinkstyle4/flare7.png"  vars="100|0.001|0.0|3|0|0.05|false|0.0|0.0|true|normal"/>
+		<item name="flare3" url="blinkstyle4/flare5.png"  vars="-6|1.3|0.3|-1|0.9|0.009|false|0.0|0.05|false|add"/>
+		<item name="flare4" url="blinkstyle4/flare5.png"  vars="-1|1.2|0.1|-1|0.9|0.011|false|0.0|0.05|false|add"/>
+		<item name="flare5" url="blinkstyle4/flare4.png"  vars="2|1.3|0.2|-1|0.9|0.014|false|0.0|0.05|false|normal"/>
+		<item name="flare6" url="blinkstyle4/flare6.png"  vars="5|0.02|0.2|2|0.9|0.05|true|0.6|0.002|false|add"/>
+		<item name="flare7" url="blinkstyle4/flare11.png" vars="1|0.01|0.0|2|0.9|0.05|true|0.3|0.02|true|add"/>
+		<item name="flare8" url="blinkstyle4/flare17.png" vars="-2|3.22|0.5|1|0.9|0.01|true|0.6|0.02|true|add"/>
+		<item name="flare9" url="blinkstyle4/flare12.png" vars="-6|0.5|0.8|3|0.9|0.01|true|0.2|0.9|false|add"/>
+	</flare_style>
+
+	                                                                                                            
+
+	<flare_style  name="blinkstyle5">
+		<item name="flare1" url="blinkstyle5/flare1.png"  vars="100|1.0|1.0|-1|0|0.02|false|0.0|0.05|true|normal"/>
+		<item name="flare2" url="blinkstyle5/flare5.png"  vars="100|6.0|0.0|2|0|0.01|false|0.0|0.05|true|normal"/>
+		<item name="flare3" url="blinkstyle5/flare9.png"  vars="-6|0.8|0.8|1|0.9|0.01|true|0.4|0.8|false|add"/>
+		<item name="flare5" url="blinkstyle5/flare8.png"  vars="-6|4.8|0.8|-1|0.9|0.1|true|0.5|0.8|true|add"/>
+		<item name="flare6" url="blinkstyle5/flare17.png"  vars="6|3.22|0.1|1|0.9|0.01|false|0.3|0.03|false|add"/>
+		<item name="flare7" url="blinkstyle5/flare7.png"  vars="-6|0.12|0.4|-1|0.9|0.005|true|0.2|0.1|true|add"/>
+		<item name="flare8" url="blinkstyle5/flare7.png"  vars="-5|0.08|0.5|-1|0.9|0.009|true|0.6|0.2|false|add"/>
+		<item name="flare9" url="blinkstyle5/flare4.png"  vars="-5|0.12|0.4|-1|0.9|0.006|true|0.2|0.23|false|add"/>
+	</flare_style>
+
+
+	                                                                                                            
+
+	<flare_style  name="blinkstyle6">
+		<item name="flare1" url="blinkstyle6/flare7.png"  vars="100|1.0|1.0|-1|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare2" url="blinkstyle6/flare5.png"  vars="100|8.0|0.0|2|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare3" url="blinkstyle6/flare6.png"  vars="-8|1.2|0.05|-1|0.9|0.05|false|0.2|0.05|false|add"/>
+		<item name="flare4" url="blinkstyle6/flare6.png"  vars="-5|0.12|0.4|-1|0.9|0.009|true|0.3|0.02|true|add"/>
+		<item name="flare5" url="blinkstyle6/flare6.png"  vars="-2|0.08|0.3|-1|0.9|0.012|true|0.4|0.05|true|add"/>
+		<item name="flare6" url="blinkstyle6/flare6.png"  vars="-1.5|0.5|0.03|-1|0.9|0.07|false|0.0|0.05|false|add"/>
+		<item name="flare7" url="blinkstyle6/flare17.png"  vars="10|4.5|0.2|1|0.9|0.03|true|0.7|0.05|false|add"/>
+		<item name="flare8" url="blinkstyle6/flare8.png"  vars="-6|4.8|0.8|-1|0.9|0.1|true|0.5|0.8|false|add"/>
+		<item name="flare9" url="blinkstyle6/flare16.png" vars="-0.1|1.2|0.0|-1|0.9|0.01|true|0.6|0.05|false|add"/>
+	</flare_style>
+
+                  
+                                                                                                            
+
+	<flare_style  name="blinkstyle7">
+		<item name="flare1" url="blinkstyle7/flare7.png" vars="100|0.3|1.0|2|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare2" url="blinkstyle7/flare5.png" vars="100|6.0|0.0|3|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare3" url="blinkstyle7/flare1.png" vars="100|2.0|0.0|1|0|0.005|true|0.0|0.005|true|add"/>
+		<item name="flare4" url="blinkstyle7/flare8.png" vars="-6|0.2|0.2|2|0.9|0.05|false|0.0|0.05|false|add"/>
+		<item name="flare5" url="blinkstyle7/flare6.png" vars="-3|0.2|0.2|2|0.9|0.015|false|0.0|0.05|true|add"/>
+		<item name="flare6" url="blinkstyle7/flare6.png" vars="-0.8|0.12|0.6|2|0.9|0.015|false|0.0|0.05|true|add"/>
+		<item name="flare7" url="blinkstyle7/flare3.png" vars="6|0.3|0.1|1|0.9|0.05|false|0.0|0.05|false|add"/>
+		<item name="flare8" url="blinkstyle7/flare4.png" vars="9|0.4|0.2|1|0.9|0.1|false|0.0|0.1|false|normal"/>
+	</flare_style>
+
+	<flare_style  name="blinkstyle8">
+		<item name="flare1" url="blinkstyle8/flare7.png" vars="100|1.0|1.0|2|0|0.1|false|0.0|0.05|true|normal"/>
+		<item name="flare2" url="blinkstyle8/flare5.png" vars="100|6.0|0.0|3|0|0.05|false|0.0|0.05|true|normal"/>
+		<item name="flare3" url="blinkstyle8/flare2.png" vars="-8|0.06|0.2|-1|0.9|0.005|false|0.1|0.01|false|add"/>
+		<item name="flare4" url="blinkstyle8/flare16.png" vars="-4.5|0.1|0.3|2|0.9|0.005|false|0.0|0.04|false|add"/>
+		<item name="flare5" url="blinkstyle8/flare6.png" vars="-2.8|0.2|0.2|2|0.9|0.005|false|0.0|0.1|true|add"/>
+		<item name="flare6" url="blinkstyle8/flare5.png" vars="-1.5|0.1|0.6|2|0.9|0.005|false|0.0|0.15|true|add"/>
+		<item name="flare7" url="blinkstyle8/flare2.png" vars="-1.2|4.0|0.6|1|0.9|0.2|true|0.5|0.12|false|add"/>
+		<item name="flare8" url="blinkstyle8/flare16.png" vars="-1|1.2|0.8|1|0.9|0.09|true|0.3|0.17|true|add"/>
+	</flare_style>
+
+
+	<flare_style  name="blinkstyle9">
+		<item name="flare1" url="blinkstyle9/flare7.png" vars="100|0.2|1.0|2|0|0.05|false|0.0|0.005|true|add"/>
+		<item name="flare2" url="blinkstyle9/flare1.png" vars="100|1.0|0.0|3|0|0.05|false|0.0|0.1|true|add"/>
+		<item name="flare3" url="blinkstyle9/flare5.png" vars="-12|0.1|0.4|-1|0.9|0.005|false|0.0|0.5|false|add"/>
+		<item name="flare4" url="blinkstyle9/flare6.png" vars="-3|0.1|0.2|-1|0.9|0.005|false|0.0|0.02|true|add"/>
+		<item name="flare5" url="blinkstyle9/flare2.png" vars="-1.5|0.1|0.4|-1|0.9|0.005|false|0.0|0.04|true|add"/>
+		<item name="flare6" url="blinkstyle9/flare6.png" vars="-0.5|0.1|0.1|-1|0.9|0.05|false|0.0|0.04|false|add"/>
+	</flare_style>
+
+
+	                                                                                
+	<plugin name="WebVR" keep="true" devices="html5"
+	        onentervr="skin_showloading(false); webvr_onentervr(); webvr_setup();roszada_flar_vebvrmode()"
+	        onexitvr="webvr_onexitvr(); webvr_setup();roszada_flar_vebvrmode()"
+	        />
+
+	<action name="roszada_flar_vebvrmode">
+		for(set(i,0),i LT hotspot.count,inc(i),
+		  if(hotspot[get(i)].tag == 'lensflare_tag_dynamic',
+				vonh(get(i));
+			);
+		);
+		load_flare_content();
+	</action>
+	                                                                                       
+
+	<action name="load_flare_content">
+		if(!first_flare_settings,
+			copy(suma_flar, lensflares[obj].item.count);
+			set(first_flare_settings, true);
+		);
+		if(lensflares[obj].item.count GT 0 OR addflaremode == true,
+			flayer(blink_fl_lt,blink_fl_lt);
+			flayer(blink_fl_rt,blink_fl_rt);
+			flayer(blink_fl_rb,blink_fl_rb);
+			flayer(blink_fl_lb,blink_fl_lb);
+			                                       
+		);
+
+		set(load_gui_flar, false);
+		for(set(i,0), i LT lensflares[obj].item.count, inc(i),
+			copy(name_flare, lensflares[obj].item[get(i)].name);
+			copy(blink_style, lensflares[obj].item[get(i)].typ);
+
+                                                                                               
+
+			if(lensflares[obj].item[get(i)].scene == scene[get(xml.scene)].name,
+				set(load_gui_flar, true);
+				for(set(j,0), j LT flare_style[get(blink_style)].item.count, inc(j),
+
+					txtsplit(flare_style[get(blink_style)].item[get(j)].vars, '|', arrows);
+
+					txtadd(n, 'f1_',get(lensflares[obj].item[get(i)].name),'_',get(j));
+					txtadd(n0, 'f1_',get(lensflares[obj].item[get(i)].name),'_0');
+
+					copy(move, 			arrows[0].value);
+					copy(scale, 		arrows[1].value);
+					copy(alpha, 		arrows[2].value);
+					copy(zorder, 		arrows[3].value);
+					copy(flying, 		arrows[4].value);
+					copy(rscale, 		arrows[5].value);
+					copy(ralpha, 		arrows[6].value);
+					copy(ralphaminus, 	arrows[7].value);
+					copy(rmove, 		arrows[8].value);
+					copy(invr, 			arrows[9].value);
+					copy(blend, 		arrows[10].value);
+
+	add_single_flare(get(n),get(i),get(j),get(blink_style),get(name_flare),get(move),get(flying),get(rscale),get(ralpha),get(ralphaminus),get(scale),get(alpha),get(zorder),get(rmove),get(invr),get(blend),get(n0));
+				);
+			);
+		);
+		if(addflaremode,
+			show_lensfrafe_aktyw_box(get(scene[get(xml.scene)].name),get(load_gui_flar));
+		);
+	</action>
+
+
+	                                
+	<action name="add_single_flare">
+		                                                                                 
+		addhotspot(%1);
+		hotspot[%1].loadstyle(flare);
+		copy(hfla, hotspot[%1]);
+
+		copy(hfla.url, flare_style[%4].item[%3].url);
+		copy(hfla.ath, lensflares[obj].item[%5].ath);
+		copy(hfla.atv, lensflares[obj].item[%5].atv);
+		if(lensflares[obj].item[%5].dust_effect === null, set(lensflares[obj].item[%5].dust_effect, true));
+		copy(hfla.dust_effect, lensflares[obj].item[%5].dust_effect);
+		set(hfla.tagmini, %5);
+		set(hfla.move, %6);
+		set(hfla.rmove, %14);
+		copy(hfla.athbazowy, hotspot[%17].ath);
+		copy(hfla.atvbazowy, hotspot[%17].atv);
+		set(hfla.flying, %7);
+		set(hfla.scale, %11);
+		set(hfla.alpha, %12);
+		set(scaleTemp_%1, %11);
+		set(hfla._alpha, %12);
+		set(hfla.rscale, %8);
+		set(hfla.ralpha, %9);
+		set(hfla.ralphaminus, %10);
+		set(hfla.zorder, %13);
+		set(hfla.invr, %15);
+		set(hfla.blendmode, %16);
+		set(hfla.tag, lensflare_tag_dynamic);
+		set(hfla.onloaded,
+			if(webvr.isenabled, if(!invr, vonh(get(name))));
+			asyncloop(loaded,
+				spheretoscreen(ath, atv, xposh_%1, yposh_%1);
+				div(xpos_%1, stagewidth, 2);
+				div(ypos_%1, stageheight, 2);
+				sub(xposg_%1, xposh_%1, xpos_%1);
+				sub(yposg_%1, yposh_%1, ypos_%1);
+				div(ox, xposg_%1, calc(move*1.4/(rmove*12)));
+				div(oy, yposg_%1, calc(move*1.4/(rmove*12)));
+
+				getlooktodistance(scal_%1, view.hlookat, view.vlookat, ath, atv);
+
+				spheretoscreen(athbazowy, atvbazowy, px_%1, py_%1);
+				sub(a_%1, px_%1, xpos_%1);
+				sub(b_%1, ypos_%1, py_%1);
+				Math.atan2(angle_%1, a_%1, b_%1);
+				mul(angle_%1, 180);
+				div(angle_%1, Math.PI);
+				add(angle_%1, 270);
+				mod(angle_%1, 360);
+				roundval(angle_%1);
+				copy(rz, angle_%1);
+
+				if(ralpha,
+					set(alpha_%1, calc((scal_%1/70)-ralphaminus));
+					if(alpha_%1 LE 0, set(alpha_%1, 0));
+					if(webVr.isenabled,
+						set(hotspot[%1].alpha, calc(alpha_%1/1.5));
+					,
+						set(hotspot[%1].alpha, calc(alpha_%1));
+						if(hotspot[%1].alpha GT 1, set(hotspot[%1].alpha, 1));
+					);
+				);
+				if(rscale != 1,
+					set(valsc_%1, calc((rscale*scal_%1)/10+scaleTemp_%1));
+					if(webVr.isenabled,
+						set(scale, calc(valsc_%1/2.5));
+					,
+						copy(scale, valsc_%1);
+					);
+				);
+
+				if(%3 == '1',
+					getlooktodistance(result_%1, view.hlookat, view.vlookat, ath, atv);
+					div(result1_%1, result_%1, 10);
+					clamp(result1_%1, 0.0, 1.0);
+					mod(result2_%1, result1_%1, 100);
+					sub(result2_%1,1);
+					mul(result2_%1,-1);
+
+					copy(alpha, result2_%1);
+					sub(alpha, 0.3);
+					if(result_%1 LT 7,
+						migaj_kurzem(get(result2_%1),get(dust_effect));
+					);
+					if(result_%1 GT 7 AND result_%1 LT 20,
+						migaj_kurzem(0,true);
+					);
+				);
+				testme(%1,get(xposh_%1),get(yposh_%1));
+			);
+
+		);
+		                                                                                                                                            
+	</action>
+
+	<action name="migaj_kurzem">
+		                        
+		                                                                                                                    
+		if(%2,
+			set(layer[blink_fl_lt].alpha, %1);
+			set(layer[blink_fl_rt].alpha, %1);
+			set(layer[blink_fl_rb].alpha, %1);
+			set(layer[blink_fl_lb].alpha, %1);
+			set(layer[blink_fl_ce].alpha, %1);
+		);
+	</action>
+
+	<action name="testme">
+		if(%3 LT 0 OR !%3,
+			set(ukryj_gora_%1, true);
+		,
+			set(ukryj_gora_%1, false);
+		);
+
+		if(%3 GT stageheight OR !%3,
+			set(ukryj_dol_%1, true);
+		,
+			set(ukryj_dol_%1, false);
+		);
+
+		                                  
+		set(zero_lewo_123, 0);
+		copy(zero_prawo_123, stagewidth);
+
+		if(fwebvr.isenabled,
+			set(zero_lewo_123, 360);
+			set(zero_prawo_123, calc(stagewidth-360));
+		);
+
+
+		if(%2 LT zero_lewo_123 OR !%2,
+			set(ukryj_lewo_%1, true);
+		,
+			set(ukryj_lewo_%1, false);
+		);
+
+		if(%2 GT zero_prawo_123 OR !%2,
+			set(ukryj_prawo_%1, true);
+		,
+			set(ukryj_prawo_%1, false);
+		);
+
+    getlooktodistance(re_%1, view.hlookat, view.vlookat, ath, atv);
+
+		if(!ukryj_gora_%1 AND !ukryj_dol_%1 AND !ukryj_lewo_%1 AND !ukryj_prawo_%1 AND re_%1 LT 90,
+			set(visible, true);
+		,
+			set(visible, false);
+		);
+	</action>
+
+
+	<action name="reset_pano_lensflare"/>
+
+
+
+                        
+	<action name="flayer">
+		addlayer(%1);
+		layer[%1].loadstyle(%2);
+		copy(p, layer[%1]);
+	</action>
+
+	<action name="fhotspot">
+		addhotspot(%1);
+		hotspot[%1].loadstyle(%2);
+		copy(h, hotspot[%1]);
+	</action>
+
+	<action name="vonp">
+		if(layer[%1].loaded, removelayer(%1));
+	</action>
+	<action name="vonh">
+		if(hotspot[%1].loaded, removehotspot(%1));
+	</action>
+
+	<action name="vonh_all">
+	  sub(i,hotspot.count,1);
+	  if(i GE 0,loop_vonh_all(get(i),%1,%2));
+   </action>
+
+	<action name="loop_vonh_all">
+		if(%2 == null,
+			vonh(%1);
+		,
+			if(hotspot[%1].%2 == %3,
+				vonh(%1);
+			);
+		);
+		dec(i);
+		if(i GE 0, loop_vonh_all(get(i),%2,%3));
+   </action>
+
+
+</krpano>
