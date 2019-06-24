@@ -1,0 +1,96 @@
+<krpano>
+	<!-- 热点设置 -->
+	<style name="hotspot_style" url="hotspot.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" />
+	<style name="hotspot_style_go" url="hotspot2.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" />
+  <style name="hotspot_style_anime" url="hotspot_anime.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
+  <style name="hotspot_style_anime_2" url="hotspot_anime_2.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
+  <style name="hotspot_style_anime_3" url="hotspot_anime_3.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
+	<!-- 自动旋转设置 -->
+	<autorotate name="rotate" enabled="false" waittime="10.0" speed="1.0" horizon="0.0" tofov="360.0" />
+
+	<!-- 行星入场 -->
+	<!-- 配置清单 -->
+	<planet_config enable="true" angle="120" during="1" />
+	<!-- 事件定义 -->
+	<events name="skin_events" keep="true" onxmlcomplete="set(events[skin_events].onxmlcomplete,null); if(planet_config.enable , planet());" />
+	<!-- 星球入场执行代码 -->
+	<action name="planet">
+        copy(lp_scene, xml.scene);
+        copy(lp_hlookat, view.hlookat);
+        copy(lp_vlookat, view.vlookat);
+        copy(lp_fov, view.fov);
+        copy(lp_fovmax, view.fovmax);
+        copy(lp_limitview, view.limitview);
+        set(view.fovmax, 170);
+        set(view.limitview, lookto);
+        set(view.vlookatmin, 90);
+        set(view.vlookatmax, 90);
+        set_hotspot_visible(false);
+        set(layer[skin_layer].visible,false);set(layer[skin_layer].alpha,0);
+        set(layer[skin_control_bar].visible,false);set(layer[skin_control_bar].alpha,0);
+        set(layer[skin_splitter_bottom].visible,false);set(layer[skin_splitter_bottom].alpha,0);
+        lookat(calc(lp_hlookat + planet_config.angle), 90, 150, 1, 0, 0);
+        set(lp_running,true);
+        set(events[lp_events].onloadcomplete,
+        delayedcall(calc(planet_config.during),
+        if(lp_scene === xml.scene,
+        set(control.usercontrol, off);
+        copy(view.limitview, lp_limitview);
+        set(view.vlookatmin, null);
+        set(view.vlookatmax, null);
+        tween(view.hlookat|view.vlookat|view.fov|view.distortion, calc('' + lp_hlookat + '|' + lp_vlookat + '|' + lp_fov + '|' + 0.0),
+        3, easeOutQuad,
+        set(control.usercontrol, all);
+        tween(view.fovmax, get(lp_fovmax));
+        );
+        set(lp_running,false);
+        delayedcall(3,set_hotspot_visible(true))
+        set(layer[skin_layer].visible,true);tween(layer[skin_layer].alpha,1,1);
+        set(layer[skin_control_bar].visible,true);tween(layer[skin_control_bar].alpha,1,1);
+        set(layer[skin_splitter_bottom].visible,true);tween(layer[skin_splitter_bottom].alpha,1,1);
+        );
+        );
+        );
+	</action>
+    <action name="set_hotspot_visible">
+        for(set(i,0),i LT hotspot.count,inc(i),
+        if(%1 == false,
+        if(hotspot[get(i)].visible == true,
+        set(hotspot[get(i)].mark,true);set(hotspot[get(i)].visible,%1);
+        );
+        ,
+        if(hotspot[get(i)].mark == true OR hotspot[get(i)].mark2 == true,
+        set(hotspot[get(i)].visible,%1);
+        );
+        );
+        );
+    </action>
+  <!-- 行星入场 -->
+  <!-- 动态热点 -->
+  <action name="do_crop_animation" scope="local" args="framewidth, frameheight, framerate">
+    <!-- 定义局部变量 -->
+    calc(local.xframes, (caller.imagewidth /framewidth) BOR 0);
+    calc(local.frames, xframes * ((caller.imageheight / frameheight) BOR 0));
+    def(local.frame, integer, 0);
+
+    <!-- 设置第一帧 -->
+    calc(caller.crop, '0|0|' + framewidth + '|' + frameheight);
+
+    <!-- 动画部分 -->
+    setinterval(calc('crop_anim_' + caller.name), calc(1.0 / framerate),
+    if(caller.loaded,
+    inc(frame);
+    if(frame GE frames, if(caller.onlastframe !== null, callwith(caller, onlastframe() ) ); set(frame,0); );
+    mod(xpos, frame, xframes);
+    div(ypos, frame, xframes);
+    Math.floor(ypos);
+    mul(xpos, framewidth);
+    mul(ypos, frameheight);
+    calc(caller.crop, xpos + '|' + ypos + '|' + framewidth + '|' + frameheight);
+    ,
+    <!-- 当热点移除时停止动画 -->
+    clearinterval(calc('crop_anim_' + caller.name));
+    );
+    );
+  </action>
+</krpano>

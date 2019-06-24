@@ -1,0 +1,49 @@
+﻿<krpano version="1.19" title="Virtual Tour">
+	<!-- 菜单设置 -->
+	<include url="style/style.xml" />
+	<!-- 生命周期-加载第一个场景 -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions());
+    jscall(krpano.hooks.ready())
+	</action>
+	<!-- 场景1 -->
+	<scene name="scene_hongkong" title="hongkong" havevrimage="true" thumburl="panos/hongkong.tiles/thumb.jpg">
+		<!-- 视窗配置 -->
+		<view hlookat="177.349" vlookat="27.330" fovtype="MFOV" fov="120.000" maxpixelzoom="0" fovmin="100" fovmax="130" limitview="auto" />
+		<!-- 预览配置 -->
+		<preview url="panos/hongkong.tiles/preview.jpg" />
+		<!-- 全景视图配置 -->
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="panos/hongkong.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="panos/hongkong.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+		<!-- 热点 -->
+		<hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="loadscene(scene_inside1,null,MERGE,BLEND(1.0, easeInCubic))" />
+		<hotspot name="spot2" style="hotspot_style_anime" ath="327.61605" atv="-3.91918" onclick="jscall(krpano.hooks.pop(1))" />
+    <hotspot name="spot3" style="hotspot_style_anime_2" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
+	</scene>
+	<!-- 场景2 -->
+	<scene name="scene_inside1" title="inside1" thumburl="panos/inside1.titles/thumb.jpg">
+		<!-- 视窗配置 -->
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="130" limitview="auto" />
+		<!-- 预览配置 -->
+		<preview url="panos/inside1.tiles/preview.jpg" />
+		<!-- 全景视图配置 -->
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="panos/inside1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="panos/inside1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+		<!-- 热点 -->
+    <hotspot name="spot4" style="hotspot_style_anime_3" ath="-266.57535" atv="-4.56823" onclick="loadscene(scene_hongkong,null,MERGE,BLEND(1.0, easeInCubic))" />
+	</scene>
+</krpano>
