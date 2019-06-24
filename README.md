@@ -1,10 +1,15 @@
-# react-krpano
+# react-krpano [Demo](https://browniu.com/react-krpano/)
 
 > krpano in react
 
 [![NPM](https://img.shields.io/npm/v/react-krpano.svg)](https://www.npmjs.com/package/react-krpano) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Demo
+
+view https://browniu.com/react-krpano/
+
 ## 安装 Install
+
 ```bash
 npm install --save react-krpano
 ```
