@@ -1,0 +1,582 @@
+<krpano devices="html5">
+
+	<events name="stopmovements" keep="true" onmouseup="stopmovements()" />
+
+                                                           
+	<flara_box_end_css value="color:#b70000; font-family: Arial, sans-serif; font-weight:normal; text-align:center; font-size:16px;" />
+
+	<flara_potwierdzenie_css value="color:#000000; font-family: Arial, sans-serif; font-weight:normal; text-align:center; font-size:16px;" />
+
+
+	<style name="flara_popup_bg" type="container" height="100%" width="100%" bgcapture="true" bgalpha="0.0" bgcolor="0x000000" align="lefttop" edge="lefttop" handcursor="false" zorder="220" keep="true" />
+
+	<style name="flara_box_bg" type="container" parent="flara_popup_bg" bgcapture="true" bgalpha="1.0" bgcolor="0xFFFFFF" align="center" edge="center"  handcursor="false" zorder="3" keep="true" width="640" height="510" bgroundedge="3" bgshadow="0 29 77 -27 0x000000 1,0 -22 109 -59 0x000000 0.7 inset"/>
+
+	<style name="flara_title_text" url="textfield.swf" parent="flara_box_bg" handcursor="true" children="false" align="top" edge="top" height="30" width="-40" x="0" y="10" autowidth="false" vcenter="true" background="false" css="color:#064344; font-family: Arial, sans-serif; font-weight:normal; text-align:center; font-size:18px;" html="select lensflare style" keep="true"/>
+
+	<style name="flara_box_end" url="textfield.swf" parent="flara_box_bg" handcursor="true" align="righttop" edge="righttop" autoheight="false" css="get:flara_box_end_css.value" autoalpha="true"  width="50" height="30" padding="6" x="2" y="2" vcenter="true" background="false" backgroundcolor="0xFFFFFF" html="close" border="false" zorder="10" onclick="close_popup_selectbox_flare()" keep="true"/>
+
+	<style name="flara_thumb_id" parent="flara_box_bg" keep="true" zorder="10" align="lefttop" edge="lefttop" ox="10" oy="50" crop="0|0|200|113" width="200" height="113" onover="th_flare_animacja(true,get(name))" onout="th_flare_animacja(false,get(name))" framewidth="200" frameheight="113" frame="0" row="0" lastframe="16"/>
+
+	<style name="flara_thumb_id_aktyw" parent="flara_box_bg" type="container" width="200" height="113" bgcapture="false" bgalpha="0.3" bgcolor="0x00af10" align="lefttop" edge="lefttop" bordercolor="0x00af10" ox="10" oy="50" zorder="12" keep="true" />
+
+
+
+                                   
+	<style name="flara_potwierdzenie_bg" type="container"  parent="flara_box_bg" height="-50" width="100%" bgcapture="true" bgalpha="0.0" bgcolor="0xffffff" align="top" edge="top" oy="50" handcursor="false" zorder="20" maskchildren="true" keep="true" />
+
+	<style name="flara_potwierdzenie_minibox_bg" type="container" parent="flara_potwierdzenie_bg" bgcapture="true" bgalpha="1.0" bgcolor="0xFFFFFF" align="top" edge="bottom"  handcursor="false" zorder="3" keep="true" width="460" height="150" bgroundedge="0 0 6 6" bgshadow="0 29 77 -27 0x000000 1"/>
+
+	<style name="flara_potwierdzenie_title" url="textfield.swf" parent="flara_potwierdzenie_minibox_bg" handcursor="true" children="false" align="top" edge="top" height="40" width="-20" x="0" y="20" autowidth="false" vcenter="true" background="false" css="color:#5a5a5a; font-family: Arial, sans-serif; font-weight:normal; text-align:center; font-size:15px;" html="confirm your choice" keep="true"/>
+
+                              
+	<style name="flara_potwierdzenie_style" url="textfield.swf" textshadow="1" textshadowrange="1" textshadowangle="90" textshadowalpha="0.6" textshadowcolor="0xffffff" handcursor="false" parent="flara_potwierdzenie_minibox_bg" align="bottom" edge="bottom" css="get:flara_potwierdzenie_css.value" width="120" height="60" padding="0" y="20"  vcenter="true" background="true" zorder="5" keep="true"/>
+
+	<style name="flara_potwierdzenie_cancel" x="-150" backgroundcolor="0xff8989" html="CANCEL" onclick="close_popup_flara_potwierdzenie_cancel()" />
+
+	<style name="flara_potwierdzenie_ok" x="0"  backgroundcolor="0x62d55f" html="OK" onclick="load_flare_dynamic(get(lensflares[obj].item.count),get(wybrany_styl_flary_to),false)" />
+
+	<style name="flara_potwierdzenie_ok_dust" x="150"  backgroundcolor="0xe6e600" html="OK[br][small][i]with dust effect[/i][/small]" onclick="load_flare_dynamic(get(lensflares[obj].item.count),get(wybrany_styl_flary_to),true)" />
+
+
+	<style name="flara_typ_title_global" url="textfield.swf" parent="flara_box_bg" handcursor="true" children="false" align="lefttop" edge="lefttop" height="30" width="-20" x="0" autowidth="false" vcenter="true" background="false" css="color:#5a5a5a; font-family: Arial, sans-serif; font-weight:bold; text-align:left; font-size:13px;" padding="0 0 0 10" keep="true"/>
+
+	<style name="flara_typ_title_daylight" style="flara_typ_title_global" y="40" html="daylight" />
+	<style name="flara_typ_title_sunset" style="flara_typ_title_global" y="195" html="sunset" />
+	<style name="flara_typ_title_normal" style="flara_typ_title_global" y="350" html="normal" />
+
+	<lensthumb>
+		<item name="blinkstyle1" x="0" y="20"  />
+		<item name="blinkstyle2" x="210" y="20" />
+		<item name="blinkstyle3" x="420" y="20" />
+		<item name="blinkstyle4" x="0" y="175" />
+		<item name="blinkstyle5" x="210" y="175" />
+		<item name="blinkstyle6" x="420" y="175" />
+		<item name="blinkstyle7" x="0" y="330" />
+		<item name="blinkstyle8" x="210" y="330" />
+		<item name="blinkstyle9" x="420" y="330" />
+	</lensthumb>
+
+	<action name="th_flare_animacja">
+
+		inc(frame,1,get(lastframe),0);
+		if(frame == 4,
+			set(frame,0);
+			inc(row);
+			if(row == 4, set(row,0))
+		);
+		mul(xpos,frame,framewidth);
+		mul(ypos,row,frameheight);
+
+		txtadd(crop, get(xpos),'|',get(ypos),'|',get(framewidth),'|',get(frameheight));
+		delayedcall(0.07, if(hovering, th_flare_animacja(true,%2) ) );
+	</action>
+
+
+	<action name="potwierdz_wybor_stylu_flary">
+		set(layer[flara_box_end].alpha, 0);
+		flayer(flara_potwierdzenie_bg,flara_potwierdzenie_bg);
+		tween(layer[flara_potwierdzenie_bg].bgalpha, 0.7,0.2,,WAIT);
+		flayer(flara_potwierdzenie_minibox_bg,flara_potwierdzenie_minibox_bg);
+		flayer(flara_potwierdzenie_title,flara_potwierdzenie_title);
+
+		flayer(flara_potwierdzenie_cancel,flara_potwierdzenie_style|flara_potwierdzenie_cancel);
+		flayer(flara_potwierdzenie_ok,flara_potwierdzenie_style|flara_potwierdzenie_ok);
+		flayer(flara_potwierdzenie_ok_dust,flara_potwierdzenie_style|flara_potwierdzenie_ok_dust);
+
+		tween(layer[flara_potwierdzenie_minibox_bg].y, 150,0.3,easeOutCubic);
+	</action>
+
+  <action name="close_popup_flara_potwierdzenie_cancel">
+		set(layer[flara_box_end].alpha, 1);
+		vonp(flara_potwierdzenie_ok);
+		vonp(flara_potwierdzenie_ok_dust);
+		vonp(flara_potwierdzenie_cancel);
+		vonp(flara_potwierdzenie_title);
+		vonp(flara_thumb_id_aktyw);
+		tween(layer[flara_potwierdzenie_minibox_bg].y, 0,0.2,easeOutCubic,
+			vonp(flara_potwierdzenie_minibox_bg);
+			vonp(flara_potwierdzenie_bg);
+		);
+	</action>
+
+	                                                                                           
+
+	<action name="show_popup_flare_selectbox">
+		flayer(flara_popup_bg,flara_popup_bg);
+		flayer(flara_box_bg,flara_box_bg);
+		flayer(flara_title_text,flara_title_text);
+		flayer(flara_box_end,flara_box_end);
+		set(height_scroll_minibox_left, 0);
+		for(set(i,0), i LT lensthumb.item.count, inc(i),
+			copy(n, lensthumb.item[get(i)].name);
+
+			flayer(get(n),flara_thumb_id);
+			txtadd(p.url, get(flare_dir),'/src/',get(n),'.jpg');
+			copy(p.x, lensthumb.item[get(i)].x);
+			copy(p.y, lensthumb.item[get(i)].y);
+			set(p.onclick, zaznacz_wybrany_styl_flary(get(name)));
+
+			inc(height_scroll_minibox_left, 130);
+		);
+
+		copy(layer[height_scroll_minibox_left].height, height_scroll_minibox_left);
+		flayer(flara_typ_title_daylight,flara_typ_title_daylight);
+		flayer(flara_typ_title_sunset,flara_typ_title_sunset);
+		flayer(flara_typ_title_normal,flara_typ_title_normal);
+	</action>
+
+	<action name="zaznacz_wybrany_styl_flary">
+		set(wybrany_styl_flary_to, %1);
+		if(!layer[flara_thumb_id_aktyw].loaded,
+			flayer(flara_thumb_id_aktyw,flara_thumb_id_aktyw);
+			copy(layer[flara_thumb_id_aktyw].x, layer[%1].x);
+			copy(layer[flara_thumb_id_aktyw].y, layer[%1].y);
+		,
+			copy(layer[flara_thumb_id_aktyw].x, layer[%1].x);
+			copy(layer[flara_thumb_id_aktyw].y, layer[%1].y);
+		);
+		delayedcall(0.3, potwierdz_wybor_stylu_flary());
+	</action>
+
+	<action name="close_popup_selectbox_flare">
+		vonp(flara_thumb_id_aktyw);
+		vonp(blinkstyle1);
+		vonp(blinkstyle2);
+		vonp(blinkstyle3);
+		vonp(blinkstyle4);
+		vonp(blinkstyle5);
+		vonp(blinkstyle6);
+		vonp(blinkstyle7);
+		vonp(blinkstyle8);
+		vonp(blinkstyle9);
+
+		vonp(flara_typ_title_daylight);
+		vonp(flara_typ_title_sunset);
+		vonp(flara_typ_title_normal);
+
+		vonp(flara_box_end);
+		vonp(flara_box_bg);
+		vonp(flara_title_text);
+		vonp(flara_popup_bg);
+	</action>
+
+
+
+                                                                    
+
+	<style name="flara_on_scene_box_bg" type="container" bgcapture="true" bgalpha="1.0" bgcolor="0xFFFFFF" align="bottom" edge="bottom" handcursor="false" zorder="200" x="get:x_listflar" y="get:y_listflar" keep="false" ondown="draglayer_flareshow()" width="400" height="90" bgroundedge="3" bgshadow="0 29 77 -27 0x000000 1,0 -22 109 -59 0x000000 0.7 inset"/>
+
+	<style name="flara_on_scene_box_mask" type="container" parent="flara_on_scene_box_bg" bgcapture="false" maskchildren="true" bgalpha="0.0" bgcolor="0x000000" align="center" edge="center" handcursor="false" zorder="1" keep="false" width="-40" y="0" height="-10" />
+
+	<style name="flara_on_scene_scroll" direction="h" width="1" height="100%" handcursor="false" parent="flara_on_scene_box_mask" y="0" x="0" onloaded="setcenter(0,0)" zorder="1" align="lefttop" edge="lefttop" keep="false"/>
+
+	<style name="flara_on_scene_thumb_id" parent="flara_on_scene_scroll" crop="0|0|200|113" keep="false" zorder="2" align="left" edge="left" y="0" width="110" height="90"/>
+
+	<style name="flara_on_scene_thumb_dust_id" url="%SWFPATH%/skin/lensflare/dust/dust_true.png" keep="false" zorder="1" enabled="false" align="center" edge="center" x="0" y="0" width="100%" height="100%"/>
+
+                                                        
+	<style name="flara_on_scene_lookto" crop="0|0|34|34" keep="false" zorder="2" align="leftbottom" edge="leftbottom" x="6" y="12" width="22" height="22"/>
+	<style name="flara_on_scene_trash" crop="34|0|34|34" keep="false" zorder="2" align="leftbottom" edge="leftbottom" x="32" y="12" width="22" height="22"/>
+            
+
+
+                                     
+	<style name="flara_on_add_mode_css" css="color:#000000; font-family: Arial, sans-serif; font-weight:bold; text-align:center; font-size:13px;" />
+
+	<style name="flara_generate_code" url="textfield.swf" textshadow="1" textshadowrange="1" textshadowangle="90" textshadowalpha="0.6" textshadowcolor="0xffffff" handcursor="true" parent="flara_on_scene_box_bg" align="top" edge="bottom"  width="-50" height="50" padding="0" y="-10" roundedge="3" vcenter="true" background="true" zorder="5" backgroundcolor="0x30aa13" html="[strong]SAVE DATA[/strong][br][small]overwrite [i]lensflaresettings.xml[/i] file in [i] the lensflare[/i] folder[/small]" onover="tween(backgroundcolor, 0x0ebbda, 0.2)" onout="tween(backgroundcolor, 0x30aa13,0.2)" keep="false"/>
+            
+
+                                   
+	<style name="flara_screen_cross_pion" type="container" bgalpha="1.0" bgcolor="0x0000ff" align="center" edge="center" bgcapture="false" zorder="10" keep="true" width="1" height="140" />
+
+	<style name="flara_screen_cross_poziom" type="container" bgalpha="1.0" bgcolor="0xff0000" align="center" edge="center" bgcapture="false" zorder="10" keep="true" width="140" height="1" />
+
+	<style name="flara_screen_addflare" url="textfield.swf" shadow="1" shadowangle="90" textshadow="1" textshadowrange="1" textshadowangle="90" textshadowalpha="0.6" textshadowcolor="0xffffff" handcursor="true" parent="flara_screen_cross_pion" align="center" edge="rightbottom" css="get:flara_on_add_mode_css.value" width="130" height="40" padding="10" x="-20" y="-20" backgroundcolor="0x30aa13" roundedge="20 20 0 20" html="ADD LENSFLARE" onclick="show_popup_flare_selectbox(get(lang))" vcenter="true" background="true" zorder="5" keep="true"/>
+            
+
+                                                 
+	<action name="show_lensfrafe_aktyw_box">
+		             
+			flayer(flara_on_scene_box_bg,flara_on_scene_box_bg);
+			copy(p.x, x_listflar);
+			copy(p.y, y_listflar);
+			flayer(flara_on_scene_box_mask,flara_on_scene_box_mask);
+			flayer(flara_on_scene_scroll,flara_on_scene_scroll);
+			set(p.url, calc:flare_dir+'/plugins/scrollarea.js');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+			flayer(flara_generate_code,flara_generate_code|flara_on_add_mode_css);
+			set(p.onclick, lensflare_is_build_so_generate(get(webvr_enabled)));
+
+			set(xflpos, 0);
+			for(set(i,0), i LT lensflares[obj].item.count, inc(i),
+				if(lensflares[obj].item[get(i)].scene == '%1',
+
+
+
+					txtadd(na, 'flt_%1_',get(lensflares[obj].item[get(i)].name));
+					txtadd(look, 'lookto_%1_',get(lensflares[obj].item[get(i)].name));
+					txtadd(tras, 'trash_%1_',get(lensflares[obj].item[get(i)].name));
+					txtadd(dust, 'dust_%1_',get(lensflares[obj].item[get(i)].name));
+
+					flayer(get(na),flara_on_scene_thumb_id);
+					set(p.url, calc(flare_dir+'/src/'+lensflares[obj].item[get(i)].typ+'.jpg'));
+					copy(p.x, xflpos);
+					if(lensflares[obj].item[get(i)].dust_effect,
+						flayer(get(dust),flara_on_scene_thumb_dust_id);
+						copy(p.parent, na);
+					);
+
+					flayer(get(look),flara_on_scene_lookto);
+					set(p.url, calc:flare_dir+'/src/ico.png');
+					copy(p.parent, na);
+					txtadd(p.onclick, 'lookto(get(lensflares[obj].item[',get(i),'].ath),get(lensflares[obj].item[',get(i),'].atv),100);');
+
+					flayer(get(tras),flara_on_scene_trash);
+					set(p.url, calc:flare_dir+'/src/ico.png');
+					copy(p.parent, na);
+					copy(p._na, na);
+					copy(p._look, look);
+					copy(p._tras, tras);
+					copy(p._dust, dust);
+					txtadd(p.onclick,
+						'
+							potwierdz_usuniecie_flary(get(lensflares[obj].item[',get(i),'].name),%1,get(_na),get(_look),get(_tras),get(_dust));
+						'
+					);
+
+
+					                                 
+					                                                             
+					inc(xflpos,126);
+					copy(layer[flara_on_scene_scroll].width, xflpos);
+				);
+				sub(layer[flara_on_scene_scroll].width, 10);
+			);
+
+			flayer(flara_screen_cross_pion,flara_screen_cross_pion);
+			flayer(flara_screen_cross_poziom,flara_screen_cross_poziom);
+			flayer(flara_screen_addflare,flara_screen_addflare|flara_on_add_mode_css);
+			set(flara_edit_mode,true);
+		         
+	</action>
+
+	<action name="draglayer_flareshow">
+		if('%1' != 'dragging',
+			copy(drag_currentx, x);
+			copy(drag_currenty, y);
+			copy(drag_stagex, mouse.stagex);
+			copy(drag_stagey, mouse.stagey);
+			set(drag_sx, +1);
+			set(drag_sy, +1);
+			if(align == 'righttop',    set(drag_sx,-1); );
+			if(align == 'right',       set(drag_sx,-1); );
+			if(align == 'rightbottom', set(drag_sx,-1); set(drag_sy,-1); );
+			if(align == 'bottom',      set(drag_sy,-1); );
+			if(align == 'leftbottom',  set(drag_sy,-1); );
+			draglayer_flareshow(dragging);
+		,
+			if(pressed,
+				sub(dx, mouse.stagex, drag_stagex);
+				sub(dy, mouse.stagey, drag_stagey);
+				mul(dx, drag_sx);
+				mul(dy, drag_sy);
+				add(x, drag_currentx, dx);
+				add(y, drag_currenty, dy);
+				copy(x_listflar, x);
+				copy(y_listflar, y);
+				delayedcall(0, draglayer_flareshow(dragging) );
+			);
+		);
+	</action>
+
+
+
+                                                    
+
+
+	<style name="vonflara_potwierdzenie_bg" type="container" height="100%" width="100%" bgcapture="true" bgalpha="0.3" bgcolor="0x000000" align="lefttop" edge="lefttop" handcursor="false" zorder="2000" keep="true" />
+
+	<style name="vonflara_potwierdzenie_minibox_bg" type="container" parent="vonflara_potwierdzenie_bg" bgcapture="true" bgalpha="1.0" bgcolor="0xFFFFFF" align="center" edge="center"  handcursor="false" zorder="3" keep="true" width="400" height="150" bgroundedge="0 6 0 6" bgshadow="0 29 77 -27 0x000000 1,0 -22 109 -59 0x000000 0.7 inset"/>
+
+	<style name="vonflara_potwierdzenie_title" url="textfield.swf" parent="vonflara_potwierdzenie_minibox_bg" handcursor="true" children="false" align="top" edge="top" height="40" width="-20" x="0" y="20" autowidth="false" vcenter="true" background="false" css="color:#5a5a5a; font-family: Arial, sans-serif; font-weight:normal; text-align:center; font-size:15px;" html="ARE YOU SURE?" keep="true"/>
+
+                              
+	<style name="vonflara_potwierdzenie_style" url="textfield.swf" textshadow="1" textshadowrange="1" textshadowangle="90" textshadowalpha="0.6" textshadowcolor="0xffffff" handcursor="true" parent="vonflara_potwierdzenie_minibox_bg" align="bottom" edge="bottom" css="get:flara_potwierdzenie_css.value" width="160" height="60" padding="0" y="20"  vcenter="true" background="true" zorder="5" keep="true"/>
+
+	<style name="vonflara_potwierdzenie_cancel" x="-100" backgroundcolor="0xff8989" html="CANCEL" onclick="usun_box_us_flary()" />
+
+	<style name="vonflara_potwierdzenie_ok" x="100"  backgroundcolor="0x62d55f" html="OK"  />
+
+
+	<action name="potwierdz_usuniecie_flary">
+		flayer(vonflara_potwierdzenie_bg,vonflara_potwierdzenie_bg);
+		flayer(vonflara_potwierdzenie_minibox_bg,vonflara_potwierdzenie_minibox_bg);
+		flayer(vonflara_potwierdzenie_title,vonflara_potwierdzenie_title);
+		flayer(vonflara_potwierdzenie_cancel,vonflara_potwierdzenie_cancel|vonflara_potwierdzenie_style);
+		flayer(vonflara_potwierdzenie_ok,vonflara_potwierdzenie_ok|vonflara_potwierdzenie_style);
+		set(p.onclick, remove_flare_dynamic(%1,%2,%3,%4,%5,%6,%7));
+	</action>
+
+	<action name="usun_box_us_flary">
+		vonp(vonflara_potwierdzenie_ok);
+		vonp(vonflara_potwierdzenie_cancel);
+		vonp(vonflara_potwierdzenie_title);
+		vonp(vonflara_potwierdzenie_minibox_bg);
+		vonp(vonflara_potwierdzenie_bg);
+	</action>
+                                                                                                                                                                              
+	<action name="load_flare_dynamic">
+		                                    
+		close_popup_flara_potwierdzenie_cancel();
+		close_popup_selectbox_flare();
+		inc(suma_flar);
+
+		copy(_view_hlookat, view.hlookat);roundval(_view_hlookat,2);
+		copy(_view_vlookat, view.vlookat);roundval(_view_vlookat,2);
+		copy(_suma_flar, timertick);roundval(_suma_flar);
+		set(_dust_effect, %3);
+
+		txtadd(nf, 'flarka',get(_suma_flar));
+		set(lensflares[obj].item[get(nf)].name);
+		copy(lensflares[obj].item[get(nf)].ath, _view_hlookat);
+		copy(lensflares[obj].item[get(nf)].atv, _view_vlookat);
+		copy(lensflares[obj].item[get(nf)].dust_effect, _dust_effect);
+		copy(lensflares[obj].item[get(nf)].scene, scene[get(xml.scene)].name);
+		set(lensflares[obj].item[get(nf)].typ, %2);
+                                                                                                                                                                                                                                                        
+		set(load_gui_flar, false);
+		for(set(i,0), i LT lensflares[obj].item.count, inc(i),
+			copy(name_flare, lensflares[obj].item[get(i)].name);
+			copy(blink_style, lensflares[obj].item[get(i)].typ);
+
+			if(lensflares[obj].item[get(i)].scene == scene[get(xml.scene)].name,
+				set(load_gui_flar, true);
+				for(set(j,0), j LT flare_style[get(blink_style)].item.count, inc(j),
+					txtadd(n, 'f1_',get(lensflares[obj].item[get(i)].name),'_',get(j));
+					txtadd(n0, 'f1_',get(lensflares[obj].item[get(i)].name),'_0');
+
+					txtsplit(flare_style[get(blink_style)].item[get(j)].vars, '|', arrows);
+					copy(move, 			arrows[0].value);
+					copy(scale, 		arrows[1].value);
+					copy(alpha, 		arrows[2].value);
+					copy(zorder, 		arrows[3].value);
+					copy(flying, 		arrows[4].value);
+					copy(rscale, 		arrows[5].value);
+					copy(ralpha, 		arrows[6].value);
+					copy(ralphaminus, 	arrows[7].value);
+					copy(rmove, 		arrows[8].value);
+					copy(invr, 			arrows[9].value);
+
+					add_single_flare(get(n),get(i),get(j),get(blink_style),get(name_flare),get(move),get(flying),get(rscale),get(ralpha),get(ralphaminus),get(scale),get(alpha),get(zorder),get(rmove),get(invr),get(n0));
+					                                                                                                                                    
+				);
+			);
+		);
+		show_lensfrafe_aktyw_box(get(scene[get(xml.scene)].name),get(load_gui_flar));
+	</action>
+
+
+
+	<action name="remove_flare_dynamic">
+		                                            
+		if(lensflares[obj].item[%1].scene == '%2',
+			vonp(%3);
+			vonp(%4);
+			vonp(%5);
+			vonp(%6);
+			vonp(flara_on_scene_scroll);
+			wait(0);
+			vonh_all(tagmini, %1);
+
+			lensflares[obj].item.removearrayitem(%1);
+
+			usun_box_us_flary(%1);
+			load_flare_content(%1);
+			show_lensfrafe_aktyw_box(%1);
+		);
+	</action>
+
+
+	                                                                
+
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+	<action name="lensflare_is_build_so_generate" type="Javascript" devices="html5"><![CDATA[
+		var flareCount = krpano.get("lensflares[obj].item.count");
+
+		console.log('flareCount: '+flareCount);
+
+		var xml = "";
+		xml += "<krpano>\n";
+
+		// GENEROWANIE DŹWIĘKÓW 2D
+		if(flareCount > 0) {
+			xml += '\t<lensflares name="obj">\n';
+
+			for (i = 0; i < flareCount; i++) {
+				var name = krpano.get('lensflares[obj].item['+i+'].name');
+				var ath = krpano.get('lensflares[obj].item['+i+'].ath');
+				var atv = krpano.get('lensflares[obj].item['+i+'].atv');
+				var scene = krpano.get('lensflares[obj].item['+i+'].scene');
+				var typ = krpano.get('lensflares[obj].item['+i+'].typ');
+				var dust_effect = krpano.get('lensflares[obj].item['+i+'].dust_effect');
+
+				//console.log(i+' : name: '+name+' audiofile:'+audiofile+' vol:'+vol+' rate:'+rate);
+
+				xml += '\t\t<item name="'+name+'" ath="'+ath+'" atv="'+atv+'" scene="'+scene+'" typ="'+typ+'" dust_effect="'+dust_effect+'"/>\n';
+			}
+			xml += "\t</lensflares>\n";
+
+		// END
+			xml += '</krpano>';
+		}
+
+		//console.log('xml: '+xml);
+
+		krpano.call("fedit_save("+xml+");");
+	]]>
+	</action>
+
+
+
+	<action name="fedit_save" type="Javascript"><![CDATA[
+			var textToWrite = args[1];
+
+
+			//var textToWrite = document.getElementById("inputTextToSave").value;
+			var textFileAsBlob = new Blob([textToWrite], {type:'text/xml;charset=utf-8;'});
+			var fileNameToSaveAs = "lensflaresettings.xml"
+
+			var downloadLink = document.createElement("a");
+			downloadLink.download = fileNameToSaveAs;
+			downloadLink.innerHTML = "Hidden link";
+			if (window.webkitURL != null)
+			{
+				// Chrome allows the link to be clicked
+				// without actually adding it to the DOM.
+				downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+			}
+			else
+			{
+				// Firefox requires the link to be added to the DOM
+				// before it can be clicked.
+				downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+				downloadLink.onclick = destroyClickedElement;
+				downloadLink.style.display = "none";
+				document.body.appendChild(downloadLink);
+			}
+
+			downloadLink.click();
+
+			function destroyClickedElement(event)
+			{
+				document.body.removeChild(event.target);
+			}
+		]]>
+	</action>
+
+
+                                                      
+
+
+	<style name="lensflare_is_build_so_generate_bg" type="container" height="100%" width="100%" bgcapture="true" bgalpha="0.5" bgcolor="0x000000" align="lefttop" edge="lefttop" handcursor="false" zorder="2200" keep="true" />
+
+	<style name="lensflare_is_build_so_generate_box" type="container" height="450" width="610" bgcapture="true" y="-20" bgalpha="1" bgcolor="0x272822" align="center" edge="center" handcursor="false" parent="lensflare_is_build_so_generate_bg" zorder="2" bgshadow="0 29 77 -27 0x000000 1,0 -22 109 -59 0x000000 0.7 inset" keep="true" />
+
+	<style name="lensflare_is_build_so_generate_copy" url="textfield.swf" parent="lensflare_is_build_so_generate_box" handcursor="true" align="lefttop" edge="lefttop" autoheight="false" css="get:lensflare_is_build_css.value" autoalpha="true" autowidth="true" height="44" padding="6" x="5" y="0" vcenter="true" background="false" enabled="false" html="Select, copy and paste to [strong]lensflaresettings.xml[/strong]" border="false" zorder="2" keep="true"/>
+
+	<style name="lensflare_is_build_so_generate_end" url="textfield.swf" parent="lensflare_is_build_so_generate_box" handcursor="true" align="righttop" edge="righttop" autoheight="false" css="get:lensflare_is_build_css.value" autoalpha="true" autowidth="true" height="44" padding="6 10 6 10" x="2" y="0" vcenter="true" background="false" html="close" zorder="10" onclick="close_lensflare_is_build_so_generate()" keep="true"/>
+
+	<lensflare_is_build_css value="color:#ffffff; font-family: Arial, sans-serif; font-weight:normal; text-align:left; font-size:16px;" />
+
+
+	<action name="lensflare_is_build_so_generate_kopia">
+		set(flare_data_dynamic,);
+		txtadd(flare_data_dynamic, '&#60;krpano&#62;<br/> &#60;lensflares name="obj" webvr_enabled="%1"&#62;<br/>');
+		for(set(i,0), i LT lensflares[obj].item.count, inc(i),
+			copy(_n, lensflares[obj].item[get(i)].name);
+			copy(_ath, lensflares[obj].item[get(i)].ath);
+			copy(_atv, lensflares[obj].item[get(i)].atv);
+			copy(_scene, lensflares[obj].item[get(i)].scene);
+			copy(_typ, lensflares[obj].item[get(i)].typ);
+			if(lensflares[obj].item[get(i)].dust_effect === null, set(lensflares[obj].item[get(i)].dust_effect, true));
+			copy(_dust_effect, lensflares[obj].item[get(i)].dust_effect);
+
+			txtadd(flare_data_dynamic,get(flare_data_dynamic),'   &#60;item name="',get(_n),'" ath="',get(_ath),'" atv="',get(_atv),'" scene="',get(_scene),'" typ="',get(_typ),'" dust_effect="',get(_dust_effect),'" /&#62;<br/>');
+		);
+		txtadd(flare_data_dynamic, get(flare_data_dynamic), ' &#60;/lensflares&#62;<br/>&#60;/krpano&#62;');
+
+		flayer(lensflare_is_build_so_generate_bg,lensflare_is_build_so_generate_bg);
+		flayer(lensflare_is_build_so_generate_box,lensflare_is_build_so_generate_box);
+		flayer(lensflare_is_build_so_generate_end,lensflare_is_build_so_generate_end);
+		flayer(lensflare_is_build_so_generate_copy,lensflare_is_build_so_generate_copy);
+
+		show_fl_textfield(get(flare_data_dynamic));
+	</action>
+
+
+	<action name="show_fl_textfield" type="Javascript">
+		<![CDATA[
+			var div = document.createElement("div");
+			div.id = "showCode";
+			div.innerHTML = '<pre style="background: none repeat scroll 0px 0px #272822;' +
+				'overflow: auto;' +
+				'display: block;' +
+				'opacity: 1.0;' +
+				'height: 400px;' +
+				'width: 600px;' +
+				'margin: -200px 0 0 -300px;' +
+				'top: 50%;' +
+				'left: 50%;' +
+				'font-size: 14px;' +
+				'font-family: Courier, sans-serif;' +
+				'color:#a6e22e;' +
+				'padding:0px;' +
+				'line-height: normal;' +
+				'position:fixed;' +
+				'z-index: 200000;">'+args[1]+'</pre>';
+			document.body.appendChild(div);
+		]]>
+	</action>
+
+	<action name="close_lensflare_is_build_so_generate">
+		vonp(lensflare_is_build_so_generate_bg);
+		vonp(lensflare_is_build_so_generate_box);
+		vonp(lensflare_is_build_so_generate_end);
+		vonp(lensflare_is_build_so_generate_copy);
+		remove_textfield();
+	</action>
+
+
+	<action name="remove_textfield" type="Javascript">
+		<![CDATA[
+			/*
+			document.getElementById("showCode").style.display = "none";
+			*/
+			var div;
+			while (!!(div = document.getElementById('showCode'))) {
+				div.parentNode.removeChild(div);
+			}
+		]]>
+	</action>
+
+	<action name="download_textfield" type="Javascript">
+		<![CDATA[
+			var pom = document.createElement('a');
+			pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(args[2]));
+			pom.setAttribute('download', args[1]);
+
+			if (document.createEvent) {
+				var event = document.createEvent('MouseEvents');
+				event.initEvent('click', true, true);
+				pom.dispatchEvent(event);
+			}
+			else {
+				pom.click();
+			}
+		]]>
+	</action>
+
+</krpano>
