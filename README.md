@@ -35,7 +35,7 @@ class Example extends Component {
 ```
 
 ## 通信 Communication
-### Xml => React Example
+### Xml => React
 
 #### 无参数 No-Params 
 ```xml
@@ -58,7 +58,7 @@ this.hooks = {
 }
 ```
 
-### React => Xml Example
+### React => Xml
 
 ##### `Get` 获取当前视角
 ```javascript
