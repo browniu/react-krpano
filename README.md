@@ -35,12 +35,12 @@ class Example extends Component {
 ## 通信 Communication
 ### Xml => React
 
-#### 无参数 No-Params 
+#### 无内部参数 No-Params 
 ```xml
 <hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="jscall(krpano.hooks.test())" />
 ```
 
-#### 携带参数 Params 
+#### 携带内部参数 Params 
 ```xml
 <hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="noParam()" />
 <action name="param">
@@ -72,7 +72,7 @@ window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
 |`xml`|配置文件的路径|krpano/tour.xml|`tour.xml`|
 |`hooks`| 提供给`Krpano` 调用的方法 |null|`{foo:()=>this.foo()}`|
 |`mounted`| 资源加载完毕的回调函数 |null|{this.mounted}|
-|Loading| 加载页配置 |Null|loading={{info: 'xixixi'}}|
+|Loading| 加载页文本配置 |Null|loading={{info: 'xixixi'}}|
 |dev| 开发者模式 |false|true|
 
 ## Config (tour.xml)
