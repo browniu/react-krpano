@@ -3,7 +3,6 @@ import './styles.css'
 import {CSSTransition} from 'react-transition-group'
 
 export default class ExampleComponent extends Component {
-
   render() {
     return (
       <div className='krpano'>
@@ -13,15 +12,15 @@ export default class ExampleComponent extends Component {
           classNames='fade'
           unmountOnExit
         >
-          <div className='krpano-loading'/>
+          <div className='krpano-loading' />
         </CSSTransition>
-        <div id="krpano" className='krpano-core'/>
+        <div id='krpano' className='krpano-core' />
       </div>
     )
   }
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       loaded: false
     }
@@ -32,24 +31,26 @@ export default class ExampleComponent extends Component {
   }
 
   init(xml) {
-    let that = this;
+    let that = this
+    let {embedpano} = window
     embedpano({
-      xml: xml, target: "krpano", html5: "only", onready(krpano_interface) {
-        that.ready();
-        window.krpano = krpano_interface;
-        krpano_interface.hooks = that.props.hooks;
+      xml: xml,
+      target: 'krpano',
+      html5: 'only',
+      onready(krpano) {
+        that.ready()
+        window.krpano = krpano
+        krpano.hooks = that.props.hooks
       }
-    });
+    })
   }
 
   ready() {
-    this.props.mounted();
-    setTimeout(()=>{
+    this.props.mounted()
+    setTimeout(() => {
       this.setState({
         loaded: true
       })
-    },1500)
-
+    }, 1500)
   }
-
 }
