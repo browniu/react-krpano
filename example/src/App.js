@@ -17,7 +17,7 @@ export default class App extends Component {
           <button onClick={() => this.next()}>下一个场景
           </button>
         </div>
-        <Krpano xml='vtour/tour.xml' hooks={this.hooks} mounted={this.mounted}/>
+        <Krpano xml='krpano/tour.xml' hooks={this.hooks} mounted={this.mounted} />
       </div>
     )
   }

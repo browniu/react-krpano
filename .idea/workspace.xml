@@ -2,9 +2,367 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b41bf60-1473-4923-baaf-27b7ac04b5d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l1/1/l1_b_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l1/1/l1_b_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l1/1/l1_b_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l1/1/l1_b_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l1/2/l1_b_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l1/2/l1_b_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l1/2/l1_b_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l1/2/l1_b_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l2/1/l2_b_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l2/1/l2_b_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l2/1/l2_b_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l2/1/l2_b_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l2/1/l2_b_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l2/1/l2_b_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l2/2/l2_b_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l2/2/l2_b_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l2/2/l2_b_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l2/2/l2_b_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l2/2/l2_b_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l2/2/l2_b_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l2/3/l2_b_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l2/3/l2_b_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l2/3/l2_b_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l2/3/l2_b_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/b/l2/3/l2_b_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/b/l2/3/l2_b_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l1/1/l1_d_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l1/1/l1_d_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l1/1/l1_d_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l1/1/l1_d_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l1/2/l1_d_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l1/2/l1_d_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l1/2/l1_d_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l1/2/l1_d_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l2/1/l2_d_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l2/1/l2_d_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l2/1/l2_d_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l2/1/l2_d_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l2/1/l2_d_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l2/1/l2_d_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l2/2/l2_d_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l2/2/l2_d_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l2/2/l2_d_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l2/2/l2_d_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l2/2/l2_d_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l2/2/l2_d_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l2/3/l2_d_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l2/3/l2_d_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l2/3/l2_d_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l2/3/l2_d_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/d/l2/3/l2_d_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/d/l2/3/l2_d_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l1/1/l1_f_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l1/1/l1_f_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l1/1/l1_f_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l1/1/l1_f_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l1/2/l1_f_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l1/2/l1_f_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l1/2/l1_f_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l1/2/l1_f_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l2/1/l2_f_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l2/1/l2_f_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l2/1/l2_f_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l2/1/l2_f_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l2/1/l2_f_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l2/1/l2_f_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l2/2/l2_f_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l2/2/l2_f_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l2/2/l2_f_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l2/2/l2_f_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l2/2/l2_f_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l2/2/l2_f_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l2/3/l2_f_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l2/3/l2_f_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l2/3/l2_f_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l2/3/l2_f_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/f/l2/3/l2_f_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/f/l2/3/l2_f_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l1/1/l1_l_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l1/1/l1_l_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l1/1/l1_l_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l1/1/l1_l_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l1/2/l1_l_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l1/2/l1_l_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l1/2/l1_l_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l1/2/l1_l_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l2/1/l2_l_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l2/1/l2_l_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l2/1/l2_l_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l2/1/l2_l_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l2/1/l2_l_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l2/1/l2_l_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l2/2/l2_l_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l2/2/l2_l_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l2/2/l2_l_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l2/2/l2_l_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l2/2/l2_l_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l2/2/l2_l_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l2/3/l2_l_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l2/3/l2_l_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l2/3/l2_l_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l2/3/l2_l_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/l/l2/3/l2_l_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/l/l2/3/l2_l_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/preview.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/preview.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l1/1/l1_r_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l1/1/l1_r_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l1/1/l1_r_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l1/1/l1_r_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l1/2/l1_r_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l1/2/l1_r_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l1/2/l1_r_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l1/2/l1_r_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l2/1/l2_r_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l2/1/l2_r_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l2/1/l2_r_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l2/1/l2_r_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l2/1/l2_r_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l2/1/l2_r_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l2/2/l2_r_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l2/2/l2_r_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l2/2/l2_r_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l2/2/l2_r_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l2/2/l2_r_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l2/2/l2_r_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l2/3/l2_r_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l2/3/l2_r_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l2/3/l2_r_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l2/3/l2_r_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/r/l2/3/l2_r_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/r/l2/3/l2_r_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/thumb.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/thumb.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l1/1/l1_u_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l1/1/l1_u_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l1/1/l1_u_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l1/1/l1_u_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l1/2/l1_u_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l1/2/l1_u_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l1/2/l1_u_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l1/2/l1_u_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l2/1/l2_u_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l2/1/l2_u_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l2/1/l2_u_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l2/1/l2_u_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l2/1/l2_u_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l2/1/l2_u_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l2/2/l2_u_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l2/2/l2_u_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l2/2/l2_u_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l2/2/l2_u_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l2/2/l2_u_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l2/2/l2_u_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l2/3/l2_u_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l2/3/l2_u_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l2/3/l2_u_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l2/3/l2_u_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/u/l2/3/l2_u_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/u/l2/3/l2_u_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/vr/pano_b.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/vr/pano_b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/vr/pano_d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/vr/pano_d.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/vr/pano_f.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/vr/pano_f.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/vr/pano_l.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/vr/pano_l.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/vr/pano_r.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/vr/pano_r.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/hongkong.tiles/vr/pano_u.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/hongkong.tiles/vr/pano_u.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l1/1/l1_b_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l1/1/l1_b_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l1/1/l1_b_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l1/1/l1_b_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l1/2/l1_b_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l1/2/l1_b_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l1/2/l1_b_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l1/2/l1_b_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l2/1/l2_b_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l2/1/l2_b_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l2/1/l2_b_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l2/1/l2_b_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l2/1/l2_b_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l2/1/l2_b_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l2/2/l2_b_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l2/2/l2_b_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l2/2/l2_b_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l2/2/l2_b_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l2/2/l2_b_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l2/2/l2_b_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l2/3/l2_b_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l2/3/l2_b_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l2/3/l2_b_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l2/3/l2_b_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/b/l2/3/l2_b_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/b/l2/3/l2_b_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l1/1/l1_d_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l1/1/l1_d_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l1/1/l1_d_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l1/1/l1_d_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l1/2/l1_d_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l1/2/l1_d_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l1/2/l1_d_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l1/2/l1_d_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l2/1/l2_d_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l2/1/l2_d_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l2/1/l2_d_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l2/1/l2_d_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l2/1/l2_d_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l2/1/l2_d_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l2/2/l2_d_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l2/2/l2_d_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l2/2/l2_d_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l2/2/l2_d_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l2/2/l2_d_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l2/2/l2_d_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l2/3/l2_d_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l2/3/l2_d_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l2/3/l2_d_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l2/3/l2_d_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/d/l2/3/l2_d_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/d/l2/3/l2_d_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l1/1/l1_f_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l1/1/l1_f_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l1/1/l1_f_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l1/1/l1_f_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l1/2/l1_f_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l1/2/l1_f_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l1/2/l1_f_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l1/2/l1_f_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l2/1/l2_f_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l2/1/l2_f_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l2/1/l2_f_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l2/1/l2_f_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l2/1/l2_f_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l2/1/l2_f_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l2/2/l2_f_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l2/2/l2_f_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l2/2/l2_f_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l2/2/l2_f_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l2/2/l2_f_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l2/2/l2_f_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l2/3/l2_f_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l2/3/l2_f_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l2/3/l2_f_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l2/3/l2_f_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/f/l2/3/l2_f_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/f/l2/3/l2_f_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l1/1/l1_l_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l1/1/l1_l_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l1/1/l1_l_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l1/1/l1_l_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l1/2/l1_l_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l1/2/l1_l_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l1/2/l1_l_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l1/2/l1_l_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l2/1/l2_l_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l2/1/l2_l_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l2/1/l2_l_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l2/1/l2_l_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l2/1/l2_l_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l2/1/l2_l_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l2/2/l2_l_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l2/2/l2_l_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l2/2/l2_l_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l2/2/l2_l_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l2/2/l2_l_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l2/2/l2_l_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l2/3/l2_l_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l2/3/l2_l_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l2/3/l2_l_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l2/3/l2_l_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/l/l2/3/l2_l_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/l/l2/3/l2_l_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/preview.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/preview.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l1/1/l1_r_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l1/1/l1_r_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l1/1/l1_r_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l1/1/l1_r_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l1/2/l1_r_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l1/2/l1_r_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l1/2/l1_r_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l1/2/l1_r_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l2/1/l2_r_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l2/1/l2_r_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l2/1/l2_r_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l2/1/l2_r_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l2/1/l2_r_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l2/1/l2_r_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l2/2/l2_r_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l2/2/l2_r_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l2/2/l2_r_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l2/2/l2_r_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l2/2/l2_r_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l2/2/l2_r_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l2/3/l2_r_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l2/3/l2_r_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l2/3/l2_r_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l2/3/l2_r_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/r/l2/3/l2_r_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/r/l2/3/l2_r_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/thumb.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/thumb.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l1/1/l1_u_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l1/1/l1_u_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l1/1/l1_u_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l1/1/l1_u_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l1/2/l1_u_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l1/2/l1_u_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l1/2/l1_u_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l1/2/l1_u_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l2/1/l2_u_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l2/1/l2_u_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l2/1/l2_u_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l2/1/l2_u_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l2/1/l2_u_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l2/1/l2_u_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l2/2/l2_u_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l2/2/l2_u_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l2/2/l2_u_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l2/2/l2_u_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l2/2/l2_u_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l2/2/l2_u_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l2/3/l2_u_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l2/3/l2_u_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l2/3/l2_u_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l2/3/l2_u_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/u/l2/3/l2_u_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/u/l2/3/l2_u_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/vr/pano_b.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/vr/pano_b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/vr/pano_d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/vr/pano_d.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/vr/pano_f.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/vr/pano_f.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/vr/pano_l.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/vr/pano_l.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/vr/pano_r.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/vr/pano_r.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/panos/test2.tiles/vr/pano_u.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/panos/test2.tiles/vr/pano_u.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/style/hotspot.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/style/hotspot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/style/hotspot2.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/style/hotspot2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/style/style.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/style/style.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/tour.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/tour.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/vtour/tour.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/tour.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l1/1/l1_b_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l1/1/l1_b_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l1/1/l1_b_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l1/1/l1_b_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l1/2/l1_b_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l1/2/l1_b_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l1/2/l1_b_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l1/2/l1_b_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l2/1/l2_b_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l2/1/l2_b_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l2/1/l2_b_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l2/1/l2_b_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l2/1/l2_b_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l2/1/l2_b_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l2/2/l2_b_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l2/2/l2_b_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l2/2/l2_b_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l2/2/l2_b_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l2/2/l2_b_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l2/2/l2_b_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l2/3/l2_b_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l2/3/l2_b_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l2/3/l2_b_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l2/3/l2_b_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/b/l2/3/l2_b_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/b/l2/3/l2_b_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l1/1/l1_d_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l1/1/l1_d_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l1/1/l1_d_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l1/1/l1_d_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l1/2/l1_d_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l1/2/l1_d_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l1/2/l1_d_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l1/2/l1_d_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l2/1/l2_d_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l2/1/l2_d_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l2/1/l2_d_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l2/1/l2_d_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l2/1/l2_d_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l2/1/l2_d_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l2/2/l2_d_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l2/2/l2_d_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l2/2/l2_d_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l2/2/l2_d_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l2/2/l2_d_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l2/2/l2_d_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l2/3/l2_d_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l2/3/l2_d_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l2/3/l2_d_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l2/3/l2_d_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/d/l2/3/l2_d_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/d/l2/3/l2_d_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l1/1/l1_f_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l1/1/l1_f_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l1/1/l1_f_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l1/1/l1_f_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l1/2/l1_f_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l1/2/l1_f_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l1/2/l1_f_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l1/2/l1_f_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l2/1/l2_f_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l2/1/l2_f_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l2/1/l2_f_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l2/1/l2_f_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l2/1/l2_f_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l2/1/l2_f_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l2/2/l2_f_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l2/2/l2_f_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l2/2/l2_f_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l2/2/l2_f_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l2/2/l2_f_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l2/2/l2_f_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l2/3/l2_f_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l2/3/l2_f_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l2/3/l2_f_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l2/3/l2_f_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/f/l2/3/l2_f_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/f/l2/3/l2_f_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l1/1/l1_l_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l1/1/l1_l_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l1/1/l1_l_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l1/1/l1_l_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l1/2/l1_l_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l1/2/l1_l_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l1/2/l1_l_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l1/2/l1_l_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l2/1/l2_l_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l2/1/l2_l_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l2/1/l2_l_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l2/1/l2_l_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l2/1/l2_l_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l2/1/l2_l_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l2/2/l2_l_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l2/2/l2_l_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l2/2/l2_l_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l2/2/l2_l_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l2/2/l2_l_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l2/2/l2_l_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l2/3/l2_l_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l2/3/l2_l_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l2/3/l2_l_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l2/3/l2_l_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/l/l2/3/l2_l_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/l/l2/3/l2_l_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/preview.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/preview.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l1/1/l1_r_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l1/1/l1_r_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l1/1/l1_r_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l1/1/l1_r_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l1/2/l1_r_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l1/2/l1_r_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l1/2/l1_r_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l1/2/l1_r_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l2/1/l2_r_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l2/1/l2_r_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l2/1/l2_r_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l2/1/l2_r_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l2/1/l2_r_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l2/1/l2_r_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l2/2/l2_r_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l2/2/l2_r_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l2/2/l2_r_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l2/2/l2_r_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l2/2/l2_r_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l2/2/l2_r_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l2/3/l2_r_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l2/3/l2_r_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l2/3/l2_r_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l2/3/l2_r_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/r/l2/3/l2_r_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/r/l2/3/l2_r_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/thumb.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/thumb.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l1/1/l1_u_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l1/1/l1_u_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l1/1/l1_u_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l1/1/l1_u_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l1/2/l1_u_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l1/2/l1_u_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l1/2/l1_u_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l1/2/l1_u_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l2/1/l2_u_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l2/1/l2_u_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l2/1/l2_u_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l2/1/l2_u_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l2/1/l2_u_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l2/1/l2_u_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l2/2/l2_u_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l2/2/l2_u_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l2/2/l2_u_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l2/2/l2_u_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l2/2/l2_u_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l2/2/l2_u_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l2/3/l2_u_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l2/3/l2_u_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l2/3/l2_u_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l2/3/l2_u_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/u/l2/3/l2_u_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/u/l2/3/l2_u_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/vr/pano_b.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/vr/pano_b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/vr/pano_d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/vr/pano_d.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/vr/pano_f.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/vr/pano_f.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/vr/pano_l.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/vr/pano_l.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/vr/pano_r.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/vr/pano_r.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/hongkong.tiles/vr/pano_u.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/hongkong.tiles/vr/pano_u.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l1/1/l1_b_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l1/1/l1_b_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l1/1/l1_b_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l1/1/l1_b_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l1/2/l1_b_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l1/2/l1_b_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l1/2/l1_b_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l1/2/l1_b_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l2/1/l2_b_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l2/1/l2_b_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l2/1/l2_b_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l2/1/l2_b_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l2/1/l2_b_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l2/1/l2_b_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l2/2/l2_b_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l2/2/l2_b_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l2/2/l2_b_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l2/2/l2_b_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l2/2/l2_b_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l2/2/l2_b_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l2/3/l2_b_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l2/3/l2_b_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l2/3/l2_b_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l2/3/l2_b_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/b/l2/3/l2_b_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/b/l2/3/l2_b_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l1/1/l1_d_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l1/1/l1_d_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l1/1/l1_d_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l1/1/l1_d_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l1/2/l1_d_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l1/2/l1_d_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l1/2/l1_d_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l1/2/l1_d_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l2/1/l2_d_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l2/1/l2_d_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l2/1/l2_d_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l2/1/l2_d_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l2/1/l2_d_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l2/1/l2_d_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l2/2/l2_d_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l2/2/l2_d_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l2/2/l2_d_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l2/2/l2_d_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l2/2/l2_d_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l2/2/l2_d_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l2/3/l2_d_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l2/3/l2_d_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l2/3/l2_d_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l2/3/l2_d_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/d/l2/3/l2_d_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/d/l2/3/l2_d_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l1/1/l1_f_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l1/1/l1_f_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l1/1/l1_f_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l1/1/l1_f_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l1/2/l1_f_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l1/2/l1_f_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l1/2/l1_f_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l1/2/l1_f_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l2/1/l2_f_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l2/1/l2_f_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l2/1/l2_f_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l2/1/l2_f_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l2/1/l2_f_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l2/1/l2_f_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l2/2/l2_f_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l2/2/l2_f_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l2/2/l2_f_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l2/2/l2_f_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l2/2/l2_f_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l2/2/l2_f_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l2/3/l2_f_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l2/3/l2_f_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l2/3/l2_f_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l2/3/l2_f_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/f/l2/3/l2_f_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/f/l2/3/l2_f_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l1/1/l1_l_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l1/1/l1_l_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l1/1/l1_l_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l1/1/l1_l_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l1/2/l1_l_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l1/2/l1_l_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l1/2/l1_l_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l1/2/l1_l_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l2/1/l2_l_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l2/1/l2_l_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l2/1/l2_l_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l2/1/l2_l_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l2/1/l2_l_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l2/1/l2_l_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l2/2/l2_l_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l2/2/l2_l_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l2/2/l2_l_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l2/2/l2_l_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l2/2/l2_l_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l2/2/l2_l_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l2/3/l2_l_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l2/3/l2_l_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l2/3/l2_l_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l2/3/l2_l_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/l/l2/3/l2_l_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/l/l2/3/l2_l_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/preview.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/preview.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l1/1/l1_r_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l1/1/l1_r_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l1/1/l1_r_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l1/1/l1_r_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l1/2/l1_r_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l1/2/l1_r_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l1/2/l1_r_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l1/2/l1_r_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l2/1/l2_r_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l2/1/l2_r_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l2/1/l2_r_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l2/1/l2_r_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l2/1/l2_r_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l2/1/l2_r_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l2/2/l2_r_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l2/2/l2_r_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l2/2/l2_r_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l2/2/l2_r_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l2/2/l2_r_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l2/2/l2_r_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l2/3/l2_r_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l2/3/l2_r_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l2/3/l2_r_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l2/3/l2_r_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/r/l2/3/l2_r_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/r/l2/3/l2_r_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/thumb.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/thumb.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l1/1/l1_u_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l1/1/l1_u_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l1/1/l1_u_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l1/1/l1_u_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l1/2/l1_u_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l1/2/l1_u_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l1/2/l1_u_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l1/2/l1_u_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l2/1/l2_u_1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l2/1/l2_u_1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l2/1/l2_u_1_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l2/1/l2_u_1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l2/1/l2_u_1_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l2/1/l2_u_1_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l2/2/l2_u_2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l2/2/l2_u_2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l2/2/l2_u_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l2/2/l2_u_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l2/2/l2_u_2_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l2/2/l2_u_2_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l2/3/l2_u_3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l2/3/l2_u_3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l2/3/l2_u_3_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l2/3/l2_u_3_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/u/l2/3/l2_u_3_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/u/l2/3/l2_u_3_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/vr/pano_b.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/vr/pano_b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/vr/pano_d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/vr/pano_d.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/vr/pano_f.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/vr/pano_f.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/vr/pano_l.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/vr/pano_l.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/vr/pano_r.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/vr/pano_r.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/panos/test2.tiles/vr/pano_u.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/panos/test2.tiles/vr/pano_u.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/style/hotspot.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/style/hotspot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/style/hotspot2.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/style/hotspot2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/style/style.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/style/style.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/tour.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/tour.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/vtour/tour.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/tour.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +378,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
+            <state relative-caret-position="1008">
               <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="82" lean-forward="true" selection-start-line="19" selection-end-line="20" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -33,7 +403,7 @@
         <entry file="file://$PROJECT_DIR$/example/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -42,8 +412,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="537">
-                <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+              <first_editor relative-caret-position="-44">
+                <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -61,6 +431,7 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/example/public/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/example/src/App.js" />
       </list>
     </option>
   </component>
@@ -116,7 +487,7 @@
               <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="vtour" type="462c0819:PsiDirectoryNode" />
+              <item name="krpano" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
@@ -131,6 +502,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -167,23 +539,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561281274111</updated>
-      <workItem from="1561281275949" duration="3907000" />
+      <workItem from="1561281275949" duration="4567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3907000" />
+    <option name="totallyTimeSpent" value="4567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1334" height="1440" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27951255" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27951255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3293944" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.46233383" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -201,12 +574,19 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/example/public/vtour/tour.xml">
+    <entry file="file://$PROJECT_DIR$/example/public/krpano/tour.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
+        <state relative-caret-position="1008">
           <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -214,18 +594,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/public/index.html">
+    <entry file="file://$PROJECT_DIR$/example/public/krpano/tour.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="82" lean-forward="true" selection-start-line="19" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="537">
-            <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+          <first_editor relative-caret-position="-44">
+            <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
