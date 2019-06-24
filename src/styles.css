@@ -1,13 +1,12 @@
 /* add css styles here (optional) */
 
 .krpano {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   overflow: hidden;
-  background: green;
   z-index: 1;
 }
 
@@ -26,16 +25,51 @@
   z-index: 2;
 }
 
-.krpano-loading:before {
-  content: '资源载入中';
+.krpano-loading span {
+  display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
   font-size: 12px;
   transform: translate(-50%, -50%);
   color: #666666;
+  /*background-image: url('https://cdn.dribbble.com/users/722246/screenshots/4723489/category-loading.gif');*/
+  /*background-size: contain;*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*padding: 150px 0;*/
 }
 
+.devTools {
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.devTools:before, .devTools:after {
+  content: '';
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #ffffff33;
+}
+
+.devTools:after {
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+}
+.devTools_label{
+  padding-left: 10px;
+  font-size: 12px;
+  color: #ffffffaa;
+}
 .fade-enter {
   opacity: 0;
 }

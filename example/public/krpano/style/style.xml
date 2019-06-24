@@ -2,7 +2,9 @@
 	<!-- 热点设置 -->
 	<style name="hotspot_style" url="hotspot.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" />
 	<style name="hotspot_style_go" url="hotspot2.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" />
-
+  <style name="hotspot_style_anime" url="hotspot_anime.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
+  <style name="hotspot_style_anime_2" url="hotspot_anime_2.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
+  <style name="hotspot_style_anime_3" url="hotspot_anime_3.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
 	<!-- 自动旋转设置 -->
 	<autorotate name="rotate" enabled="false" waittime="10.0" speed="1.0" horizon="0.0" tofov="360.0" />
 
@@ -63,5 +65,32 @@
         );
         );
     </action>
-    <!-- 行星入场 -->
+  <!-- 行星入场 -->
+  <!-- 动态热点 -->
+  <action name="do_crop_animation" scope="local" args="framewidth, frameheight, framerate">
+    <!-- 定义局部变量 -->
+    calc(local.xframes, (caller.imagewidth /framewidth) BOR 0);
+    calc(local.frames, xframes * ((caller.imageheight / frameheight) BOR 0));
+    def(local.frame, integer, 0);
+
+    <!-- 设置第一帧 -->
+    calc(caller.crop, '0|0|' + framewidth + '|' + frameheight);
+
+    <!-- 动画部分 -->
+    setinterval(calc('crop_anim_' + caller.name), calc(1.0 / framerate),
+    if(caller.loaded,
+    inc(frame);
+    if(frame GE frames, if(caller.onlastframe !== null, callwith(caller, onlastframe() ) ); set(frame,0); );
+    mod(xpos, frame, xframes);
+    div(ypos, frame, xframes);
+    Math.floor(ypos);
+    mul(xpos, framewidth);
+    mul(ypos, frameheight);
+    calc(caller.crop, xpos + '|' + ypos + '|' + framewidth + '|' + frameheight);
+    ,
+    <!-- 当热点移除时停止动画 -->
+    clearinterval(calc('crop_anim_' + caller.name));
+    );
+    );
+  </action>
 </krpano>

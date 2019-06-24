@@ -7,4 +7,48 @@ body {
 .panel {
   position: absolute;
   z-index: 99;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.popup {
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('http://jx3.xoyo.com/zt/2019/06/17/pop/big.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: auto;
+  max-width: 95vw;
+}
+
+.popup_second {
+  height: 500px;
+  width: 600px;
+  background-image: url('https://jx3.xoyo.com/zt/2019/06/17/operate/assets/images/book.dfe45355.png');
+}
+
+.popup_button {
+  position: absolute;
+  bottom: 80px;
+  left: 70px;
+  display: inline-block;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.popup_close {
+  content: '';
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  cursor: pointer;
 }
