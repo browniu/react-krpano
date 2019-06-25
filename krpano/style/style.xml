@@ -7,7 +7,11 @@
   <style name="hotspot_style_anime_3" url="hotspot_anime_3.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
 	<!-- 自动旋转设置 -->
 	<autorotate name="rotate" enabled="false" waittime="10.0" speed="1.0" horizon="0.0" tofov="360.0" />
-
+  <!-- 拖动方式 -->
+  <action name="control_startup" autorun="onstart">
+    set(control.mouse, drag);
+    set(control.touch, drag);
+  </action>
 	<!-- 行星入场 -->
 	<!-- 配置清单 -->
 	<planet_config enable="true" angle="120" during="1" />
@@ -93,4 +97,23 @@
     );
     );
   </action>
+  <!--光晕插件-->
+  <krpano flare_dir="lensflare"/>
+<!--  <include url="lensflare/core.xml" />-->
+  <!--陀螺仪-->
+  <plugin name="gyro" devices="html5" keep="true"
+          url="plugins/gyro2.js"
+          enabled="true"
+          camroll="true"
+          friction="0.0"
+          touch_mode="full"
+          sensor_mode="1"
+          softstart="0.5"
+          autocalibration="true"
+          onavailable=""
+          onunavailable=""
+          onenable=""
+          ondisable=""
+  />
+
 </krpano>
