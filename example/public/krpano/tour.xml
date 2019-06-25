@@ -29,7 +29,7 @@
 			</level>
 		</image>
 		<!-- 热点 -->
-		<hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="loadscene(scene_inside1,null,MERGE,BLEND(1.0, easeInCubic))" />
+		<hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="loadscene(scene_inside,null,MERGE,BLEND(1.0, easeInCubic))" />
 		<hotspot name="spot2" style="hotspot_style_anime" ath="327.61605" atv="-3.91918" onclick="jscall(krpano.hooks.pop(1))" />
     <hotspot name="spot3" style="hotspot_style_anime_2" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
 	</scene>
@@ -51,4 +51,13 @@
 		<!-- 热点 -->
     <hotspot name="spot4" style="hotspot_style_anime_3" ath="-266.57535" atv="-4.56823" onclick="loadscene(scene_hongkong,null,MERGE,BLEND(1.0, easeInCubic))" />
 	</scene>
+
+  <scene name="scene_inside" title="IMG_0838" onstart="" thumburl="panos/inside.tiles/thumb.jpg" lat="" lng="" heading="">
+    <view hlookat="-295.54753" vlookat="-6.76344" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+    <preview url="panos/inside.tiles/preview.jpg" />
+    <image>
+      <cube url="panos/inside.tiles/pano_%s.jpg" />
+    </image>
+    <hotspot name="spot5" style="hotspot_style_anime_3" ath="8.69626" atv="-23.04136" onclick="loadscene(scene_hongkong,null,MERGE,BLEND(1.0, easeInCubic))" />
+  </scene>
 </krpano>

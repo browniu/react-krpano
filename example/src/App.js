@@ -29,7 +29,6 @@ export default class App extends Component {
                 this.setState({popState: false})
               }}/>
             </div>}
-
           </div>}
         </div>
         <Krpano xml='krpano/tour.xml' hooks={this.hooks} mounted={this.mounted} loading={{info: '资源配置中'}} dev={false}/>

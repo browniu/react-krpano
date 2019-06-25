@@ -7,7 +7,11 @@
   <style name="hotspot_style_anime_3" url="hotspot_anime_3.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
 	<!-- 自动旋转设置 -->
 	<autorotate name="rotate" enabled="false" waittime="10.0" speed="1.0" horizon="0.0" tofov="360.0" />
-
+  <!-- 拖动方式 -->
+  <action name="control_startup" autorun="onstart">
+    set(control.mouse, drag);
+    set(control.touch, moveto);
+  </action>
 	<!-- 行星入场 -->
 	<!-- 配置清单 -->
 	<planet_config enable="true" angle="120" during="1" />

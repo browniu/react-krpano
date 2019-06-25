@@ -10,6 +10,7 @@ body {
   height: 100%;
   width: 100%;
   pointer-events: none;
+  /*background-image: url('http://jx3.xoyo.com/assets/2018/11/26/assets/images/roles_bg_2560.jpg');*/
 }
 
 .popup {
@@ -24,6 +25,7 @@ body {
   background-repeat: no-repeat;
   pointer-events: auto;
   max-width: 95vw;
+  background-position: center;
 }
 
 .popup_second {
