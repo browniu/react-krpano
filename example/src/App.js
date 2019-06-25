@@ -31,7 +31,7 @@ export default class App extends Component {
             </div>}
           </div>}
         </div>
-        <Krpano xml='krpano/tour.xml' hooks={this.hooks} mounted={this.mounted} loading={{info: '资源配置中'}} dev={false}/>
+        <Krpano xml='krpano/tour.xml' hooks={this.hooks} mounted={this.mounted} loading={{info: '资源配置中'}} groy={true} dev={false}/>
       </div>
     )
   }

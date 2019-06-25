@@ -10,7 +10,7 @@
   <!-- 拖动方式 -->
   <action name="control_startup" autorun="onstart">
     set(control.mouse, drag);
-    set(control.touch, moveto);
+    set(control.touch, drag);
   </action>
 	<!-- 行星入场 -->
 	<!-- 配置清单 -->
@@ -97,4 +97,23 @@
     );
     );
   </action>
+  <!--光晕插件-->
+  <krpano flare_dir="lensflare"/>
+<!--  <include url="lensflare/core.xml" />-->
+  <!--陀螺仪-->
+  <plugin name="gyro" devices="html5" keep="true"
+          url="plugins/gyro2.js"
+          enabled="true"
+          camroll="true"
+          friction="0.0"
+          touch_mode="full"
+          sensor_mode="1"
+          softstart="0.5"
+          autocalibration="true"
+          onavailable=""
+          onunavailable=""
+          onenable=""
+          ondisable=""
+  />
+
 </krpano>
