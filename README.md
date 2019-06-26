@@ -211,7 +211,12 @@ window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
 </krpano>
 ```
 
+## 开发流程
 
+1. 使用`krpano` 开发工具生成全景图分片
+2. 下载定制开发包，将全景图分片包放入`krpano/pano/`
+3. 安装并引入组件,`props`方式传入配置文件的路径
+4. 对配置文件`krpano/tour.xml`进行二次开发
 
 ## Q&A
 
