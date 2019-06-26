@@ -12,7 +12,13 @@ body {
   pointer-events: none;
   /*background-image: url('http://jx3.xoyo.com/assets/2018/11/26/assets/images/roles_bg_2560.jpg');*/
 }
-
+.eyes{
+  position: absolute;
+  z-index: 100;
+  bottom: 15px;
+  right: 15px;
+  pointer-events: auto;
+}
 .popup {
   height: 300px;
   width: 500px;
