@@ -211,7 +211,7 @@ window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
 </krpano>
 ```
 
-## 开发流程
+## 开发流程 workflow 
 
 1. 使用`krpano` 开发工具生成全景图分片
 2. 下载定制开发包，将全景图分片包放入`krpano/pano/`
