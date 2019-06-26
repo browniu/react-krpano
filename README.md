@@ -217,7 +217,7 @@ window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
 
 ## 开发流程 workflow 
 
-1. 使用`[krpano` 开发工具](https://krpano.com/)生成全景图分片
+1. 使用Krpano官方提供的[切片工具](https://krpano.com/)生成全景图分片
 2. 下载[定制开发包](https://github.com/browniu/react-krpano/tree/develop)，将全景图分片包放入`krpano/pano/`
 3. 安装并引入组件,`props`方式传入配置文件的路径
 4. 对配置文件`krpano/tour.xml`进行二次开发
