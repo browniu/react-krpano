@@ -47,21 +47,21 @@
     <hotspot name="spot4" style="hotspot_style_anime_3" ath="-266.57535" atv="-4.56823" onclick="loadscene(scene_hongkong,null,MERGE,BLEND(1.0, easeInCubic))" />
 	</scene>
 
-  <scene name="scene_inside" title="IMG_0838" onstart="" thumburl="panos/inside.tiles/thumb.jpg" lat="" lng="" heading="">
+  <scene name="scene_inside"  onstart="" thumburl="panos/inside3.tiles/thumb.jpg">
     <view hlookat="-295.54753" vlookat="-6.76344" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="100" fovmax="130" limitview="auto" />
-    <preview url="panos/inside.tiles/preview.jpg" />
+    <preview url="panos/inside3.tiles/preview.jpg" />
     <image>
-      <cube url="panos/inside.tiles/pano_%s.jpg" />
+      <cube url="panos/inside3.tiles/pano_%s.jpg" />
     </image>
   </scene>
 
-  <scene name="scene_inside_eye"  thumburl="panos/inside_eye.tiles/thumb.jpg">
+  <scene name="scene_inside_eye"  thumburl="panos/inside3_eye.tiles/thumb.jpg">
     <view hlookat="-295.54753" vlookat="-6.76344" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="100" fovmax="130" limitview="auto" />
-    <preview url="panos/inside_eye.tiles/preview.jpg" />
+    <preview url="panos/inside3_eye.tiles/preview.jpg" />
     <image>
-      <cube url="panos/inside_eye.tiles/pano_%s.jpg" />
+      <cube url="panos/inside3_eye.tiles/pano_%s.jpg" />
     </image>
-    <hotspot name="spot5" style="hotspot_style_anime_3" ath="8.69626" atv="-23.04136" onclick="loadscene(scene_hongkong,null,MERGE,BLEND(1.0, easeInCubic));jscall(krpano.hooks.eyeMode())" />
+    <hotspot name="spot5" style="hotspot_style_anime_3" ath="-452.06719" atv="-19.36974" onclick="loadscene(scene_hongkong,null,MERGE,BLEND(1.0, easeInCubic));jscall(krpano.hooks.eyeMode())" />
   </scene>
 
 </krpano>
