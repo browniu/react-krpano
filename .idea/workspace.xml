@@ -69,22 +69,6 @@
               <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -135,17 +119,17 @@
       <option name="presentableId" value="Default" />
       <updated>1561281274111</updated>
       <workItem from="1561281275949" duration="22740000" />
-      <workItem from="1561425692359" duration="20436000" />
+      <workItem from="1561425692359" duration="21130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43176000" />
+    <option name="totallyTimeSpent" value="43870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1184" height="1440" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17798796" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17798796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -159,7 +143,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.15805022" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.15805022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
