@@ -1,7 +1,6 @@
 ﻿<krpano version="1.19" title="Virtual Tour">
 	<!-- 菜单设置 -->
 	<include url="style/style.xml" />
-
 	<!-- 生命周期-加载第一个场景 -->
 	<action name="startup" autorun="onstart">
 		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
@@ -62,7 +61,7 @@
     <image>
       <cube url="panos/inside_eye.tiles/pano_%s.jpg" />
     </image>
-    <hotspot name="spot5" style="hotspot_style_anime_3" ath="8.69626" atv="-23.04136" onclick="loadscene(scene_hongkong,null,MERGE,BLEND(1.0, easeInCubic))" />
+    <hotspot name="spot5" style="hotspot_style_anime_3" ath="8.69626" atv="-23.04136" onclick="loadscene(scene_hongkong,null,MERGE,BLEND(1.0, easeInCubic));jscall(krpano.hooks.eyeMode())" />
   </scene>
 
 </krpano>

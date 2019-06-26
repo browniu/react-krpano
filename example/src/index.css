@@ -14,10 +14,20 @@ body {
 }
 .eyes{
   position: absolute;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  background-image: url('./assets/images/eye_close.png');
+  background-size: contain;
+  background-position: center;
+  transform-origin: center;
   z-index: 100;
   bottom: 15px;
   right: 15px;
   pointer-events: auto;
+}
+.eyes.act{
+  background-image: url('./assets/images/eye.png');
 }
 .popup {
   height: 300px;

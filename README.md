@@ -12,11 +12,15 @@ npm install --save react-krpano
 ## 依赖 Dependency
 * 渲染引擎 A Krpano player globally referenced by `<script>` :
 
-```html
-<script src="vtour/tour.js"></script>
-```
+  ```html
+  <script src="vtour/tour.js"></script>
+  ```
 
 * 配置文件 A krpano config file `tour.xml`
+
+  ```jsx
+  <Krpano xml='krpano/tour.xml' hooks={this.hooks} mounted={this.mounted} />
+  ```
 
 ## 使用 Usage
 ```jsx
@@ -27,7 +31,7 @@ import Krpano from 'react-krpano'
 class Example extends Component {
   render () {
     return (
-        <Krpano xml='krpano/tour.xml' hooks={this.hooks} mounted={this.mounted} />
+      <Krpano xml='krpano/tour.xml' hooks={this.hooks} mounted={this.mounted} loading={{info: '资源配置中'}} groy={true} dev={false}/>
     )
   }
 }
@@ -75,6 +79,7 @@ window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
 |`mounted`| 资源加载完毕的回调函数 |null|{this.mounted}|
 |Loading| 加载页文本配置 |Null|loading={{info: 'xixixi'}}|
 |dev| 开发者模式 |false|true|
+|Gray| 重力感应 |true|true|
 
 ## Config (tour.xml)
 
@@ -187,6 +192,22 @@ window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
 	<lensflares name="obj">
 		<item name="name" ath="0" atv="0" scene="scene_name" typ="blinkstyle1" dust_effect="true"/>
 	</lensflares>
+</krpano>
+```
+
+### 控制方式
+
+`drag | moveto`
+
+```xml
+<!-- style/style.xml -->
+<krpano>
+...
+  <action name="control_startup" autorun="onstart">
+    set(control.mouse, drag);
+    set(control.touch, moveto);
+  </action>
+...
 </krpano>
 ```
 

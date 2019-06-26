@@ -40,6 +40,33 @@
   /*padding: 150px 0;*/
 }
 
+.krpano-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  padding: 15px;
+}
+
+.krpano-panel-groy {
+  transition: .3s ease;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  background-image: url('krpano/style/plugins/groy_close.png');
+  background-size: contain;
+  background-position: center;
+  transform-origin: center;
+  transform: rotate(90deg);
+  opacity: .5;
+}
+
+.krpano-panel-groy.act {
+  opacity: .7;
+  transform: rotate(0deg);
+  background-image: url('krpano/style/plugins/groy.png');
+}
+
 .devTools {
   padding: 15px;
   position: absolute;
@@ -65,11 +92,13 @@
   height: 100%;
   width: 1px;
 }
-.devTools_label{
+
+.devTools_label {
   padding-left: 10px;
   font-size: 12px;
   color: #ffffffaa;
 }
+
 .fade-enter {
   opacity: 0;
 }

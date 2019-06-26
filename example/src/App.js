@@ -11,7 +11,7 @@ export default class App extends Component {
     }
     this.hooks = {
       pop: (e) => this.pop(e),
-      eyeMode: () => { this.setState({eyes: true}) }
+      eyeMode: () => { this.setState({eyes: !this.state.eyes}) }
     }
   }
 
@@ -19,7 +19,8 @@ export default class App extends Component {
     return (
       <div>
         <div className={'panel'}>
-          {this.state.eyes && <button className={'eyes'} onClick={() => this.eyeModeSwitch()}>心眼模式</button>}
+          {this.state.eyes &&
+          <div className={['eyes', this.state.eyeMode ? 'act' : ''].join(' ')} onClick={() => this.eyeModeSwitch()} />}
           {this.state.popState &&
           <div className={['popup', this.state.popState === 2 ? 'popup_second' : ''].join(' ')} onClick={() => {
             if (this.state.popState === 2) this.setState({popState: false})
