@@ -2,184 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b41bf60-1473-4923-baaf-27b7ac04b5d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l1/1/l1_b_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l1/1/l1_b_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l1/2/l1_b_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l1/2/l1_b_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l2/1/l2_b_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l2/1/l2_b_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l2/1/l2_b_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l2/2/l2_b_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l2/2/l2_b_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l2/2/l2_b_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l2/3/l2_b_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l2/3/l2_b_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/b/l2/3/l2_b_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l1/1/l1_d_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l1/1/l1_d_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l1/2/l1_d_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l1/2/l1_d_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l2/1/l2_d_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l2/1/l2_d_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l2/1/l2_d_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l2/2/l2_d_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l2/2/l2_d_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l2/2/l2_d_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l2/3/l2_d_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l2/3/l2_d_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/d/l2/3/l2_d_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l1/1/l1_f_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l1/1/l1_f_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l1/2/l1_f_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l1/2/l1_f_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l2/1/l2_f_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l2/1/l2_f_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l2/1/l2_f_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l2/2/l2_f_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l2/2/l2_f_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l2/2/l2_f_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l2/3/l2_f_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l2/3/l2_f_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/f/l2/3/l2_f_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l1/1/l1_l_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l1/1/l1_l_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l1/2/l1_l_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l1/2/l1_l_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l2/1/l2_l_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l2/1/l2_l_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l2/1/l2_l_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l2/2/l2_l_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l2/2/l2_l_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l2/2/l2_l_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l2/3/l2_l_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l2/3/l2_l_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/l/l2/3/l2_l_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l1/1/l1_r_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l1/1/l1_r_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l1/2/l1_r_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l1/2/l1_r_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l2/1/l2_r_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l2/1/l2_r_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l2/1/l2_r_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l2/2/l2_r_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l2/2/l2_r_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l2/2/l2_r_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l2/3/l2_r_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l2/3/l2_r_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/r/l2/3/l2_r_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/thumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l1/1/l1_u_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l1/1/l1_u_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l1/2/l1_u_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l1/2/l1_u_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l2/1/l2_u_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l2/1/l2_u_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l2/1/l2_u_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l2/2/l2_u_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l2/2/l2_u_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l2/2/l2_u_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l2/3/l2_u_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l2/3/l2_u_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/u/l2/3/l2_u_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/vr/pano_b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/vr/pano_d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/vr/pano_f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/vr/pano_l.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/vr/pano_r.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/hongkong.tiles/vr/pano_u.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l1/1/l1_b_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l1/1/l1_b_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l1/2/l1_b_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l1/2/l1_b_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l2/1/l2_b_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l2/1/l2_b_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l2/1/l2_b_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l2/2/l2_b_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l2/2/l2_b_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l2/2/l2_b_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l2/3/l2_b_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l2/3/l2_b_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/b/l2/3/l2_b_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l1/1/l1_d_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l1/1/l1_d_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l1/2/l1_d_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l1/2/l1_d_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l2/1/l2_d_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l2/1/l2_d_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l2/1/l2_d_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l2/2/l2_d_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l2/2/l2_d_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l2/2/l2_d_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l2/3/l2_d_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l2/3/l2_d_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/d/l2/3/l2_d_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l1/1/l1_f_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l1/1/l1_f_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l1/2/l1_f_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l1/2/l1_f_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l2/1/l2_f_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l2/1/l2_f_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l2/1/l2_f_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l2/2/l2_f_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l2/2/l2_f_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l2/2/l2_f_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l2/3/l2_f_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l2/3/l2_f_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/f/l2/3/l2_f_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l1/1/l1_l_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l1/1/l1_l_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l1/2/l1_l_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l1/2/l1_l_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l2/1/l2_l_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l2/1/l2_l_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l2/1/l2_l_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l2/2/l2_l_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l2/2/l2_l_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l2/2/l2_l_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l2/3/l2_l_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l2/3/l2_l_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/l/l2/3/l2_l_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l1/1/l1_r_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l1/1/l1_r_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l1/2/l1_r_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l1/2/l1_r_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l2/1/l2_r_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l2/1/l2_r_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l2/1/l2_r_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l2/2/l2_r_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l2/2/l2_r_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l2/2/l2_r_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l2/3/l2_r_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l2/3/l2_r_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/r/l2/3/l2_r_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/thumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l1/1/l1_u_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l1/1/l1_u_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l1/2/l1_u_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l1/2/l1_u_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l2/1/l2_u_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l2/1/l2_u_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l2/1/l2_u_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l2/2/l2_u_2_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l2/2/l2_u_2_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l2/2/l2_u_2_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l2/3/l2_u_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l2/3/l2_u_3_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/u/l2/3/l2_u_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/vr/pano_b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/vr/pano_d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/vr/pano_f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/vr/pano_l.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/vr/pano_r.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/panos/test2.tiles/vr/pano_u.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/style/hotspot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/style/hotspot2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/style/style.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/tour.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vtour/tour.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -191,7 +14,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -220,6 +53,7 @@
         <option value="$PROJECT_DIR$/example/src/index.css" />
         <option value="$PROJECT_DIR$/example/public/krpano/tour.xml" />
         <option value="$PROJECT_DIR$/example/src/App.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -247,11 +81,6 @@
             <path>
               <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,15 +135,16 @@
       <workItem from="1561425692359" duration="23095000" />
       <workItem from="1561549716159" duration="176000" />
       <workItem from="1561550328582" duration="70000" />
-      <workItem from="1561624563733" duration="447000" />
+      <workItem from="1561624563733" duration="551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46528000" />
+    <option name="totallyTimeSpent" value="46632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22331627" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -380,9 +210,6 @@
     <entry file="file://$PROJECT_DIR$/src/.eslintrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -442,6 +269,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
