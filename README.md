@@ -43,6 +43,39 @@ class Example extends Component {
 3. 安装并引入组件,`props`方式传入配置文件的路径
 4. 对配置文件`krpano/tour.xml`进行二次开发
 
+## 切图方式
+
+### `MAKE VTOUR (VR-OPT) Droplet`（推荐）
+普通加载，调用方式：
+```xml
+<!-- tour/xml -->
+<scene name="scene_scene" title="scene" havevrimage="true" thumburl="panos/scene.tiles/thumb.jpg">
+  <!-- ... -->
+  <image>
+    <cube url="panos/scene.tiles/pano_%s.jpg" />
+  </image>
+  <!-- ... -->
+</scene>
+```
+
+### `MAKE VTOUR (NORMAL) Droplet`
+多级加载，适用于对图片缩放效果要求较高的场景，调用方式：
+```xml
+<!-- tour/xml -->
+<scene name="scene_scene" title="scene" havevrimage="true" thumburl="panos/scene.tiles/thumb.jpg">
+  <!-- ... -->
+  <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+    <level tiledimagewidth="1280" tiledimageheight="1280">
+      <cube url="panos/scene.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+    </level>
+    <level tiledimagewidth="640" tiledimageheight="640">
+      <cube url="panos/scene.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+    </level>
+  </image>
+  <!-- ... -->
+</scene>
+```
+
 ## 通信 Communication
 ### Xml => React (e.g.)
 

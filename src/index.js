@@ -75,12 +75,12 @@ export default class Krpano extends Component {
   }
 
   ready() {
-    this.props.mounted()
     setTimeout(() => {
       this.setState({
         loaded: true
       })
     }, 1500)
+    this.props.mounted()
   }
 
   groy() {
