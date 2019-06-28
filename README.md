@@ -13,13 +13,13 @@ npm install --save react-krpano
 * 渲染引擎 A Krpano player globally referenced by `<script>` :
 
   ```html
-  <script src="vtour/tour.js"></script>
+  <script src="krpano/tour.js"></script>
   ```
 
 * 配置文件 A krpano config file `tour.xml`
 
   ```jsx
-  <Krpano xml='krpano/tour.xml' hooks={this.hooks} mounted={this.mounted} />
+  <Krpano xml='krpano/tour.xml' />
   ```
 
 ## 使用 Usage
@@ -31,7 +31,7 @@ import Krpano from 'react-krpano'
 class Example extends Component {
   render () {
     return (
-      <Krpano xml='krpano/tour.xml' hooks={this.hooks} mounted={this.mounted} loading={{info: '资源配置中'}} groy={true} dev={false}/>
+      <Krpano xml='krpano/tour.xml' loading={{info: '资源配置中'}} groy={true} dev={false}/>
     )
   }
 }
