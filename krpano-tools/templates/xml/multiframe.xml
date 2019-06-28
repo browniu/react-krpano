@@ -1,0 +1,9 @@
+﻿<krpano>
+
+	<include url="skin/multiframeskin.xml" />
+	
+	<view fov="90" maxpixelzoom="2.0" fovmax="120" limitview="fullrange" />
+	
+	[IMAGE]
+
+</krpano>

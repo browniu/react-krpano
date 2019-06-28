@@ -1,0 +1,13 @@
+﻿<krpano bgcolor="0x000000">
+
+	<!-- the skin and the flat pano viewing and controlling setup -->
+	<include url="skin/defaultskin.xml" />
+	<include url="skin/flatpano_setup.xml" />
+	
+	<!-- preview pano image -->
+	[PREVIEW]
+
+	<!-- pano image -->
+	[IMAGE]
+
+</krpano>

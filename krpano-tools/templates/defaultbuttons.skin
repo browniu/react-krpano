@@ -1,0 +1,11 @@
+# Single Pano Skin
+# - krpano Default Buttons
+# - QTVR/Drag Mouse Cursor
+# - Context Menu with Different Projections
+# krpano 1.18
+
+xmltemplate=xml/default.xml
+xmltemplate_additional_file=xml/skin/defaultskin.xml
+xmltemplate_additional_file=xml/skin/buttons-2.png
+xmltemplate_additional_file=xml/skin/qtvr-cursors.png
+xmltemplate_additional_file=xml/skin/drag-cursors-2.png

@@ -1,0 +1,43 @@
+﻿<krpano>
+
+	<action name="startup" autorun="onstart">
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(videopano);
+		  );
+	</action>
+
+	<scene name="videopano" title="[NAME]">
+
+		<!-- include the videoplayer interface / skin (with VR support) -->
+		<include url="skin/videointerface.xml" />
+
+		<!-- include the videoplayer plugin -->
+		<plugin name="video"
+		        url.html5="%SWFPATH%/plugins/videoplayer.js"
+		        url.flash="%SWFPATH%/plugins/videoplayer.swf"
+		        pausedonstart="true"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        />
+
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<sphere url="plugin:video" />
+		</image>
+
+		<!-- set the default view -->
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
+
+		<!-- add the video sources and play the video -->
+		<action name="add_video_sources">
+			videointerface_addsource('[HRES]x[VRES]', '%CURRENTXML%/[BASENAME].mp4|%CURRENTXML%/[BASENAME].webm|%CURRENTXML%/[BASENAME]-iphone-audio.m4a', '%CURRENTXML%/[BASENAME]-poster.jpg');
+			videointerface_play('[HRES]x[VRES]');
+		</action>
+
+	</scene>
+
+</krpano>

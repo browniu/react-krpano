@@ -1,0 +1,172 @@
+﻿<krpano>
+	<!-- krpano 1.19 default buttons skin -->
+
+	<!-- set the default mouse and touch control modes (drag or moveto) -->
+	<control mouse="drag" touch="drag" />
+
+	<!-- default autorotate settings (disabled by default) -->
+	<autorotate enabled="false" waittime="1.0" accel="2.0" speed="8.0" horizon="0.0" tofov="90.0" />
+
+
+	<!-- control buttons style -->
+	<style name="defaultskin_button" url="buttons-2.png" scale="0.5" align="lefttop" />
+
+	<!-- the container layer that contains the buttons -->
+	<layer name="defaultskin_buttons" type="container" width="360" height="40" align="bottom=" y="10" scalechildren="true" scale="1.0" keep="true">
+		<layer name="btn_in"       x="0"   style="defaultskin_button" crop="320|0|80|80" onovercrop="320|80|80|80" ondown="set(fov_moveforce,-1);"     onup="set(fov_moveforce,0);"     />
+		<layer name="btn_out"      x="40"  style="defaultskin_button" crop="400|0|80|80" onovercrop="400|80|80|80" ondown="set(fov_moveforce,+1);"     onup="set(fov_moveforce,0);"     />
+		<layer name="btn_left"     x="80"  style="defaultskin_button" crop=  "0|0|80|80" onovercrop=  "0|80|80|80" ondown="set(hlookat_moveforce,-1);" onup="set(hlookat_moveforce,0);" />
+		<layer name="btn_right"    x="120" style="defaultskin_button" crop= "80|0|80|80" onovercrop= "80|80|80|80" ondown="set(hlookat_moveforce,+1);" onup="set(hlookat_moveforce,0);" />
+		<layer name="btn_up"       x="160" style="defaultskin_button" crop="160|0|80|80" onovercrop="160|80|80|80" ondown="set(vlookat_moveforce,-1);" onup="set(vlookat_moveforce,0);" />
+		<layer name="btn_down"     x="200" style="defaultskin_button" crop="240|0|80|80" onovercrop="240|80|80|80" ondown="set(vlookat_moveforce,+1);" onup="set(vlookat_moveforce,0);" />
+		<layer name="btn_ctrlmode" x="240" style="defaultskin_button" crop="800|0|80|80" onovercrop="800|80|80|80" onclick="switch(control.mouse,drag,moveto); switch(control.touch,drag,moveto); update_ctrl_mode();" />
+		<layer name="btn_autorot"  x="280" style="defaultskin_button" crop="480|0|80|80" onovercrop="480|80|80|80" onclick="switch(autorotate.enabled);" />
+		<layer name="btn_fs"       x="320" style="defaultskin_button" crop="560|0|80|80" onovercrop="560|80|80|80" onclick="switch(fullscreen);" visible="true" devices="fullscreensupport" />
+	</layer>
+
+	<!-- no fullscreen support => no fullscreen button => smaller container width -->
+	<layer name="defaultskin_buttons" width="320" devices="!fullscreensupport" />
+
+	<!-- scale the buttons 2x for mobile devices (when the mobilescale setting in the html file is below 1.0) -->
+	<layer name="defaultskin_buttons" scale="2.0" if="device.mobile AND stagescale LT 1.0" />
+
+
+	<!-- events for handling dynamic changes -->
+	<events name="defaultskin_buttons" keep="true"
+	        onxmlcomplete="update_ctrl_mode(); update_fs_button();"
+	        onresize="adjust_button_sizes();"
+	        onenterfullscreen="update_fs_button();"
+	        onexitfullscreen ="update_fs_button();"
+	        />
+
+
+	<!-- check if the buttons fit inside the window, and if not, make them smaller so that they will fit -->
+	<action name="adjust_button_sizes">
+		if(layer[defaultskin_buttons].pixelwidth GT stagewidth,
+			div(layer[defaultskin_buttons].scale, stagewidth, layer[defaultskin_buttons].width);
+		  );
+	</action>
+
+	<!-- update the buttons and the cursors according to the current control mode setting -->
+	<action name="update_ctrl_mode">
+		if(control.mouse == drag,
+			<!-- set mouse cursor graphic -->
+			set(cursors.url, %SWFPATH%/skin/drag-cursors-2.png);
+			set(cursors.type, drag);
+			set(cursors.move,  0|0|32|32);
+			set(cursors.drag, 32|0|32|32);
+			<!-- set button graphic -->
+			set(layer[btn_ctrlmode].crop,       720|0|80|80);
+			set(layer[btn_ctrlmode].onovercrop, 720|80|80|80);
+		  ,
+			<!-- set mouse cursor graphic -->
+			set(cursors.url, %SWFPATH%/skin/qtvr-cursors.png);
+			set(cursors.type, 8way);
+			set(cursors.move,       0|0|16|16);
+			set(cursors.drag,      16|0|16|16);
+			set(cursors.arrow_u,   32|0|16|16);
+			set(cursors.arrow_d,   48|0|16|16);
+			set(cursors.arrow_l,   64|0|16|16);
+			set(cursors.arrow_r,   80|0|16|16);
+			set(cursors.arrow_lu,  96|0|16|16);
+			set(cursors.arrow_ru, 112|0|16|16);
+			set(cursors.arrow_rd, 128|0|16|16);
+			set(cursors.arrow_ld, 144|0|16|16);
+			<!-- set button graphic -->
+			set(layer[btn_ctrlmode].crop,       800|0|80|80);
+			set(layer[btn_ctrlmode].onovercrop, 800|80|80|80);
+		  );
+	</action>
+
+	<!-- update the fullscreen button according to the current state -->
+	<action name="update_fs_button">
+		if(fullscreen,
+			set(layer[btn_fs].crop,       640|0|80|80);
+			set(layer[btn_fs].onovercrop, 640|80|80|80);
+		  ,
+			set(layer[btn_fs].crop,       560|0|80|80);
+			set(layer[btn_fs].onovercrop, 560|80|80|80);
+		  );
+	</action>
+
+
+	<!--
+		inlined contextmenu.xml
+		- Change the control mode and the viewing projection via the right click contextmenu.
+		- The distorted view items will be only shown when Flash or WebGL are supported and when the
+		  pano image itself is a full 360x180 pano.
+	-->
+
+	<contextmenu>
+		<item name="kr" caption="KRPANO"     />
+		<item name="fs" caption="FULLSCREEN" />
+		<item name="cc" caption="Change Controlmode" onclick="cm_changecontrolmode();"  separator="true" />
+		<item name="nv" caption="Normal View"        onclick="cm_normal_view();"        showif="view.vlookatrange == 180" separator="true"      />
+		<item name="fv" caption="Fisheye View"       onclick="cm_fisheye_view();"       showif="view.vlookatrange == 180" devices="flash|webgl" />
+		<item name="sv" caption="Stereographic View" onclick="cm_stereographic_view();" showif="view.vlookatrange == 180" devices="flash|webgl" />
+		<item name="av" caption="Architectural View" onclick="cm_architectural_view();" showif="view.vlookatrange == 180"                       />
+		<item name="pv" caption="Pannini View"       onclick="cm_pannini_view();"       showif="view.vlookatrange == 180" devices="flash|webgl" />
+		<item name="lp" caption="Little Planet View" onclick="cm_littleplanet_view();"  showif="view.vlookatrange == 180" devices="flash|webgl" />
+	</contextmenu>
+
+
+	<action name="cm_changecontrolmode">
+		switch(control.mouse, drag, moveto);
+		switch(control.touch, drag, moveto);
+	</action>
+
+	<action name="cm_look_straight">
+		if(view.vlookat LT -80 OR view.vlookat GT +80,
+			tween(view.vlookat, 0.0, 1.0, easeInOutSine);
+			tween(view.fov,     100, distance(150,0.8));
+		  );
+	</action>
+
+	<action name="cm_normal_view">
+		cm_look_straight();
+		tween(view.architectural, 0.0, distance(1.0,0.5));
+		tween(view.pannini,       0.0, distance(1.0,0.5));
+		tween(view.fisheye,       0.0, distance(1.0,0.5));
+	</action>
+
+	<action name="cm_architectural_view">
+		cm_look_straight();
+		tween(view.architectural, 1.0, distance(1.0,0.5));
+		tween(view.pannini,       0.0, distance(1.0,0.5));
+		tween(view.fisheye,       0.0, distance(1.0,0.5));
+	</action>
+
+	<action name="cm_fisheye_view">
+		cm_look_straight();
+		tween(view.architectural, 0.0,  distance(1.0,0.5));
+		tween(view.pannini,       0.0,  distance(1.0,0.5));
+		tween(view.fisheye,       0.35, distance(1.0,0.5));
+	</action>
+
+	<action name="cm_stereographic_view">
+		cm_look_straight();
+		tween(view.architectural, 0.0, distance(1.0,0.5));
+		tween(view.pannini,       0.0, distance(1.0,0.5));
+		tween(view.fisheye,       1.0, distance(1.0,0.8));
+	</action>
+
+	<action name="cm_pannini_view">
+		cm_look_straight();
+		tween(view.architectural, 0.0, distance(1.0,0.5));
+		tween(view.pannini,       1.0, distance(1.0,0.8));
+		if(view.fisheye LT 0.1,
+			tween(view.fisheye, 1.0, distance(1.0,0.8));
+		  );
+	</action>
+
+	<action name="cm_littleplanet_view">
+		tween(view.architectural, 0.0, distance(1.0,0.5));
+		tween(view.pannini,       0.0, distance(1.0,0.5));
+		tween(view.fisheye,       1.0, distance(1.0,0.8));
+		tween(view.fov,           150, distance(150,0.8));
+		tween(view.vlookat,        90, distance(100,0.8));
+		add(new_hlookat, view.hlookat, 123.0);
+		tween(view.hlookat, get(new_hlookat), distance(100,0.8));
+	</action>
+
+</krpano>

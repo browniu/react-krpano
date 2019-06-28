@@ -1,0 +1,48 @@
+# Virtual Tour Skin - Design 1.19
+# - Button bar
+# - Scene/pano title
+# - Previous/next scene buttons
+# - Show/hide skin buttons
+# - Hotspots style
+# - Scrolling thumbnails
+# - Bingmaps or Googlemaps plugin
+# - Tooltips
+# - Gyroscope plugin
+# - MobileVR/WebVR support
+# - Retina resolution images
+# - Different mobile layout
+# - Virtual Tour Editor compatible
+# krpano 1.19-pr13
+
+htmltemplate=html/embedpano.html
+
+xmltemplate=xml/vtour.xml
+xmltemplate_scene=xml/vtour_scenetemplate.xml
+xmltemplate_view=xml/vtour_viewtemplate.xml
+xmltemplate_additional_file=xml/skin/vtourskin.xml
+xmltemplate_additional_file=xml/skin/vtourskin_design_black.xml
+xmltemplate_additional_file=xml/skin/vtourskin_design_glass.xml
+xmltemplate_additional_file=xml/skin/vtourskin_design_flat_light.xml
+xmltemplate_additional_file=xml/skin/vtourskin_design_ultra_light.xml
+xmltemplate_additional_file=xml/skin/vtourskin_design_117.xml
+xmltemplate_additional_file=xml/skin/vtourskin_design_117round.xml
+xmltemplate_additional_file=xml/skin/vtourskin.png
+xmltemplate_additional_file=xml/skin/vtourskin_light.png
+xmltemplate_additional_file=xml/skin/vtourskin_hotspot.png
+xmltemplate_additional_file=xml/skin/vtourskin_mapspot.png
+xmltemplate_additional_file=xml/skin/vtourskin_mapspotactive.png
+xmltemplate_additional_file=xml/plugins/scrollarea.swf
+xmltemplate_additional_file=xml/plugins/scrollarea.js
+xmltemplate_additional_file=xml/plugins/combobox.xml
+xmltemplate_additional_file=xml/plugins/bingmaps.swf
+xmltemplate_additional_file=xml/plugins/bingmaps.js
+xmltemplate_additional_file=xml/plugins/googlemaps.js
+xmltemplate_additional_file=xml/plugins/videoplayer.swf
+xmltemplate_additional_file=xml/plugins/videoplayer.js
+xmltemplate_additional_file=xml/plugins/soundinterface.swf
+xmltemplate_additional_file=xml/plugins/soundinterface.js
+xmltemplate_additional_file=xml/plugins/gyro2.js
+xmltemplate_additional_file=xml/plugins/webvr.js
+xmltemplate_additional_file=xml/plugins/webvr.xml
+xmltemplate_additional_file=xml/plugins/webvr_cursor_80x80_17f.png
+xmltemplate_additional_file=xml/skin/rotate_device.png

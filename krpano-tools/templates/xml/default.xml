@@ -1,0 +1,14 @@
+﻿<krpano>
+	
+	<!-- the skin -->
+	<include url="skin/defaultskin.xml" />
+	
+	<!-- view settings -->
+	<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" [VIEWLIMITS]/>
+	
+
+	[PREVIEW]
+
+	[IMAGE]
+
+</krpano>

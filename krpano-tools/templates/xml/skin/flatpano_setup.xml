@@ -1,0 +1,55 @@
+﻿<krpano>
+	<!-- krpano 1.19 viewing and controlling setup for flat panos -->
+
+	<!-- view settings -->
+	<view fovtype="HFOV" fov="1.0" fovmax="1.0" maxpixelzoom="2.0" limitview="lookat" />
+
+	<!-- control settings (drag2d for flat pano) -->
+	<control mousetype="drag" touchtype="drag" zoomtocursor="true" zoomoutcursor="true" bouncinglimits="true" keycodesin="16" keycodesout="17" />
+
+
+	<!-- events and actions for adjusting the view settings to see the whole image -->
+	<events name="flatpano_events" onnewpano="callwhen(area.pixelwidth GT 0 AND area.pixelheight GT 0, flatpano_startup() );" onresize="flatpano_imagefit();" />
+
+	<!-- setup the view to show the whole image at startup -->
+	<action name="flatpano_startup">
+		div(pano_aspectratio, image.hfov, image.vfov);
+		div(screen_aspectratio, area.pixelwidth, area.pixelheight);
+
+		if(pano_aspectratio GT screen_aspectratio,
+			set(view.fovtype, HFOV);
+			copy(view.fov,    image.hfov);
+			copy(view.fovmax, image.hfov);
+		  ,
+			set(view.fovtype, VFOV);
+			copy(view.fov,    image.vfov);
+			copy(view.fovmax, image.vfov);
+		  );
+	</action>
+
+	<!-- adjust the fov limits during resizing -->
+	<action name="flatpano_imagefit">
+		if(image.vfov GT 0,
+			div(pano_aspectratio, image.hfov, image.vfov);
+			div(screen_aspectratio, area.pixelwidth, area.pixelheight);
+
+			if(pano_aspectratio GT screen_aspectratio,
+				if(view.fovtype == VFOV,
+						remapfovtype(view.fov, VFOV, HFOV, lastresize_width, lastresize_height);
+						set(view.fovtype, HFOV);
+						copy(view.fovmax, image.hfov);
+				  );
+			  ,
+				if(view.fovtype == HFOV,
+						remapfovtype(view.fov, HFOV, VFOV, lastresize_width, lastresize_height);
+						set(view.fovtype, VFOV);
+						copy(view.fovmax, image.vfov);
+				  );
+			  );
+		  );
+
+		set(lastresize_width, get(area.pixelwidth));
+		set(lastresize_height, get(area.pixelheight));
+	</action>
+
+</krpano>

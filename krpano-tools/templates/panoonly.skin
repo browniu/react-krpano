@@ -1,0 +1,5 @@
+# Single Pano Skin
+# - Just the pano itself, no skin
+# krpano 1.18
+
+xmltemplate=xml/panoonly.xml

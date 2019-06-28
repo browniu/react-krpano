@@ -1,0 +1,142 @@
+﻿<!--
+	krpano - object movie rotate/zoom/move example skin 
+-->
+
+<krpano>
+
+	<events name="objectskin"
+	        onnewpano="setup_object_viewer(backup);"
+	        onremovepano="setup_object_viewer(restore);"
+	        onenterfullscreen="set(plugin[openfs].visible,false); set(plugin[closefs].visible,true);"
+	        onexitfullscreen ="set(plugin[openfs].visible,true); set(plugin[closefs].visible,false);"
+	        onmousedown="mdown();"
+	        onmouseup="mup();"
+	        onidle="showup_rotate_buttons();"
+	        onviewchange="if(fullviewfov===null, if(view.fov != 90, copy(fullviewfov,view.fov);roundval(fullviewfov,1); ));
+	                      copy(fovrounded,view.fov);
+	                      roundval(fovrounded,1);
+	                      if(fovrounded LT fullviewfov, set(control.mousespeed,10), set(control.mousespeed,0));"
+	        />
+
+	<action name="backup">
+		copy(objectbackup.%1,%1);
+		set(%1,%2);
+	</action>
+	
+	<action name="restore">
+		copy(%1,objectbackup.%1);
+	</action>
+
+	<action name="setup_object_viewer">
+		<!-- backup and set or restore all settings for viewing objects -->
+		%1(idletime, 2.0);
+		%1(view.fovtype, HFOV);
+		%1(view.limitview, fullrange);
+		%1(view.maxpixelzoom, 1.0);
+		%1(control.zoomtocursor, true);
+		%1(control.zoomoutcursor, true);
+		%1(control.mousetype, drag2D);
+		%1(control.mousespeed, mousespeed);
+		%1(display.stillquality, HIGHSHARP);
+	</action>
+	
+
+	<!-- object mouse rotate actions -->
+	
+	<action name="mdown">
+		if(control.mousespeed == 0,
+			set(mbdown, true);
+			set(lastframepos,null);
+			objectrotate();
+		  );
+	</action>
+
+	<action name="mup">
+		set(mbdown, false);
+	</action>
+
+	<action name="objectrotate">
+		div(mxpos, mouse.x, stagewidth);
+		mul(framepos, mxpos, image.frames);
+		roundval(framepos);
+
+		if(lastframepos == null, copy(lastframepos,framepos));
+
+		sub(framemove, lastframepos, framepos);
+		copy(lastframepos,framepos);
+
+		set(rotatedirection, right);
+		if(framemove LT 0, mul(framemove,framemove,-1); set(rotatedirection, left); );
+
+		if(mbdown,
+			if(framemove != 0,
+				if(rotatedirection == left,
+					dec(image.frame,get(framemove),1,get(image.frames));
+				   ,
+					inc(image.frame,get(framemove),get(image.frames),1);
+				  );
+			  );
+
+			delayedcall(0.01,objectrotate());
+		  );
+	</action>
+
+
+	<!-- object UI skin - buttons -->
+
+	<textstyle name="buttonstyle" font="Arial" fontsize="12" bold="true" italic="true"
+	           textcolor="0x000000" background="false" border="false"
+	           blendmode="layer" effect="glow(0xFFFFFF,0.85,4,4);dropshadow(2,45,0x000000,4,1);"
+	           origin="cursor" edge="bottom" xoffset="15" yoffset="-5" showtime="0.1" fadeintime="0.1" fadetime="0.1"
+	           />
+
+	<style name="button" url="%SWFPATH%/skin/buttons.png" zorder="3" keep="true" />
+
+	<plugin name="in"       align="bottom" x="-120" y="10" style="button" crop="160|0|40|40" onovercrop="160|40|40|40" ondowncrop="160|80|40|40" onhover="showtext('Zoom IN ', buttonstyle);"   ondown="set(movevectorz,-1);"  onup="set(movevectorz,0);" />
+	<plugin name="out"      align="bottom" x="-80"  y="10" style="button" crop="200|0|40|40" onovercrop="200|40|40|40" ondowncrop="200|80|40|40" onhover="showtext('Zoom OUT ', buttonstyle);"  ondown="set(movevectorz,+1);"  onup="set(movevectorz,0);" />
+	<plugin name="left"     align="bottom" x="-40"  y="10" style="button" crop=  "0|0|40|40" onovercrop=  "0|40|40|40" ondowncrop=  "0|80|40|40" onhover="showtext('Pan Left ', buttonstyle);"  ondown="set(movevectorx,-1);"  onup="set(movevectorx,0);" />
+	<plugin name="right"    align="bottom" x="0"    y="10" style="button" crop= "40|0|40|40" onovercrop= "40|40|40|40" ondowncrop= "40|80|40|40" onhover="showtext('Pan Right ', buttonstyle);" ondown="set(movevectorx,+1);"  onup="set(movevectorx,0);" />
+	<plugin name="up"       align="bottom" x="+40"  y="10" style="button" crop= "80|0|40|40" onovercrop= "80|40|40|40" ondowncrop= "80|80|40|40" onhover="showtext('Pan Up ', buttonstyle);"    ondown="set(movevectory,-1);"  onup="set(movevectory,0);" />
+	<plugin name="down"     align="bottom" x="+80"  y="10" style="button" crop="120|0|40|40" onovercrop="120|40|40|40" ondowncrop="120|80|40|40" onhover="showtext('Pan Down ', buttonstyle);"  ondown="set(movevectory,+1);"  onup="set(movevectory,0);" />
+	<plugin name="openfs"   align="bottom" x="+120" y="10" style="button" crop="280|0|40|40" onovercrop="280|40|40|40" ondowncrop="280|80|40|40" onhover="showtext('Fullscreen ', buttonstyle);"      onclick="set(fullscreen,true);"  visible="true"  />
+	<plugin name="closefs"  align="bottom" x="+120" y="10" style="button" crop="320|0|40|40" onovercrop="320|40|40|40" ondowncrop="320|80|40|40" onhover="showtext('Exit Fullscreen ',buttonstyle);"  onclick="set(fullscreen,false);" visible="false" />
+
+	<plugin name="rotaterightbg" url="%SWFPATH%/skin/black.png" align="right" width="125" height="100%" alpha="0.0" zorder="1" onover="tween(plugin[rotaterightbg].alpha,0.7);" onout="tween(plugin[rotaterightbg].alpha,0);" ondown="startrotateleft();"  onup="stoprotate();" />
+	<plugin name="rotateleftbg"  url="%SWFPATH%/skin/black.png" align="left"  width="125" height="100%" alpha="0.0" zorder="1" onover="tween(plugin[rotateleftbg].alpha,0.7);"  onout="tween(plugin[rotateleftbg].alpha,0);"  ondown="startrotateright();" onup="stoprotate();" />
+
+	<plugin name="rotaterighticon" url="%SWFPATH%/skin/arrow.png" align="right" x="10" scale="0.5" zorder="2" enabled="false" parent="rotaterightbg" />
+	<plugin name="rotatelefticon"  url="%SWFPATH%/skin/arrow.png" align="left" edge="right" rotate="180" x="10" scale="0.5" zorder="2" enabled="false"  parent="rotateleftbg" />
+
+
+	<!-- button actions -->
+
+	<action name="showup_rotate_buttons">
+		tween(plugin[rotaterightbg].alpha, 0.7, 1.5, easeOutQuad, tween(plugin[rotaterightbg].alpha, 0.0, 2.5, easeInExpo));
+		tween(plugin[rotateleftbg].alpha,  0.7, 1.5, easeOutQuad, tween(plugin[rotateleftbg].alpha,  0.0, 2.5, easeInExpo));
+	</action>
+
+	<action name="startrotateleft">
+		set(rotateing,true);
+		rotateleft();
+	</action>
+
+	<action name="startrotateright">
+		set(rotateing,true);
+		rotateright();
+	</action>
+
+	<action name="rotateleft">
+		dec(image.frame,1,1,get(image.frames));
+		delayedcall(0.02, if(rotateing,rotateleft()) );
+	</action>
+
+	<action name="rotateright">
+		inc(image.frame,1,get(image.frames),1);
+		delayedcall(0.02, if(rotateing,rotateright()) );
+	</action>
+
+	<action name="stoprotate">
+		set(rotateing,false);
+	</action>
+
+</krpano>

@@ -1,0 +1,10 @@
+﻿<!-- place your hotspots here -->
+
+		<!-- example hotspot:
+		<hotspot name="spot1" style="hotspot_ani_black" 
+		         ath="0"
+		         atv="0"
+		         zoom="false"
+		         onclick="looktohotspot(get(name)); loadscene('insert-scene-name',null,MERGE,BLEND(1));"
+		         />
+		-->
