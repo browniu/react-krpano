@@ -1,0 +1,69 @@
+﻿<krpano>
+	<!-- krpano 1.16 default buttons skin for flat panos -->
+
+	<progress showload="none" showwait="none" />
+	<control zoomtocursor="true" zoomoutcursor="false" />
+
+	<!-- control buttons -->
+	<style name="button" url="%SWFPATH%/skin/buttons.png" keep="true" align="bottom" />
+
+	<plugin name="btn_in"       devices="desktop" x="-160" y="10" style="button" crop="160|0|40|40" onovercrop="160|40|40|40" ondowncrop="160|80|40|40" ondown="set(fov_moveforce,-1);"     onup="set(fov_moveforce,0);"     />
+	<plugin name="btn_out"      devices="desktop" x="-120" y="10" style="button" crop="200|0|40|40" onovercrop="200|40|40|40" ondowncrop="200|80|40|40" ondown="set(fov_moveforce,+1);"     onup="set(fov_moveforce,0);"     />
+	<plugin name="btn_lft"      devices="desktop" x="-80"  y="10" style="button" crop=  "0|0|40|40" onovercrop=  "0|40|40|40" ondowncrop=  "0|80|40|40" ondown="set(hlookat_moveforce,-1);" onup="set(hlookat_moveforce,0);" />
+	<plugin name="btn_rgt"      devices="desktop" x="-40"  y="10" style="button" crop= "40|0|40|40" onovercrop= "40|40|40|40" ondowncrop= "40|80|40|40" ondown="set(hlookat_moveforce,+1);" onup="set(hlookat_moveforce,0);" />
+	<plugin name="btn_up"       devices="desktop" x="+00"  y="10" style="button" crop= "80|0|40|40" onovercrop= "80|40|40|40" ondowncrop= "80|80|40|40" ondown="set(vlookat_moveforce,-1);" onup="set(vlookat_moveforce,0);" />
+	<plugin name="btn_dwn"      devices="desktop" x="+40"  y="10" style="button" crop="120|0|40|40" onovercrop="120|40|40|40" ondowncrop="120|80|40|40" ondown="set(vlookat_moveforce,+1);" onup="set(vlookat_moveforce,0);" />
+	<plugin name="btn_home"     devices="desktop" x="+80"  y="10" style="button" crop="240|0|40|40" onovercrop="240|40|40|40" ondowncrop="240|80|40|40" onclick="zoomto(1.0,smooth(3,3,10));" />
+	<plugin name="btn_dragmode" devices="desktop" x="+120" y="10" style="button" crop="400|0|40|40" onovercrop="400|40|40|40" ondowncrop="400|80|40|40" onclick="dragcursor();" visible="true"  />
+	<plugin name="btn_movemode" devices="desktop" x="+120" y="10" style="button" crop="360|0|40|40" onovercrop="360|40|40|40" ondowncrop="360|80|40|40" onclick="qtvrcursor();" visible="false" />
+	<plugin name="btn_enterfs"  devices="desktop+fullscreensupport" x="+160" y="10" style="button" crop="280|0|40|40" onovercrop="280|40|40|40" ondowncrop="280|80|40|40" onclick="set(fullscreen,true);"  visible="true"  />
+	<plugin name="btn_exitfs"   devices="desktop+fullscreensupport" x="+160" y="10" style="button" crop="320|0|40|40" onovercrop="320|40|40|40" ondowncrop="320|80|40|40" onclick="set(fullscreen,false);" visible="false" />
+
+	<events name="defaultbuttons" keep="true" devices="desktop"
+	        onxmlcomplete="setuppano();"
+	        onenterfullscreen="set(plugin[btn_enterfs].visible,false); set(plugin[btn_exitfs].visible,true);"
+	        onexitfullscreen ="set(plugin[btn_enterfs].visible,true);  set(plugin[btn_exitfs].visible,false);"
+	        />
+
+	<!-- android buttons and events -->
+	<plugin name="androidzoom_out" devices="android+flash" keep="true" url="%SWFPATH%/skin/androidbuttons.png" alpha="0.5" crop="0|0|71|64"   align="rightbottom" x="88" y="10" ondown="set(crop,0|64|71|64);  set(fov_moveforce,+1);" onup="set(crop,0|0|71|64);  set(fov_moveforce,0);" />
+	<plugin name="androidzoom_in"  devices="android+flash" keep="true" url="%SWFPATH%/skin/androidbuttons.png" alpha="0.5" crop="71|0|78|64"  align="rightbottom" x="10" y="10" ondown="set(crop,71|64|78|64); set(fov_moveforce,-1);" onup="set(crop,71|0|78|64); set(fov_moveforce,0);" />
+	<plugin name="androidfsbutton" devices="android+flash" keep="true" url="%SWFPATH%/skin/androidbuttons.png" alpha="0.5" crop="149|0|64|64" align="righttop"    x="0"  y="0"  onclick="switch(fullscreen);" />
+
+	<events name="androidfsbutton" devices="android+flash" keep="true" onenterfullscreen="set(plugin[androidfsbutton].crop,149|64|64|64);" onexitfullscreen="set(plugin[androidfsbutton].crop,149|0|64|64);" />
+
+
+	<!-- actions to change the mouse cursor -->
+	<action name="dragcursor">
+		set(plugin[btn_dragmode].visible, false);
+		set(plugin[btn_movemode].visible, true);
+		set(control.mousetype, drag2D);
+		set(cursors.url, %SWFPATH%/skin/drag-cursors.png);
+		set(cursors.type, drag);
+		set(cursors.move,  2|0|30|32);
+		set(cursors.drag, 37|0|30|32);
+	</action>
+
+	<action name="qtvrcursor">
+		set(plugin[btn_dragmode].visible, true);
+		set(plugin[btn_movemode].visible, false);
+		set(control.mousetype, moveto);
+		set(cursors.url, %SWFPATH%/skin/qtvr-cursors.png);
+		set(cursors.type, 8way);
+		set(cursors.move,       0|0|16|16);
+		set(cursors.drag,      16|0|16|16);
+		set(cursors.arrow_u,   32|0|16|16);
+		set(cursors.arrow_d,   48|0|16|16);
+		set(cursors.arrow_l,   64|0|16|16);
+		set(cursors.arrow_r,   80|0|16|16);
+		set(cursors.arrow_lu,  96|0|16|16);
+		set(cursors.arrow_ru, 112|0|16|16);
+		set(cursors.arrow_rd, 128|0|16|16);
+		set(cursors.arrow_ld, 144|0|16|16);
+	</action>
+
+	<action name="setuppano">
+		qtvrcursor();
+	</action>
+
+</krpano>

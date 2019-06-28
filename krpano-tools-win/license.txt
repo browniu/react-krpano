@@ -1,0 +1,212 @@
+krpano.com - License Usage and License Agreement
+===============================================================================
+
+Files Overview:
+
+  Viewer Software:
+   o krpano.js  - krpano HTML5 Viewer (plus the krpano Embedding Script)
+   o krpano.swf - krpano Flash Viewer
+   o plugins/*  - krpano Plugins: js for HTML5, swf for Flash, xml for both
+
+  Tools Software:
+   o All applications, batch/script files and droplets.
+
+  Examples/Skins:
+   o All files in the examples, templates or skin folders.
+   o These files can be freely used and modified.
+
+
+-------------------------------------------------------------------------------
+
+LICENSE AGREEMENT
+
+  Terms and Conditions
+
+   1. All copyrights to krpano are exclusively owned by the krpano GmbH.
+
+   2. The krpano software is protected by copyright laws and international
+      copyright treaties, as well as other intellectual property laws and
+      treaties.
+
+   3. This license is a legal and binding agreement between you and the krpano
+      GmbH. Using the krpano software signifies that you have read, understand
+      and accept the terms and conditions of this license agreement. Any
+      unauthorized use of krpano shall result in immediate termination of this
+      license and may result in criminal and/or civil prosecution.
+
+   4. You may not modify, clone, decompile, disassemble, reverse engineer or
+      create derivative works based upon krpano.
+
+   5. Your krpano license grants you the right to sell and distribute projects
+      containing your licensed version of krpano.
+
+   6. Third parties may not use your licensed version of krpano to create new
+      projects, including modified versions of your projects.
+
+   7. You may not rent, lease, lend or sublicense krpano.
+
+   8. Offering your licensed krpano version to third parties on a hosting
+      platform is not allowed without 'krpano Hosting License'.
+
+   9. The krpano entry in the context menu may not be removed, suppressed,
+      altered, disabled or covered in any way without owning the additional
+      'krpano Branding Free License'.
+
+  10. krpano is provided "As Is" without warranty of any kind, either express
+      or implied, including any warranty of quality, merchantability, or
+      fitness for a particular purpose. In no event will the krpano GmbH be
+      liable for loss of data, costs of procurement of substitute goods or
+      services or any special, consequential or incidental damages, under any
+      cause of action and regardless of whether or not the krpano GmbH have
+      been advised of the possibility of such damage. This limitation will
+      apply notwithstanding any failure of essential purpose of any limited
+      remedy provided herein. In any event the krpano GmbH will have liability
+      arising out of this agreement.
+
+  11. All rights not expressly granted here are reserved by the krpano GmbH.
+
+
+-------------------------------------------------------------------------------
+
+ACKNOWLEDGMENTS / THIRD-PARTY LIBRARY LICENSES
+
+  krpano includes a number of third-party libraries that are used to provide
+  certain features. Here the copyright licenses of these libraries:
+
+
+  o zlib Copyright and License Agreement
+
+    Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler
+
+    This software is provided 'as-is', without any express or implied
+    warranty. In no event will the authors be held liable for any damages
+    arising from the use of this software.
+
+    Permission is granted to anyone to use this software for any purpose,
+    including commercial applications, and to alter it and redistribute it
+    freely, subject to the following restrictions:
+
+    1. The origin of this software must not be misrepresented; you must not
+       claim that you wrote the original software. If you use this software
+       in a product, an acknowledgment in the product documentation would be
+       appreciated but is not required.
+    2. Altered source versions must be plainly marked as such, and must not be
+       misrepresented as being the original software.
+    3. This notice may not be removed or altered from any source distribution.
+
+    Jean-loup Gailly        Mark Adler
+    jloup@gzip.org          madler@alumni.caltech.edu
+
+
+  o LibJPEG Copyright and License Agreement
+
+    The authors make NO WARRANTY or representation, either express or implied,
+    with respect to this software, its quality, accuracy, merchantability, or
+    fitness for a particular purpose.  This software is provided "AS IS", and
+    you, its user, assume the entire risk as to its quality and accuracy.
+
+    This software is copyright (C) 1991-1998, Thomas G. Lane.
+
+    All Rights Reserved except as specified below.
+
+    Permission is hereby granted to use, copy, modify, and distribute this
+    software (or portions thereof) for any purpose, without fee, subject to
+    these conditions:
+
+    1. If any part of the source code for this software is distributed, then
+       this README file must be included, with this copyright and no-warranty
+       notice unaltered; and any additions, deletions, or changes to the
+       original files must be clearly indicated in accompanying documentation.
+    2. If only executable code is distributed, then the accompanying
+       documentation must state that "this software is based in part on the
+       work of the Independent JPEG Group".
+    3. Permission for use of this software is granted only if the user accepts
+       full responsibility for any undesirable consequences; the authors accept
+       NO LIABILITY for damages of any kind.
+
+    These conditions apply to any software derived from or based on the IJG
+    code, not just to the unmodified library.  If you use our work, you ought
+    to acknowledge us.
+    Permission is NOT granted for the use of any IJG author's name or company
+    name in advertising or publicity relating to this software or products
+    derived from it.  This software may be referred to only as "the
+    Independent JPEG Group's software".
+    We specifically permit and encourage the use of this software as the basis
+    of commercial products, provided that all warranty or liability claims are
+    assumed by the product vendor.
+
+
+  o LibTIFF Copyright and License Agreement
+
+    Use and Copyright
+
+    Copyright© 1988-1997 Sam Leffler
+    Copyright© 1991-1997 Silicon Graphics, Inc.
+
+    Permission to use, copy, modify, distribute, and sell this software and
+    its documentation for any purpose is hereby granted without fee, provided
+    that (i) the above copyright notices and this permission notice appear in
+    all copies of the software and related documentation, and (ii) the names
+    of Sam Leffler and Silicon Graphics may not be used in any advertising or
+    publicity relating to the software without the specific, prior written
+    permission of Sam Leffler and Silicon Graphics.
+
+    THE SOFTWARE IS PROVIDED "AS-IS" AND WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY
+    OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+    IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY
+    SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY
+    DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR
+    NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY,
+    ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+    SOFTWARE.
+
+
+  o mongoose Copyright and License Agreement
+
+    Copyright (c) 2004-2010 Sergey Lyubka
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM,OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+
+
+  o Little Color Management System License Agreement
+
+    Copyright (c) 1998-2016 Marti Maria Saguer
+
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the Software
+    is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+    THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+    LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+===============================================================================
+                                                 Copyright (c) 2018 krpano GmbH

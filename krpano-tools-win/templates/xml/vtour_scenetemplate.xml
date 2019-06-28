@@ -1,0 +1,10 @@
+﻿
+	<scene name="scene_[BASENAME]" title="[NAME]" onstart=""[SCENEPARAMETERS][THUMB][GPS][DEVICE]>
+
+		[VIEW]
+
+		[PREVIEW]
+
+		[IMAGE]
+
+	</scene>

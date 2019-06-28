@@ -1,0 +1,1 @@
+﻿<view hlookat="[HLOOKAT]" vlookat="[VLOOKAT]" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" [VIEWLIMITS]/>

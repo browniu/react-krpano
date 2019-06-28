@@ -1,0 +1,40 @@
+# Virtual Tour Skin - Design 1.18
+# - Button bar
+# - Scene/pano title
+# - Previous/next scene buttons
+# - Show/hide skin buttons
+# - Hotspots style
+# - Scrolling thumbnails
+# - Bingmaps or Googlemaps plugin
+# - Tooltips
+# - Gyroscope plugin
+# - WebVR support
+# - Retina resolution images
+# - Different mobile layout
+# - Virtual Tour Editor compatible
+# krpano 1.19-pr2
+
+htmltemplate=html/embedpano.html
+
+xmltemplate=xml/vtour118.xml
+xmltemplate_scene=xml/vtour_scenetemplate.xml
+xmltemplate_view=xml/vtour_viewtemplate.xml
+xmltemplate_hotspot=xml/vtour_hotspottemplate.xml
+xmltemplate_additional_file=xml/skin/vtourskin118.xml
+xmltemplate_additional_file=xml/skin/vtourskin118.png
+xmltemplate_additional_file=xml/skin/vtourskin_thumbborder.png
+xmltemplate_additional_file=xml/skin/vtourskin_hotspot.png
+xmltemplate_additional_file=xml/skin/vtourskin_mapspot.png
+xmltemplate_additional_file=xml/skin/vtourskin_mapspotactive.png
+xmltemplate_additional_file=xml/plugins/scrollarea.swf
+xmltemplate_additional_file=xml/plugins/scrollarea.js
+xmltemplate_additional_file=xml/plugins/bingmaps.swf
+xmltemplate_additional_file=xml/plugins/bingmaps.js
+xmltemplate_additional_file=xml/plugins/googlemaps.js
+xmltemplate_additional_file=xml/plugins/textfield.swf
+xmltemplate_additional_file=xml/plugins/gyro2.js
+xmltemplate_additional_file=xml/plugins/webvr.js
+xmltemplate_additional_file=xml/plugins/webvr.xml
+xmltemplate_additional_file=xml/plugins/webvr_cursor_80x80_17f.png
+xmltemplate_additional_file=xml/skin/cardboard_logo.png
+xmltemplate_additional_file=xml/skin/rotate_device.png

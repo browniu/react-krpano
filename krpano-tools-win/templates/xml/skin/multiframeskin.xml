@@ -1,0 +1,38 @@
+﻿<!--
+	krpano 1.16
+	simple multi-frame pano skin 
+-->
+
+<krpano>
+	
+	<plugin name="prevframebg"   url="%SWFPATH%/skin/black.png" align="bottom" y="10" x="+50" width="100" height="70" alpha="0.2" zorder="1" onover="tween(alpha,0.7);" onout="tween(alpha,0.2);" ondown="startnextframe();" onup="stopframechanging();" />
+	<plugin name="nextframebg"   url="%SWFPATH%/skin/black.png" align="bottom" y="10" x="-50" width="100" height="70" alpha="0.2" zorder="1" onover="tween(alpha,0.7);" onout="tween(alpha,0.2);" ondown="startprevframe();" onup="stopframechanging();" />
+	<plugin name="prevframeicon" url="%SWFPATH%/skin/arrow.png" parent="prevframebg" align="right" edge="right"              x="10" scale="0.4" zorder="2" enabled="false" />
+	<plugin name="nextframeicon" url="%SWFPATH%/skin/arrow.png" parent="nextframebg" align="left"  edge="right" rotate="180" x="10" scale="0.4" zorder="2" enabled="false" />
+
+
+	<action name="startnextframe">
+		set(buttondown,true);
+		nextframe();
+	</action>
+
+	<action name="startprevframe">
+		set(buttondown,true);
+		prevframe();
+	</action>
+
+	<action name="nextframe">
+		inc(image.frame,1,get(image.frames),get(image.frames));
+		delayedcall(0.02, if(buttondown,nextframe()) );
+	</action>
+
+	<action name="prevframe">
+		dec(image.frame,1,1,1);
+		delayedcall(0.02,  if(buttondown,prevframe()) );
+	</action>
+
+	<action name="stopframechanging">
+		set(buttondown,false);
+	</action>
+
+</krpano>

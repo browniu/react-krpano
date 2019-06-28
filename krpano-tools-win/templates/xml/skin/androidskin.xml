@@ -1,0 +1,16 @@
+﻿<krpano>
+
+	<!--
+		Android Skin (androidskin.xml)
+		In the Android Flashplayer there are unfortunately no multi-touch gestures,
+		like the two-finger zooming - so provide zoom buttons instead.
+		Additionally this skin provides also a fullscreen button.
+	-->  
+	
+	<plugin name="androidzoom_out" keep="true" url="androidbuttons.png" alpha="0.5" crop="0|0|71|64"   align="rightbottom" x="88" y="10" ondown="set(crop,0|64|71|64);  set(fov_moveforce,+1);" onup="set(crop,0|0|71|64);  set(fov_moveforce,0);" />
+	<plugin name="androidzoom_in"  keep="true" url="androidbuttons.png" alpha="0.5" crop="71|0|78|64"  align="rightbottom" x="10" y="10" ondown="set(crop,71|64|78|64); set(fov_moveforce,-1);" onup="set(crop,71|0|78|64); set(fov_moveforce,0);" />
+	<plugin name="androidfsbutton" keep="true" url="androidbuttons.png" alpha="0.5" crop="149|0|64|64" align="righttop"    x="0"  y="0"  onclick="switch(fullscreen);" />
+	
+	<events name="androidfsbutton" keep="true" onenterfullscreen="set(plugin[androidfsbutton].crop,149|64|64|64);" onexitfullscreen="set(plugin[androidfsbutton].crop,149|0|64|64);" />
+
+</krpano>
