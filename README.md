@@ -40,6 +40,23 @@ class Example extends Component {
 ## 通信 Communication
 ### Xml => React (e.g.)
 
+需要`props`传入所有回调函数
+
+```jsx
+constructor(props) {
+  //...
+  this.hooks = {
+    noParam:()=>this.noParam()
+    param: (e) => this.param(e)
+  }
+	//...
+  render () {
+    return (
+      <Krpano xml='krpano/tour.xml' hooks={this.hooks} />
+    )
+  }
+  //...
+```
 #### 无内部参数 No-Params 
 ```xml
 <hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="jscall(krpano.hooks.test())" />
@@ -53,18 +70,11 @@ class Example extends Component {
 </action>
 ```
 
-```jsx
-constructor(props) {
-  //...
-  this.hooks = {
-    noParam:()=>this.noParam()
-    param: (e) => this.param(e)
-  }
-	//...
-}
-```
+
 
 ### React => Xml (e.g.)
+
+需要使用全局变量`window.krpano`
 
 ##### `Get` 获取当前视角
 ```javascript
