@@ -9,6 +9,7 @@
 ```bash
 npm install --save react-krpano
 ```
+
 ## 依赖 Dependency
 * 渲染引擎 A Krpano player globally referenced by `<script>` :
 
@@ -16,11 +17,8 @@ npm install --save react-krpano
   <script src="krpano/tour.js"></script>
   ```
 
-* 配置文件 A krpano config file `tour.xml`
+* [配置文件包](https://github.com/browniu/react-krpano/tree/develop)
 
-  ```jsx
-  <Krpano xml='krpano/tour.xml' />
-  ```
 
 ## 使用 Usage
 ```jsx
@@ -31,7 +29,7 @@ import Krpano from 'react-krpano'
 class Example extends Component {
   render () {
     return (
-      <Krpano xml='krpano/tour.xml' loading={{info: '资源配置中'}} groy={true} dev={false}/>
+      <Krpano/>
     )
   }
 }
@@ -44,7 +42,9 @@ class Example extends Component {
 4. 对配置文件`krpano/tour.xml`进行二次开发
 
 ## 切图方式
+
 ### `MAKE VTOUR (VR-OPT) Droplet`（推荐）
+
 普通加载，调用方式：
 ```xml
 <!-- tour/xml -->
@@ -58,7 +58,9 @@ class Example extends Component {
 ```
 
 ### `MAKE VTOUR (NORMAL) Droplet`
+
 多级加载，适用于对图片缩放效果要求较高的场景，调用方式：
+
 ```xml
 <!-- tour/xml -->
 <scene name="scene_scene" title="scene" havevrimage="true" thumburl="panos/scene.tiles/thumb.jpg">
@@ -114,26 +116,31 @@ constructor(props) {
 
 需要使用全局变量`window.krpano`
 
-##### `Get` 获取当前视角
+##### `Get` 方法
 ```javascript
-console.log(window.krpano.get("view.vlookat"),window.krpano.get("view.hlookat"));
+window.krpano.get("view.vlookat"),window.krpano.get("view.hlookat")
 ```
-##### `Call` 切换视图
+##### `Call` 方法
 ```javascript
-window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
+window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))")
+```
+##### `Set` 方法
+```javascript
+window.krpano.set('view.vlookat', 0)
 ```
 
-## Props
+## Props 接口参数
+
 |Name|Description|Defalt|Example|
 |:--|:--|---|:--|
 |`xml`|配置文件的路径|krpano/tour.xml|`tour.xml`|
 |`hooks`| 提供给`Krpano` 调用的方法 |null|`{foo:()=>this.foo()}`|
 |`mounted`| 资源加载完毕的回调函数 |null|{this.mounted}|
-|Loading| 加载页文本配置 |Null|loading={{info: 'xixixi'}}|
+|Loading| 加载页文本配置 |Null|loading={'loading'}|
 |dev| 开发者模式 |false|true|
 |gray| 重力感应 |true|true|
 
-## Config (tour.xml)
+## Config 配置文件
 
 ### 新建场景
 
@@ -199,6 +206,18 @@ window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
   ...
 </scene>
 ```
+### 限制视角
+
+`view`的`fov`属性控制缩放(单位%)
+
+```xml
+<scene>
+  ...
+  	 <view  vlookat="0" vlookatmax="0" vlookatmin="0"  limitview="lookat" />
+  ...
+</scene>
+```
+> 限制视角不要与行星入场混用
 
 ### 自动旋转
 
@@ -273,8 +292,13 @@ window.krpano.call("loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))");
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no">
   ```
 
-  
+## Update
 
+### 0.0.6
+
+* 优化内部逻辑，提高稳定性
+* 文档补充
+* **注意** 调整了参数`loading`的属性
 
 ## License
 
