@@ -307,8 +307,8 @@ window.krpano.set('hotspot[spot3].visible','true')
 设置两个样式不同但位置重合的热点，同时切换显示/隐藏状态，达到切换样式的目的：
 
 ```xml
-    <hotspot name="spot3" style="hotspot_style_anime_2" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
-    <hotspot name="spot3x" visible="false" style="hotspot_style_anime_3" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
+<hotspot name="spot3" style="hotspot_style_anime_2" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
+<hotspot name="spot3x" visible="false" style="hotspot_style_anime_3" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
 ```
 
 ```javascript
