@@ -232,7 +232,7 @@ window.krpano.set('view.vlookat', 0)
 </krpano>
 ```
 
-### 移镜入场
+### [移镜入场](https://github.com/browniu/react-krpano/blob/master/example/public/krpano/style/style.xml)
 
 | 参数  | 释义                                  | 类型     |
 | ----- | ------------------------------------- | -------- |
