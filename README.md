@@ -240,7 +240,11 @@ window.krpano.set('view.vlookat', 0)
 | v    | 锁定水平视角 |
 
 ```javascript
-window.krpano.hooks.localView()
+window.krpano.hooks.localView(h|v)
+```
+
+```
+window.krpano.hooks.unlocalView()
 ```
 
 ### [移镜入场](https://github.com/browniu/react-krpano/blob/master/example/public/krpano/style/style.xml)
@@ -312,7 +316,7 @@ window.krpano.hooks.localView()
 
 
 
-## Q&A
+## Q&A 常见问题
 
 #### 缩放视角失真
 
@@ -321,8 +325,6 @@ window.krpano.hooks.localView()
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no">
 ```
-
-
 
 #### 热点控制
 
@@ -348,29 +350,12 @@ window.krpano.set('hotspot[spot3].visible','false')
 
 
 
-#### 锁定视角
+## Update 更新日志
 
-```jsx
-  lockView() {
-    let vl = window.krpano.get('view.vlookat')
-    let hl = window.krpano.get('view.hlookat')
-    window.krpano.set('view.vlookatmin', vl)
-    window.krpano.set('view.vlookatmax', vl)
-    window.krpano.set('view.hlookatmin', hl)
-    window.krpano.set('view.hlookatmax', hl)
-    window.krpano.set('view.limitview', 'lookat')
-  }
-```
+### 0.0.7
 
-```jsx
-  unlockView() {
-    window.krpano.set('view.limitview', 'auto')
-  }
-```
-
-
-
-## Update
+* 新增移镜入场效果
+* 内置多维锁定/解锁视角方法
 
 ### 0.0.6
 
