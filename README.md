@@ -232,6 +232,17 @@ window.krpano.set('view.vlookat', 0)
 </krpano>
 ```
 
+### 锁定视角
+
+| 参数 | 释义         |
+| ---- | ------------ |
+| h    | 锁定垂直视角 |
+| v    | 锁定水平视角 |
+
+```javascript
+window.krpano.hooks.localView()
+```
+
 ### [移镜入场](https://github.com/browniu/react-krpano/blob/master/example/public/krpano/style/style.xml)
 
 | 参数  | 释义                                  | 类型     |

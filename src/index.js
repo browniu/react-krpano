@@ -31,11 +31,7 @@ export default class Krpano extends Component {
 
   static defaultProps = {
     xml: 'krpano/tour.xml',
-    hooks: {
-      ready: () => {
-        this.ready()
-      }
-    },
+    hooks: {},
     loading: '资源配置中',
     groy: false,
     dev: false,
@@ -54,6 +50,11 @@ export default class Krpano extends Component {
       groy: true,
       groyAble: false
     }
+    this.innerHooks = {
+      lockView: (e) => this.lockView(e),
+      unlockView: () => this.unlockView(),
+      ready: () => this.ready()
+    }
   }
 
   componentDidMount() {
@@ -70,7 +71,8 @@ export default class Krpano extends Component {
       html5: 'only',
       passQueryParameters: true,
       onready(krpano) {
-        let hooks = that.props.hooks
+        let hooks = Object.assign(that.props.hooks, that.innerHooks)
+        console.log(hooks)
         if (!hooks.ready) hooks.ready = () => that.ready()
         krpano.hooks = hooks
         window.krpano = krpano
@@ -94,6 +96,32 @@ export default class Krpano extends Component {
     }, 1500)
     // eslint-disable-next-line react/prop-types
     this.props.mounted()
+  }
+
+  lockView(target) {
+    if (!target) {
+      let vl = window.krpano.get('view.vlookat')
+      window.krpano.set('view.vlookatmin', vl)
+      window.krpano.set('view.vlookatmax', vl)
+      let hl = window.krpano.get('view.hlookat')
+      window.krpano.set('view.hlookatmin', hl)
+      window.krpano.set('view.hlookatmax', hl)
+    }
+    if (/v/.test(target)) {
+      let vl = window.krpano.get('view.vlookat')
+      window.krpano.set('view.vlookatmin', vl)
+      window.krpano.set('view.vlookatmax', vl)
+    }
+    if (/h/.test(target)) {
+      let hl = window.krpano.get('view.hlookat')
+      window.krpano.set('view.hlookatmin', hl)
+      window.krpano.set('view.hlookatmax', hl)
+    }
+    window.krpano.set('view.limitview', 'lookat')
+  }
+
+  unlockView() {
+    window.krpano.set('view.limitview', 'auto')
   }
 
   groy() {

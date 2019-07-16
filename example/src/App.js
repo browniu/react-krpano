@@ -11,8 +11,7 @@ export default class App extends Component {
     }
     this.hooks = {
       pop: (e) => this.pop(e),
-      eyeMode: () => { this.setState({eyes: !this.state.eyes}) },
-      lockView: () => this.lockView()
+      eyeMode: () => { this.setState({eyes: !this.state.eyes}) }
     }
   }
 
@@ -76,13 +75,14 @@ export default class App extends Component {
   };
 
   lockView() {
-    let vl = window.krpano.get('view.vlookat')
-    let hl = window.krpano.get('view.hlookat')
-    window.krpano.set('view.vlookatmin', vl)
-    window.krpano.set('view.vlookatmax', vl)
-    window.krpano.set('view.hlookatmin', hl)
-    window.krpano.set('view.hlookatmax', hl)
-    window.krpano.set('view.limitview', 'lookat')
+    window.krpano.hooks.lockView('h')
+    // let vl = window.krpano.get('view.vlookat')
+    // let hl = window.krpano.get('view.hlookat')
+    // window.krpano.set('view.vlookatmin', vl)
+    // window.krpano.set('view.vlookatmax', vl)
+    // window.krpano.set('view.hlookatmin', hl)
+    // window.krpano.set('view.hlookatmax', hl)
+    // window.krpano.set('view.limitview', 'lookat')
   }
 
   unlockView() {
