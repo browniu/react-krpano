@@ -25,9 +25,9 @@ export default class App extends Component {
               window.krpano.set('hotspot[spot3x].visible', 'true')
             }}>动态更新热点
             </button>
-            <button onClick={() => this.lockView()}>锁定视角
+            <button onClick={() => {window.krpano.hooks.lockView('h')}}>锁定视角
             </button>
-            <button onClick={() => this.unlockView()}>解锁视角
+            <button onClick={() => {window.krpano.hooks.unlockView()}}>解锁视角
             </button>
           </div>
 

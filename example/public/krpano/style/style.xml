@@ -72,7 +72,7 @@
   <!-- 行星入场 -->
 
   <!-- 移镜入场 -->
-  <camera_move_config enable="true" fov="100" angle="60" call="lockView(vh)" />
+  <camera_move_config enable="true" fov="100" angle="60" call="lockView(v)" />
   <events name="camera_move_event" keep="true" onxmlcomplete="set(events[camera_move_event].onxmlcomplete,null); if(camera_move_config.enable , camera_move());"  />
   <action name="camera_move">
     copy(lp_scene, xml.scene);
