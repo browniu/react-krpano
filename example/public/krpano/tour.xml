@@ -8,6 +8,7 @@
 		if(startactions !== null, startactions());
     jscall(krpano.hooks.ready())
 	</action>
+  
 	<!-- 场景1 -->
 	<scene name="scene_hongkong" title="hongkong" havevrimage="true" thumburl="panos/hongkong.tiles/thumb.jpg">
 		<!-- 视窗配置 -->

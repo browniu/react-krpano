@@ -70,6 +70,51 @@
         );
     </action>
   <!-- 行星入场 -->
+
+  <!-- 移镜入场 -->
+  <camera_move_config enable="true" fov="100" angle="60" call="lockView()" />
+  <events name="camera_move_event" keep="true" onxmlcomplete="set(events[camera_move_event].onxmlcomplete,null); if(camera_move_config.enable , camera_move());"  />
+  <action name="camera_move">
+    copy(lp_scene, xml.scene);
+    copy(lp_hlookat, view.hlookat);
+    copy(lp_vlookat, view.vlookat);
+    copy(lp_fov, view.fov);
+    copy(lp_fovmax, view.fovmax);
+    copy(lp_limitview, view.limitview);
+    set(view.fovmax, camera_move_config.fov);
+    set(view.limitview, lookto);
+    set(view.vlookatmin, 30);
+    set(view.vlookatmax, 30);
+    set_hotspot_visible(false);
+    set(layer[skin_layer].visible,false);set(layer[skin_layer].alpha,0);
+    set(layer[skin_control_bar].visible,false);set(layer[skin_control_bar].alpha,0);
+    set(layer[skin_splitter_bottom].visible,false);set(layer[skin_splitter_bottom].alpha,0);
+    lookat(calc(lp_hlookat + camera_move_config.angle), 90, camera_move_config.fov, 1, 0, 0);
+    set(lp_running,true);
+    set(events[lp_events].onloadcomplete,
+    delayedcall(calc(1),
+    if(lp_scene === xml.scene,
+    set(control.usercontrol, off);
+    copy(view.limitview, lp_limitview);
+    set(view.vlookatmin, null);
+    set(view.vlookatmax, null);
+    tween(view.hlookat|view.vlookat|view.fov|view.distortion, calc('' + lp_hlookat + '|' + lp_vlookat + '|' + lp_fov + '|' + 0.0),
+    3, easeOutQuad,
+    set(control.usercontrol, all);
+    tween(view.fovmax, get(lp_fovmax));
+    );
+    set(lp_running,false);
+    delayedcall(3,set_hotspot_visible(true))
+    set(layer[skin_layer].visible,true);tween(layer[skin_layer].alpha,1,1);
+    set(layer[skin_control_bar].visible,true);tween(layer[skin_control_bar].alpha,1,1);
+    set(layer[skin_splitter_bottom].visible,true);tween(layer[skin_splitter_bottom].alpha,1,1);
+    );
+    );
+    );
+    delayedcall(4,jscall(calc('krpano.hooks.'+camera_move_config.call))))
+  </action>
+  <!-- 移镜入场 -->
+
   <!-- 动态热点 -->
   <action name="do_crop_animation" scope="local" args="framewidth, frameheight, framerate">
     <!-- 定义局部变量 -->

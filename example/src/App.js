@@ -11,7 +11,8 @@ export default class App extends Component {
     }
     this.hooks = {
       pop: (e) => this.pop(e),
-      eyeMode: () => { this.setState({eyes: !this.state.eyes}) }
+      eyeMode: () => { this.setState({eyes: !this.state.eyes}) },
+      lockView: () => this.lockView()
     }
   }
 
@@ -21,9 +22,13 @@ export default class App extends Component {
         <div className={'panel'}>
           <div className="test">
             <button onClick={() => {
-              window.krpano.set('hotspot[spot3].visible','false')
-              window.krpano.set('hotspot[spot3x].visible','true')
+              window.krpano.set('hotspot[spot3].visible', 'false')
+              window.krpano.set('hotspot[spot3x].visible', 'true')
             }}>动态更新热点
+            </button>
+            <button onClick={() => this.lockView()}>锁定视角
+            </button>
+            <button onClick={() => this.unlockView()}>解锁视角
             </button>
           </div>
 
@@ -69,6 +74,20 @@ export default class App extends Component {
   next = () => {
     window.krpano.call('loadscene(scene_test2,null,MERGE,BLEND(1.0, easeInCubic))')
   };
+
+  lockView() {
+    let vl = window.krpano.get('view.vlookat')
+    let hl = window.krpano.get('view.hlookat')
+    window.krpano.set('view.vlookatmin', vl)
+    window.krpano.set('view.vlookatmax', vl)
+    window.krpano.set('view.hlookatmin', hl)
+    window.krpano.set('view.hlookatmax', hl)
+    window.krpano.set('view.limitview', 'lookat')
+  }
+
+  unlockView() {
+    window.krpano.set('view.limitview', 'auto')
+  }
 
   mounted = () => {
     console.log('krpano is ready')

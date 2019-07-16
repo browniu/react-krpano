@@ -232,6 +232,23 @@ window.krpano.set('view.vlookat', 0)
 </krpano>
 ```
 
+### 移镜入场
+
+| 参数  | 释义                                  | 类型     |
+| ----- | ------------------------------------- | -------- |
+| fov   | 初始景深                              | number   |
+| angle | 视角偏移                              | number   |
+| call  | 回调函数（须在hooks中注册过才能调用） | function |
+
+```xml
+<!-- style/style.xml -->
+<krpano>
+...
+<camera_move_config enable="true" fov="100" angle="60" call="lockView()" />
+...
+</krpano>
+```
+
 ### 星球入场
 
 配置是否开启星球视角入场
@@ -282,6 +299,8 @@ window.krpano.set('view.vlookat', 0)
 </krpano>
 ```
 
+
+
 ## Q&A
 
 #### 缩放视角失真
@@ -294,7 +313,7 @@ window.krpano.set('view.vlookat', 0)
 
 
 
-#### 动态控制热点
+#### 热点控制
 
 ##### 显示隐藏
 
@@ -314,6 +333,28 @@ window.krpano.set('hotspot[spot3].visible','true')
 ```javascript
 window.krpano.set('hotspot[spot3].visible','true')
 window.krpano.set('hotspot[spot3].visible','false')
+```
+
+
+
+#### 锁定视角
+
+```jsx
+  lockView() {
+    let vl = window.krpano.get('view.vlookat')
+    let hl = window.krpano.get('view.hlookat')
+    window.krpano.set('view.vlookatmin', vl)
+    window.krpano.set('view.vlookatmax', vl)
+    window.krpano.set('view.hlookatmin', hl)
+    window.krpano.set('view.hlookatmax', hl)
+    window.krpano.set('view.limitview', 'lookat')
+  }
+```
+
+```jsx
+  unlockView() {
+    window.krpano.set('view.limitview', 'auto')
+  }
 ```
 
 
