@@ -12,6 +12,12 @@ body {
   pointer-events: none;
   /*background-image: url('http://jx3.xoyo.com/assets/2018/11/26/assets/images/roles_bg_2560.jpg');*/
 }
+.test{
+  position: absolute;
+  pointer-events: auto;
+  top: 0;
+  right: 0;
+}
 .eyes{
   position: absolute;
   height: 25px;

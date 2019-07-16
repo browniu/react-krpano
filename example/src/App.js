@@ -19,6 +19,14 @@ export default class App extends Component {
     return (
       <div>
         <div className={'panel'}>
+          <div className="test">
+            <button onClick={() => {
+              window.krpano.set('hotspot[spot3].visible','false')
+              window.krpano.set('hotspot[spot3x].visible','true')
+            }}>动态更新热点
+            </button>
+          </div>
+
           {this.state.eyes &&
           <div className={['eyes', this.state.eyeMode ? 'act' : ''].join(' ')} onClick={() => this.eyeModeSwitch()} />}
           {this.state.popState &&
@@ -35,7 +43,7 @@ export default class App extends Component {
             </div>}
           </div>}
         </div>
-        <Krpano hooks={this.hooks} />
+        <Krpano hooks={this.hooks} dev={true} />
       </div>
     )
   }

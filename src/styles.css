@@ -92,7 +92,9 @@
   height: 100%;
   width: 1px;
 }
-
+.devTools button{
+  margin-right: 3px;
+}
 .devTools_label {
   padding-left: 10px;
   font-size: 12px;

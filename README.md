@@ -284,13 +284,39 @@ window.krpano.set('view.vlookat', 0)
 
 ## Q&A
 
-* 缩放视角失真
+#### 缩放视角失真
 
-  需要设置禁用用户缩放
+需要设置禁用用户缩放
 
-  ```html
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no">
-  ```
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no">
+```
+
+
+
+#### 动态控制热点
+
+##### 显示隐藏
+
+```javascript
+window.krpano.set('hotspot[spot3].visible','true')
+```
+
+##### 更新样式
+
+设置两个样式不同但位置重合的热点，同时切换显示/隐藏状态，达到切换样式的目的：
+
+```xml
+    <hotspot name="spot3" style="hotspot_style_anime_2" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
+    <hotspot name="spot3x" visible="false" style="hotspot_style_anime_3" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
+```
+
+```javascript
+window.krpano.set('hotspot[spot3].visible','true')
+window.krpano.set('hotspot[spot3].visible','false')
+```
+
+
 
 ## Update
 

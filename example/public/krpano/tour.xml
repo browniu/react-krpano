@@ -26,7 +26,10 @@
 		<!-- 热点 -->
 		<hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="loadscene(scene_inside,null,MERGE,BLEND(1.0, easeInCubic));jscall(krpano.hooks.eyeMode())" />
 		<hotspot name="spot2" style="hotspot_style_anime" ath="327.61605" atv="-3.91918" onclick="jscall(krpano.hooks.pop(1))" />
+
     <hotspot name="spot3" style="hotspot_style_anime_2" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
+    <hotspot name="spot3x" visible="false" style="hotspot_style_anime_3" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
+
 	</scene>
 	<!-- 场景2 -->
 	<scene name="scene_inside1" title="inside1" thumburl="panos/inside1.titles/thumb.jpg">

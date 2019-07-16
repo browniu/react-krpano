@@ -14,7 +14,7 @@
   </action>
 	<!-- 行星入场 -->
 	<!-- 配置清单 -->
-	<planet_config enable="true" angle="120" during="1" />
+	<planet_config enable="false" angle="120" during="1" />
 	<!-- 事件定义 -->
 	<events name="skin_events" keep="true" onxmlcomplete="set(events[skin_events].onxmlcomplete,null); if(planet_config.enable , planet());" />
 	<!-- 星球入场执行代码 -->
