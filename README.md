@@ -240,11 +240,11 @@ window.krpano.set('view.vlookat', 0)
 | v    | 锁定水平视角 |
 
 ```javascript
-window.krpano.hooks.localView(h|v)
+window.krpano.hooks.lockView(h|v)
 ```
 
 ```
-window.krpano.hooks.unlocalView()
+window.krpano.hooks.unlockView()
 ```
 
 ### [移镜入场](https://github.com/browniu/react-krpano/blob/master/example/public/krpano/style/style.xml)
