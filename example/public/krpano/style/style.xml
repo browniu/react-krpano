@@ -2,9 +2,10 @@
 	<!-- 热点设置 -->
 	<style name="hotspot_style" url="hotspot.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" />
 	<style name="hotspot_style_go" url="hotspot2.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" />
-  <style name="hotspot_style_anime" url="hotspot_anime.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
-  <style name="hotspot_style_anime_2" url="hotspot_anime_2.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
-  <style name="hotspot_style_anime_3" url="hotspot_anime_3.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
+  <style name="hotspot_style_anime" url="hotspot_anime.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);" />
+  <style name="hotspot_style_anime_2" url="hotspot_anime_2.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);" />
+  <style name="hotspot_style_anime_3" url="hotspot_anime_3.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);" />
+  <style name="hotspot_style_anime_4" url="spritesheet2.png"  scale="1" edge="top" distorted="true"  onloaded="do_crop_animation(150, 150, 23);add_all_the_time_tooltip();" />
 	<!-- 自动旋转设置 -->
 	<autorotate name="rotate" enabled="false" waittime="10.0" speed="1.0" horizon="0.0" tofov="360.0" />
   <!-- 拖动方式 -->
@@ -142,6 +143,42 @@
     );
     );
   </action>
+<!--热点标题-s-->
+  <hotspot_title_config bgColor="0xffffff" bgOpacity="0.25" fontColor="#ffffff" fontSize="16px" />
+    <action name="add_all_the_time_tooltip">
+      txtadd(tooltipname, 'tooltip_', get(name));
+      addplugin(get(tooltipname));
+      txtadd(plugin[get(tooltipname)].parent, 'hotspot[', get(name), ']');
+      set(plugin[get(tooltipname)].url,'%SWFPATH%/plugins/textfield.swf');
+      set(plugin[get(tooltipname)].align,center);
+      set(plugin[get(tooltipname)].edge,bottom);
+      set(plugin[get(tooltipname)].x,0);
+      set(plugin[get(tooltipname)].y,0);
+      set(plugin[get(tooltipname)].autowidth,true);
+      set(plugin[get(tooltipname)].autoheight,true);
+      set(plugin[get(tooltipname)].vcenter,true);
+      set(plugin[get(tooltipname)].background,false);
+      set(plugin[get(tooltipname)].backgroundcolor,0xffffff);
+      set(plugin[get(tooltipname)].roundedge,5);
+      set(plugin[get(tooltipname)].backgroundalpha,0.25);
+      set(plugin[get(tooltipname)].padding,5);
+      set(plugin[get(tooltipname)].border,false);
+      set(plugin[get(tooltipname)].glow,0);
+      set(plugin[get(tooltipname)].glowcolor,0xFFFFFF);
+      set(plugin[get(tooltipname)].css,'text-align:center; color:#000000; font-family:MicrosoftYahei; font-weight:lighter;  font-size:12px; transform:scale(.7) translateY(15px)');
+      if(device.mobile,set(plugin[get(tooltipname)].css,'text-align:center; color:#FFFFFF; font-family:MicrosoftYahei; font-weight:bold; font-size:24px;');
+      );
+      set(plugin[get(tooltipname)].textshadow,0);
+      set(plugin[get(tooltipname)].textshadowrange,6.0);
+      set(plugin[get(tooltipname)].textshadowangle,90);
+      if(title == '' OR title === null,
+      copy(plugin[get(tooltipname)].html,scene[get(linkedscene)].title),
+      copy(plugin[get(tooltipname)].html,title)
+      );
+      set(plugin[get(tooltipname)].enabled,false);
+    </action>
+  <!--热点标题-e-->
+
   <!--光晕插件-->
   <krpano flare_dir="lensflare"/>
 <!--  <include url="lensflare/core.xml" />-->

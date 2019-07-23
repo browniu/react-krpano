@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b41bf60-1473-4923-baaf-27b7ac04b5d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/browniu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/browniu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/dictionaries/browniu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/dictionaries/browniu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/style/style.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/style/style.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/tour.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/example/public/krpano/tour.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/krpano/style/style.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/style/style.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/krpano/tour.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/krpano/tour.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,13 +25,31 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="228">
-                <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/example/public/krpano/style/style.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="161" column="48" lean-forward="true" selection-start-line="161" selection-start-column="48" selection-end-line="161" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/public/krpano/tour.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7">
+              <caret line="29" column="138" selection-start-line="29" selection-start-column="126" selection-end-line="29" selection-end-column="138" />
             </state>
           </provider>
         </entry>
@@ -42,6 +69,8 @@
       <find>this.config</find>
       <find>ready</find>
       <find>innerHooks</find>
+      <find>camera_move_config</find>
+      <find>text</find>
     </findStrings>
     <replaceStrings>
       <replace>Krpano</replace>
@@ -58,12 +87,12 @@
         <option value="$PROJECT_DIR$/example/public/krpano/style/lensflare/lensflaresettings.xml" />
         <option value="$PROJECT_DIR$/src/styles.css" />
         <option value="$PROJECT_DIR$/example/src/index.css" />
-        <option value="$PROJECT_DIR$/example/public/krpano/tour.xml" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/example/src/App.js" />
-        <option value="$PROJECT_DIR$/example/public/krpano/style/style.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/example/src/App.js" />
+        <option value="$PROJECT_DIR$/example/public/krpano/tour.xml" />
+        <option value="$PROJECT_DIR$/example/public/krpano/style/style.xml" />
       </list>
     </option>
   </component>
@@ -95,12 +124,18 @@
             <path>
               <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
-              <item name="krpano-tools-win" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
+              <item name="krpano-tools-win" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -163,18 +198,19 @@
       <workItem from="1562206253662" duration="160000" />
       <workItem from="1562811274169" duration="7355000" />
       <workItem from="1563152855688" duration="209000" />
-      <workItem from="1563243435706" duration="11596000" />
+      <workItem from="1563243435706" duration="11604000" />
+      <workItem from="1563788135312" duration="7144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73763000" />
+    <option name="totallyTimeSpent" value="80915000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1176" height="1440" extended-state="6" />
+    <frame x="0" y="0" width="1689" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24155845" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25959232" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -188,7 +224,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28286558" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28286558" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -277,10 +313,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="228">
+            <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/example/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+        <state relative-caret-position="326">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -289,25 +335,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/public/krpano/tour.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="7">
+          <caret line="29" column="138" selection-start-line="29" selection-start-column="126" selection-end-line="29" selection-end-column="138" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/example/public/krpano/style/style.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1371">
-          <caret line="74" column="73" selection-start-line="74" selection-start-column="73" selection-end-line="74" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="228">
-            <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="478">
+          <caret line="161" column="48" lean-forward="true" selection-start-line="161" selection-start-column="48" selection-end-line="161" selection-end-column="48" />
         </state>
       </provider>
     </entry>

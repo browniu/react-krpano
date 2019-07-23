@@ -190,10 +190,86 @@ window.krpano.set('view.vlookat', 0)
 <!-- style/style.xml -->
 <krpano>
 ...
-  <style name="hotspot_style_anime" url="hotspot_anime.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);add_all_the_time_tooltip();" />
+  <style name="hotspot_style_anime" url="hotspot_anime.png" scale="0.5" edge="top" distorted="true" onloaded="do_crop_animation(128, 128, 60);" />
 ...
+<action name="do_crop_animation" scope="local" args="framewidth, frameheight, framerate">
+  calc(local.xframes, (caller.imagewidth /framewidth) BOR 0);
+  calc(local.frames, xframes * ((caller.imageheight / frameheight) BOR 0));
+  def(local.frame, integer, 0);
+  calc(caller.crop, '0|0|' + framewidth + '|' + frameheight);
+  setinterval(calc('crop_anim_' + caller.name), calc(1.0 / framerate),
+  if(caller.loaded,
+  inc(frame);
+  if(frame GE frames, if(caller.onlastframe !== null, callwith(caller, onlastframe() ) ); set(frame,0); );
+  mod(xpos, frame, xframes);
+  div(ypos, frame, xframes);
+  Math.floor(ypos);
+  mul(xpos, framewidth);
+  mul(ypos, frameheight);
+  calc(caller.crop, xpos + '|' + ypos + '|' + framewidth + '|' + frameheight);
+  ,
+  clearinterval(calc('crop_anim_' + caller.name));
+  );
+  );
+</action>
 </krpano>
 ```
+
+`do_crop_animation`参数：（帧宽度，帧高度，帧率）
+
+### 热点标题
+
+```xml
+<!-- tour.xml -->
+<scene>
+...
+  <hotspot name="spot" style="hotspot_style" ath="177.199" atv="15.974" title="旋转三角" />
+...
+</scene>
+```
+
+```xml
+<!-- style/tour.xml -->
+<krpano>
+...
+<style name="hotspot_style" url="hotspot_anime.png" scale="1" edge="top" distorted="true" onloaded="add_all_the_time_tooltip();" />
+...
+<action name="add_all_the_time_tooltip">
+  txtadd(tooltipname, 'tooltip_', get(name));
+  addplugin(get(tooltipname));
+  txtadd(plugin[get(tooltipname)].parent, 'hotspot[', get(name), ']');
+  set(plugin[get(tooltipname)].url,'%SWFPATH%/plugins/textfield.swf');
+  set(plugin[get(tooltipname)].align,center);
+  set(plugin[get(tooltipname)].edge,bottom);
+  set(plugin[get(tooltipname)].x,0);
+  set(plugin[get(tooltipname)].y,0);
+  set(plugin[get(tooltipname)].autowidth,true);
+  set(plugin[get(tooltipname)].autoheight,true);
+  set(plugin[get(tooltipname)].vcenter,true);
+  set(plugin[get(tooltipname)].background,false);
+  set(plugin[get(tooltipname)].backgroundcolor,0x000000);
+  set(plugin[get(tooltipname)].roundedge,5);
+  set(plugin[get(tooltipname)].backgroundalpha,0.25);
+  set(plugin[get(tooltipname)].padding,5);
+  set(plugin[get(tooltipname)].border,false);
+  set(plugin[get(tooltipname)].glow,0);
+  set(plugin[get(tooltipname)].glowcolor,0xFFFFFF);
+  set(plugin[get(tooltipname)].css,'text-align:center; color:#000000; font-family:MicrosoftYahei; font-weight:lighter;  font-size:12px; transform:scale(.7) translateY(15px)');
+  if(device.mobile,set(plugin[get(tooltipname)].css,'text-align:center; color:#FFFFFF; font-family:MicrosoftYahei; font-weight:bold; font-size:24px;');
+  );
+  set(plugin[get(tooltipname)].textshadow,0);
+  set(plugin[get(tooltipname)].textshadowrange,6.0);
+  set(plugin[get(tooltipname)].textshadowangle,90);
+  if(title == '' OR title === null,
+  copy(plugin[get(tooltipname)].html,scene[get(linkedscene)].title),
+  copy(plugin[get(tooltipname)].html,title)
+  );
+  set(plugin[get(tooltipname)].enabled,false);
+</action>
+</krpano>
+```
+
+
 
 ### 调整缩放范围
 
