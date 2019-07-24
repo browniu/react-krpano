@@ -175,7 +175,12 @@ window.krpano.set('view.vlookat', 0)
 <!-- tour.xml -->
 <scene>
 ...
+  <!-- 内联属性 -->
+  <hotspot name="spot0" ath="177.199" atv="0" url="style/hotspot2.png" scale="0.5"></hotspot>
+...
+  <!-- 外部属性 -->
   <hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="loadscene(other_scene,null,MERGE,BLEND(1.0, easeInCubic))" />
+...
 </scene>
 ```
 
@@ -187,6 +192,18 @@ window.krpano.set('view.vlookat', 0)
 ...
 </krpano>
 ```
+
+| Name      | Description                   |
+| --------- | ----------------------------- |
+| url       | 热点图源                      |
+| distorted | 跟随缩放                      |
+| onover    | 鼠标悬浮回调                  |
+| onout     | 鼠标离开回调                  |
+| style     | 外部属性（在style.xml中定义） |
+| ath       | 水平坐标                      |
+| atv       | 垂直坐标                      |
+| alpha     | 透明度                        |
+| visible   | 可见性（不可见时不可用）      |
 
 ### 动态热点
 

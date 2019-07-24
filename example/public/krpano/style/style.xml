@@ -1,6 +1,6 @@
 <krpano>
 	<!-- 热点设置 -->
-	<style name="hotspot_style" url="hotspot.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" />
+	<style name="hotspot_style" url="hotspot.png" scale="0.5" edge="top" distorted="false" onover="tween(scale,0.55);" onout="tween(scale,0.5);" />
 	<style name="hotspot_style_go" url="hotspot2.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" />
   <style name="hotspot_style_anime" url="hotspot_anime.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);" />
   <style name="hotspot_style_anime_2" url="hotspot_anime_2.png" scale="0.5" edge="top" distorted="true" onover="tween(scale,0.55);" onout="tween(scale,0.5);" onloaded="do_crop_animation(128, 128, 60);" />
