@@ -329,7 +329,7 @@ window.krpano.set('view.vlookat', 0)
 
 ### 锁定视角
 
-| 参数 | 释义         |
+| Name | Description  |
 | ---- | ------------ |
 | h    | 锁定垂直视角 |
 | v    | 锁定水平视角 |
@@ -344,12 +344,6 @@ window.krpano.hooks.unlockView()
 
 ### [移镜入场](https://github.com/browniu/react-krpano/blob/master/example/public/krpano/style/style.xml)
 
-| 参数  | 释义                                  | 类型     |
-| ----- | ------------------------------------- | -------- |
-| fov   | 初始景深                              | number   |
-| angle | 视角偏移                              | number   |
-| call  | 回调函数（须在hooks中注册过才能调用） | function |
-
 ```xml
 <!-- style/style.xml -->
 <krpano>
@@ -358,6 +352,12 @@ window.krpano.hooks.unlockView()
 ...
 </krpano>
 ```
+
+| Name  | Description                           |
+| ----- | ------------------------------------- |
+| fov   | 初始景深                              |
+| angle | 视角偏移                              |
+| call  | 回调函数（须在hooks中注册过才能调用） |
 
 ### 星球入场
 
