@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b41bf60-1473-4923-baaf-27b7ac04b5d2" name="Default Changelist" comment="" />
+    <list default="true" id="8b41bf60-1473-4923-baaf-27b7ac04b5d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -72,6 +76,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,19 +92,12 @@
             <path>
               <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-krpano" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-krpano" type="462c0819:PsiDirectoryNode" />
               <item name="krpano-tools-win" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,18 +155,18 @@
       <workItem from="1562811274169" duration="7355000" />
       <workItem from="1563152855688" duration="209000" />
       <workItem from="1563243435706" duration="11604000" />
-      <workItem from="1563788135312" duration="7537000" />
+      <workItem from="1563788135312" duration="7606000" />
+      <workItem from="1563936656101" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81308000" />
+    <option name="totallyTimeSpent" value="81683000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1347" height="1440" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.326546" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3265065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -182,7 +180,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28286558" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2732644" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />

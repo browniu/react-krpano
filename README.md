@@ -11,6 +11,9 @@ npm install --save react-krpano
 ```
 
 ## 依赖 Dependency
+
+* [krpano 官方文档](https://krpano.com/docu/)
+
 * 渲染引擎 A Krpano player globally referenced by `<script>` :
 
   ```html
@@ -269,8 +272,6 @@ window.krpano.set('view.vlookat', 0)
 </krpano>
 ```
 
-
-
 ### 调整缩放范围
 
 `view`的`fov`属性控制缩放(单位%)
@@ -407,7 +408,8 @@ window.krpano.hooks.unlockView()
 ##### 显示隐藏
 
 ```javascript
-window.krpano.set('hotspot[spot3].visible','true')
+window.krpano.set('hotspot[spot3].visible','true') //display
+window.krpano.set('hotspot[spot3].alpha','0') //opacity
 ```
 
 ##### 更新样式
