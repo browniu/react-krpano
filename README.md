@@ -193,17 +193,18 @@ window.krpano.set('view.vlookat', 0)
 </krpano>
 ```
 
-| Name      | Description                   |
-| --------- | ----------------------------- |
-| url       | 热点图源                      |
-| distorted | 跟随缩放                      |
-| onover    | 鼠标悬浮回调                  |
-| onout     | 鼠标离开回调                  |
-| style     | 外部属性（在style.xml中定义） |
-| ath       | 水平坐标                      |
-| atv       | 垂直坐标                      |
-| alpha     | 透明度                        |
-| visible   | 可见性（不可见时不可用）      |
+| Name         | Description                   |
+| ------------ | ----------------------------- |
+| url          | 热点图源                      |
+| distorted    | 跟随缩放                      |
+| onover       | 鼠标悬浮回调                  |
+| onout        | 鼠标离开回调                  |
+| style        | 外部属性（在style.xml中定义） |
+| ath          | 水平坐标                      |
+| atv          | 垂直坐标                      |
+| alpha        | 透明度                        |
+| visible      | 可见性（不可见时不可用）      |
+| height/width | 热点尺寸（需要携带单位）      |
 
 ### 动态热点
 
