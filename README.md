@@ -10,18 +10,6 @@
 npm install --save react-krpano
 ```
 
-## 依赖 Dependency
-
-* [krpano 官方文档](https://krpano.com/docu/)
-
-* 渲染引擎 A Krpano player globally referenced by `<script>` :
-
-  ```html
-  <script src="krpano/tour.js"></script>
-  ```
-
-* [配置文件包](https://github.com/browniu/react-krpano/tree/develop)
-
 
 ## 使用 Usage
 ```jsx
@@ -38,7 +26,20 @@ class Example extends Component {
 }
 ```
 
+## 依赖 Dependency
+
+- [krpano 官方文档](https://krpano.com/docu/)
+
+- 渲染引擎 A Krpano player globally referenced by `<script>` :
+
+  ```html
+  <script src="krpano/tour.js"></script>
+  ```
+
+- [配置文件包](https://github.com/browniu/react-krpano/tree/develop)
+
 ## 开发流程 workflow 
+
 1. 使用Krpano官方提供的[切片工具](https://krpano.com/)生成全景图分片(或者使用[精简包](https://github.com/browniu/react-krpano/tree/develop))
 2. 下载[定制开发包](https://github.com/browniu/react-krpano/tree/develop)，将全景图分片包放入`krpano/pano/`
 3. 安装并引入组件,`props`方式传入配置文件的路径
