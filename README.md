@@ -329,17 +329,14 @@ window.krpano.set('view.vlookat', 0)
 
 ### 锁定视角
 
-| Name | Description  |
-| ---- | ------------ |
-| h    | 锁定垂直视角 |
-| v    | 锁定水平视角 |
+| Name | Description          |
+| ---- | -------------------- |
+| h    | 锁定垂直视角         |
+| v    | 锁定水平视角         |
+| null | 无参数时默认全部锁定 |
 
 ```javascript
-window.krpano.hooks.lockView(h|v)
-```
-
-```
-window.krpano.hooks.unlockView()
+window.krpano.hooks.lockView('h')
 ```
 
 ### [移镜入场](https://github.com/browniu/react-krpano/blob/master/example/public/krpano/style/style.xml)
