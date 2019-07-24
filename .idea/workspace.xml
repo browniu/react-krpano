@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b41bf60-1473-4923-baaf-27b7ac04b5d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-krpano/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,7 +42,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="660">
-                <caret line="339" column="3" selection-start-line="339" selection-start-column="3" selection-end-line="339" selection-end-column="3" />
+                <caret line="340" column="3" selection-start-line="340" selection-start-column="3" selection-end-line="340" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -106,8 +107,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1274" />
-    <option name="height" value="1440" />
+    <option name="x" value="77" />
+    <option name="y" value="162" />
+    <option name="width" value="1091" />
+    <option name="height" value="1166" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -218,18 +221,17 @@
       <workItem from="1563152855688" duration="209000" />
       <workItem from="1563243435706" duration="11604000" />
       <workItem from="1563788135312" duration="7606000" />
-      <workItem from="1563936656101" duration="2096000" />
+      <workItem from="1563936656101" duration="2973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83473000" />
+    <option name="totallyTimeSpent" value="84350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1447" height="1440" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3141655" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3141655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -243,7 +245,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2732644" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2732644" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -360,7 +362,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="660">
-            <caret line="339" column="3" selection-start-line="339" selection-start-column="3" selection-end-line="339" selection-end-column="3" />
+            <caret line="340" column="3" selection-start-line="340" selection-start-column="3" selection-end-line="340" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
