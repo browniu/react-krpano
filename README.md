@@ -427,6 +427,18 @@ window.krpano.set('hotspot[spot3].visible','true')
 window.krpano.set('hotspot[spot3].visible','false')
 ```
 
+##### 更新图源
+
+```xml
+<hotspot name="spot0" ath="177.199" atv="0" url="style/hotspot2.png" scale="0.5"></hotspot>
+```
+
+更新的图源必须是绝对路径：
+
+```javascript
+window.krpano.set('hotspot[spot0].url','http://localhost:3000/krpano/style/hotspot.png')
+```
+
 
 
 ## Update 更新日志
