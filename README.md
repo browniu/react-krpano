@@ -169,7 +169,9 @@ window.krpano.set('view.vlookat', 0)
 </krpano>
 ```
 
-### 添加热点
+### 热点相关
+
+#### 添加热点
 
 ```xml
 <!-- tour.xml -->
@@ -206,7 +208,7 @@ window.krpano.set('view.vlookat', 0)
 | visible      | 可见性（不可见时不可用）      |
 | height/width | 热点尺寸（需要携带单位）      |
 
-### 动态热点
+#### 动态热点
 
 ```xml
 <!-- style/style.xml -->
@@ -239,7 +241,7 @@ window.krpano.set('view.vlookat', 0)
 
 `do_crop_animation`参数：（帧宽度，帧高度，帧率）
 
-### 热点标题
+#### 热点标题
 
 ```xml
 <!-- tour.xml -->
@@ -290,6 +292,21 @@ window.krpano.set('view.vlookat', 0)
 </action>
 </krpano>
 ```
+
+#### 全局热点
+
+在`scene`之外且携带`keep="true"`属性的热点会被作为全局热点始终保留
+
+```jsx
+<!-- tour.xml -->
+<krpano>
+...
+  <hotspot keep="true" name="spot0" ath="177.199" atv="0" url="style/hotspot.png" ></hotspot>
+...
+</krpano>
+```
+
+
 
 ### 调整缩放范围
 
