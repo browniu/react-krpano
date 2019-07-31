@@ -11,34 +11,25 @@
 
   <hotspot name="spot0" ath="177.199" atv="0" url="style/spritesheet4.png" keep="true" scale="1" onloaded="do_crop_animation(92, 90, 38);"/>
 
-	<!-- 场景1 -->
-	<scene name="scene_hongkong" title="hongkong" havevrimage="true" thumburl="panos/hongkong.tiles/thumb.jpg">
-		<!-- 视窗配置 -->
-		<view hlookat="177.349" vlookat="27.330" fovtype="MFOV" fov="110.000" maxpixelzoom="1" fovmin="110" fovmax="110" limitview="auto" />
-		<!-- 预览配置 -->
-		<preview url="panos/hongkong.tiles/preview.jpg" />
-		<!-- 全景视图配置 -->
-		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
-			<level tiledimagewidth="1280" tiledimageheight="1280">
-				<cube url="panos/hongkong.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="640" tiledimageheight="640">
-				<cube url="panos/hongkong.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-		<!-- 热点 -->
+  <scene name="eggs" thumburl="panos/eggs.tiles/thumb.jpg" >
 
-		<hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="loadscene(scene_inside,null,MERGE,BLEND(1.0, easeInCubic));jscall(krpano.hooks.eyeMode())" />
-		<hotspot name="spot2" style="hotspot_style_anime" ath="327.61605" atv="-3.91918" onclick="jscall(krpano.hooks.pop(1))" />
-    <hotspot name="spot3" style="hotspot_style_anime_4"  ath="16.92924" atv="7.66196"  onclick="jscall(krpano.hooks.pop(2))"  title="旋转三角" />
-    <hotspot name="spot3y" visible="false" style="hotspot_style_anime_4"  ath="16.92924" atv="7.66196"  onclick="jscall(krpano.hooks.pop(2))"  title="无敌小三角" />
-    <hotspot name="spot3x" visible="false" style="hotspot_style_anime_3" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
+  <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120"  fovmin="120" fovmax="120" limitview="auto" />
+  <preview url="panos/eggs.tiles/preview.jpg" />
 
-	</scene>
-	<!-- 场景2 -->
+    <image>
+      <cube url="panos/inside3.tiles/pano_%s.jpg" />
+    </image>
+
+  <!-- 从彩蛋屋返回老板办公室 大门-->
+  <hotspot name="eggs-logout-door" style="xl_hotshot" ath="219.31313" atv="2.71378"
+           visible="true" alpha="1" keep="true"
+           onclick="jscall(krpano.hooks.logoutEggsHomeBtnClick())" />
+  </scene>
+
+  <!-- 场景2 -->
 	<scene name="scene_inside1" title="inside1" thumburl="panos/inside1.titles/thumb.jpg">
 		<!-- 视窗配置 -->
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="130" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120"  fovmin="120" fovmax="120" limitview="auto" />
 		<!-- 预览配置 -->
 		<preview url="panos/inside1.tiles/preview.jpg" />
 		<!-- 全景视图配置 -->
@@ -54,6 +45,30 @@
     <hotspot name="spot4" style="hotspot_style_anime_3" ath="-266.57535" atv="-4.56823" onclick="loadscene(scene_hongkong,null,MERGE,BLEND(1.0, easeInCubic))" />
 	</scene>
 
+  <!-- 场景1 -->
+  <scene name="scene_hongkong" title="hongkong" havevrimage="true" thumburl="panos/hongkong.tiles/thumb.jpg">
+    <!-- 视窗配置 -->
+    <view hlookat="177.349" vlookat="27.330" fovtype="MFOV" fov="110.000" maxpixelzoom="1" fovmin="110" fovmax="110" limitview="auto" />
+    <!-- 预览配置 -->
+    <preview url="panos/hongkong.tiles/preview.jpg" />
+    <!-- 全景视图配置 -->
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="1280" tiledimageheight="1280">
+        <cube url="panos/hongkong.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+      </level>
+      <level tiledimagewidth="640" tiledimageheight="640">
+        <cube url="panos/hongkong.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+      </level>
+    </image>
+    <!-- 热点 -->
+
+    <hotspot name="spot1" style="hotspot_style" ath="177.199" atv="15.974" onclick="loadscene(scene_inside,null,MERGE,BLEND(1.0, easeInCubic));jscall(krpano.hooks.eyeMode())" />
+    <hotspot name="spot2" style="hotspot_style_anime" ath="327.61605" atv="-3.91918" onclick="jscall(krpano.hooks.pop(1))" />
+    <hotspot name="spot3" style="hotspot_style_anime_4"  ath="16.92924" atv="7.66196"  onclick="jscall(krpano.hooks.pop(2))"  title="旋转三角" />
+    <hotspot name="spot3y" visible="false" style="hotspot_style_anime_4"  ath="16.92924" atv="7.66196"  onclick="jscall(krpano.hooks.pop(2))"  title="无敌小三角" />
+    <hotspot name="spot3x" visible="false" style="hotspot_style_anime_3" ath="16.92924" atv="7.66196" onclick="jscall(krpano.hooks.pop(2))" />
+
+  </scene>
   <scene name="scene_inside"  onstart="" thumburl="panos/inside3.tiles/thumb.jpg">
     <view hlookat="-295.54753" vlookat="-6.76344" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="100" fovmax="130" limitview="auto" />
     <preview url="panos/inside3.tiles/preview.jpg" />

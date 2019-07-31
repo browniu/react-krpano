@@ -310,12 +310,13 @@ window.krpano.set('view.vlookat', 0)
 
 ### 调整缩放范围
 
-`view`的`fov`属性控制缩放(单位%)
+`view`的`fov`属性控制缩放，同时需要关闭`pixelzoom` 相关属性
 
 ```xml
+<!-- tour.xml -->
 <scene>
   ...
-  	<view fovtype="MFOV" fov="120.000"fovmin="100" fovmax="130"/>
+  	<view fovtype="MFOV" fov="100.000"fovmin="110" fovmax="120" limitview="auto"/>
   ...
 </scene>
 ```
@@ -326,7 +327,7 @@ window.krpano.set('view.vlookat', 0)
 ```xml
 <scene>
   ...
-  	 <view  vlookat="0" vlookatmax="0" vlookatmin="0"  limitview="lookat" />
+  	 <view  vlookat="0" vlookatmax="0" vlookatmin="0"  limitview="lookat"  />
   ...
 </scene>
 ```
@@ -471,7 +472,9 @@ window.krpano.set('hotspot[spot3].visible','false')
 window.krpano.set('hotspot[spot0].url','http://localhost:3000/krpano/style/hotspot.png')
 ```
 
+### 场景失控
 
+查看是否 `name`属性与其他同一级元素重合，同一级别下`name`具有唯一性
 
 ## Update 更新日志
 
