@@ -9,12 +9,12 @@
     jscall(krpano.hooks.ready())
 	</action>
 
-  <hotspot name="spot0" ath="177.199" atv="0" url="style/hotspot.png" keep="true" scale="0.5" onclick="jscall(console.log('xixi'))"/>
+  <hotspot name="spot0" ath="177.199" atv="0" url="style/spritesheet4.png" keep="true" scale="1" onloaded="do_crop_animation(92, 90, 38);"/>
 
 	<!-- 场景1 -->
 	<scene name="scene_hongkong" title="hongkong" havevrimage="true" thumburl="panos/hongkong.tiles/thumb.jpg">
 		<!-- 视窗配置 -->
-		<view hlookat="177.349" vlookat="27.330" fovtype="MFOV" fov="120.000" maxpixelzoom="0" fovmin="100" fovmax="130" limitview="auto" />
+		<view hlookat="177.349" vlookat="27.330" fovtype="MFOV" fov="110.000" maxpixelzoom="1" fovmin="110" fovmax="110" limitview="auto" />
 		<!-- 预览配置 -->
 		<preview url="panos/hongkong.tiles/preview.jpg" />
 		<!-- 全景视图配置 -->
