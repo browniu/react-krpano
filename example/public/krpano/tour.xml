@@ -11,21 +11,6 @@
 
   <hotspot name="spot0" ath="177.199" atv="0" url="style/spritesheet4.png" keep="true" scale="1" onloaded="do_crop_animation(92, 90, 38);"/>
 
-  <scene name="eggs" thumburl="panos/eggs.tiles/thumb.jpg" >
-
-  <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120"  fovmin="120" fovmax="120" limitview="auto" />
-  <preview url="panos/eggs.tiles/preview.jpg" />
-
-    <image>
-      <cube url="panos/inside3.tiles/pano_%s.jpg" />
-    </image>
-
-  <!-- 从彩蛋屋返回老板办公室 大门-->
-  <hotspot name="eggs-logout-door" style="xl_hotshot" ath="219.31313" atv="2.71378"
-           visible="true" alpha="1" keep="true"
-           onclick="jscall(krpano.hooks.logoutEggsHomeBtnClick())" />
-  </scene>
-
   <!-- 场景2 -->
 	<scene name="scene_inside1" title="inside1" thumburl="panos/inside1.titles/thumb.jpg">
 		<!-- 视窗配置 -->
