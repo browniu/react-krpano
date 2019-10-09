@@ -1,4 +1,4 @@
-# react-krpano [demo](https://browniu.com/react-krpano/)
+# react-krpano [demo](https://browniu.github.io/react-krpano/)
 
 > krpano in react
 
