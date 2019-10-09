@@ -10,7 +10,6 @@
 npm install --save react-krpano
 ```
 
-
 ## 使用 Usage
 ```jsx
 import React, { Component } from 'react'
