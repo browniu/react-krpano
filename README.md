@@ -1,8 +1,12 @@
-# react-krpano [demo](https://browniu.github.io/react-krpano/)
+# react-krpano
 
-> krpano in react
+> VR全景渲染组件
 
 [![NPM](https://img.shields.io/npm/v/react-krpano.svg)](https://www.npmjs.com/package/react-krpano) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## [demo](https://browniu.github.io/react-krpano/)
+
+![demo](./static/kp.gif)
 
 ## 安装 Install
 
