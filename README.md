@@ -6,7 +6,7 @@
 
 ## [demo](https://browniu.github.io/react-krpano/)
 
-![demo](./static/kp.gif)
+![demo](https://browniu-wx-1257187612.cos.ap-shanghai.myqcloud.com/GitHub/kp.gif)
 
 ## 安装 Install
 
